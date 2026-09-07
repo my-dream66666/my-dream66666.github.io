@@ -65,7 +65,7 @@
   <script id="fluid-configs">
     var Fluid = window.Fluid || {};
     Fluid.ctx = Object.assign({}, Fluid.ctx)
-    var CONFIG = {"hostname":"starseaeternal.dpdns.org","root":"/","version":"1.9.8","typing":{"enable":true,"typeSpeed":70,"cursorChar":"⭐","loop":false,"scope":[]},"anchorjs":{"enable":true,"element":"h1,h2,h3,h4,h5,h6","placement":"left","visible":"hover","icon":""},"progressbar":{"enable":true,"height_px":3,"color":"#29d","options":{"showSpinner":false,"trickleSpeed":100}},"code_language":{"enable":true,"default":"TEXT"},"copy_btn":true,"image_caption":{"enable":true},"image_zoom":{"enable":true,"img_url_replace":["",""]},"toc":{"enable":true,"placement":"right","headingSelector":"h1,h2,h3,h4,h5,h6","collapseDepth":0},"lazyload":{"enable":true,"loading_img":"/img/loading.gif","onlypost":false,"offset_factor":2},"web_analytics":{"enable":false,"follow_dnt":true,"baidu":null,"google":{"measurement_id":null},"tencent":{"sid":null,"cid":null},"leancloud":{"app_id":null,"app_key":null,"server_url":null,"path":"window.location.pathname","ignore_local":false},"umami":{"src":null,"website_id":null,"domains":null,"start_time":"2024-01-01T00:00:00.000Z","token":null,"api_server":null}},"search_path":"/local-search.xml","include_content_in_search":true};
+    var CONFIG = {"hostname":"starseaeternal.dpdns.org","root":"/","version":"1.9.9","typing":{"enable":true,"typeSpeed":91,"cursorChar":"⭐","loop":true,"scope":[]},"anchorjs":{"enable":true,"element":"h1,h2,h3,h4,h5,h6","placement":"left","visible":"hover","icon":""},"progressbar":{"enable":false,"height_px":3,"color":"#29d","options":{"showSpinner":false,"trickleSpeed":100}},"code_language":{"enable":true,"default":"TEXT"},"copy_btn":true,"image_caption":{"enable":true},"image_zoom":{"enable":true,"img_url_replace":["",""]},"toc":{"enable":true,"expand_all":true,"placement":"right","headingSelector":"h1,h2,h3,h4,h5,h6","collapseDepth":0},"lazyload":{"enable":true,"loading_img":"/img/loading.gif","onlypost":false,"offset_factor":2},"web_analytics":{"enable":false,"follow_dnt":true,"baidu":null,"google":{"measurement_id":null},"tencent":{"sid":null,"cid":null},"leancloud":{"app_id":null,"app_key":null,"server_url":null,"path":"window.location.pathname","ignore_local":false},"openkounter":{"server_url":"https://open-kounter.mintimate.cn","path":"window.location.pathname","ignore_local":false},"umami":{"src":null,"website_id":null,"domains":null,"start_time":"2024-01-01T00:00:00.000Z","token":null,"api_server":null}},"search_path":"/local-search.xml","include_content_in_search":true};
 
     if (CONFIG.web_analytics.follow_dnt) {
       var dntVal = navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack;
@@ -78,11 +78,10 @@
 
 
   
+
 <meta name="generator" content="Hexo 8.1.1"></head>
 
-
 <body>
-
   
 
   <header>
@@ -101,7 +100,7 @@
       <div class="animated-icon"><span></span><span></span><span></span></div>
     </button>
 
-    <!-- Collapsible content -->
+    <!-- Collapsible content (desktop) -->
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav ml-auto text-center">
         
@@ -165,6 +164,18 @@
             </li>
           
         
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/links/" target="_self">
+                <i class="iconfont icon-link-fill"></i>
+                <span>Links</span>
+              </a>
+            </li>
+          
+        
         
           <li class="nav-item" id="search-btn">
             <a class="nav-link" target="_self" href="javascript:;" data-toggle="modal" data-target="#modalSearch" aria-label="Search">
@@ -185,10 +196,127 @@
   </div>
 </nav>
 
+<!-- Mobile grid menu overlay -->
+<div id="mobile-grid-menu" class="d-lg-none">
+  <div class="mobile-grid-menu-inner">
+    <div class="container">
+      <div class="row">
+        
+          
+          
+          
+          
+            <div class="col-4 mobile-grid-cell">
+              <a href="/" target="_self">
+                <div class="mobile-grid-item">
+                  <i class="iconfont icon-home-fill"></i>
+                  <span>Home</span>
+                </div>
+              </a>
+            </div>
+          
+        
+          
+          
+          
+          
+            <div class="col-4 mobile-grid-cell">
+              <a href="/archives/" target="_self">
+                <div class="mobile-grid-item">
+                  <i class="iconfont icon-user-fill"></i>
+                  <span>Archives</span>
+                </div>
+              </a>
+            </div>
+          
+        
+          
+          
+          
+          
+            <div class="col-4 mobile-grid-cell">
+              <a href="/categories/" target="_self">
+                <div class="mobile-grid-item">
+                  <i class="iconfont icon-user-fill"></i>
+                  <span>Categories</span>
+                </div>
+              </a>
+            </div>
+          
+        
+          
+          
+          
+          
+            <div class="col-4 mobile-grid-cell">
+              <a href="/tags/" target="_self">
+                <div class="mobile-grid-item">
+                  <i class="iconfont icon-tags-fill"></i>
+                  <span>Tag</span>
+                </div>
+              </a>
+            </div>
+          
+        
+          
+          
+          
+          
+            <div class="col-4 mobile-grid-cell">
+              <a href="/about/" target="_self">
+                <div class="mobile-grid-item">
+                  <i class="iconfont icon-user-fill"></i>
+                  <span>About</span>
+                </div>
+              </a>
+            </div>
+          
+        
+          
+          
+          
+          
+            <div class="col-4 mobile-grid-cell">
+              <a href="/links/" target="_self">
+                <div class="mobile-grid-item">
+                  <i class="iconfont icon-link-fill"></i>
+                  <span>Links</span>
+                </div>
+              </a>
+            </div>
+          
+        
+        
+          <div class="col-4 mobile-grid-cell" id="mobile-search-btn">
+            <a href="javascript:;" data-toggle="modal" data-target="#modalSearch" aria-label="Search">
+              <div class="mobile-grid-item">
+                <i class="iconfont icon-search"></i>
+                <span>Search</span>
+              </div>
+            </a>
+          </div>
+        
+        
+          <div class="col-4 mobile-grid-cell" id="mobile-color-toggle-btn"
+               data-label-light="Light"
+               data-label-dark="Dark">
+            <a href="javascript:;" aria-label="Color Toggle">
+              <div class="mobile-grid-item">
+                <i class="iconfont icon-dark" id="mobile-color-toggle-icon"></i>
+                <span id="mobile-color-toggle-label">Dark</span>
+              </div>
+            </a>
+          </div>
+        
+      </div>
+    </div>
+  </div>
+</div>
+
   
 
-<div id="banner" class="banner" parallax=true
-     style="background: url('/img/bg/15.jpg') no-repeat center center; background-size: cover;">
+<div id="banner" class="banner" parallax=true data-random-banner='/img/random/10.jpg,/img/random/11.jpg,/img/random/12.jpg,/img/random/13.jpg,/img/random/14.jpg,/img/random/15.jpg,/img/random/16.jpg,/img/random/17.jpg,/img/random/18.jpg,/img/random/19.jpg,/img/random/20.jpg,/img/random/21.jpg,/img/random/22.jpg,/img/random/23.jpg,/img/random/24.jpg,/img/random/25.jpg,/img/random/26.jpg,/img/random/27.jpg,/img/random/28.jpg,/img/random/29.jpg,/img/random/3.jpg,/img/random/30.jpg,/img/random/31.jpg,/img/random/32.jpg,/img/random/33.jpg,/img/random/34.jpg,/img/random/35.jpg,/img/random/36.jpg,/img/random/37.jpg,/img/random/38.jpg,/img/random/39.jpg,/img/random/40.jpg,/img/random/41.jpg,/img/random/42.jpg,/img/random/43.jpg,/img/random/44.jpg,/img/random/45.jpg,/img/random/46.jpg,/img/random/47.jpg,/img/random/48.jpg,/img/random/49.jpg,/img/random/50.jpg,/img/random/51.jpg,/img/random/52.jpg,/img/random/53.jpg,/img/random/54.jpg,/img/random/55.jpg,/img/random/56.jpg,/img/random/57.jpg,/img/random/58.jpg,/img/random/59.jpg,/img/random/6.jpg,/img/random/60.jpg,/img/random/61.jpg,/img/random/7.jpg,/img/random/8.jpg,/img/random/9.jpg,/img/random/default.png,/img/random/t1.jpg'
+     style="background: url('/img/random/10.jpg') no-repeat center center; background-size: cover;">
   <div class="full-bg-img">
     <div class="mask flex-center" style="background-color: rgba(0, 0, 0, 0.3)">
       <div class="banner-text text-center fade-in-up">
@@ -210,6 +338,21 @@
   </div>
 </div>
 
+
+  <script>
+    (function() {
+      var banner = document.getElementById('banner');
+      if (!banner) return;
+      var list = banner.getAttribute('data-random-banner');
+      if (!list) return;
+      list = list.split(',').filter(Boolean);
+      if (list.length === 0) return;
+      var pick = list[Math.floor(Math.random() * list.length)];
+      banner.style.backgroundImage = "url('" + pick + "')";
+    })();
+  </script>
+
+
 </div>
 
   </header>
@@ -225,6 +368,7 @@
               <div class="col-12 col-md-10 m-auto">
                 
 
+<h1 style="display: none">my_dream666&#39;s Blog</h1>
 
   <div class="row mx-auto index-card">
     
@@ -232,15 +376,15 @@
     <article class="col-12 col-md-12 mx-auto index-info">
       <h2 class="index-header">
         
-        <a href="/2026/05/31/%E9%A2%98%E8%A7%A3%EF%BC%9AP2056-ZJOI2007-%E6%8D%89%E8%BF%B7%E8%97%8F/" target="_self">
-          题解：P2056 [ZJOI2007] 捉迷藏
+        <a href="/2026/08/24/%E9%A2%98%E8%A7%A3%EF%BC%9AP11598-NOISG-2018-Finals-Safety/" target="_self">
+          题解：P11598 [NOISG 2018 Finals] Safety
         </a>
       </h2>
 
       
-      <a class="index-excerpt index-excerpt__noimg" href="/2026/05/31/%E9%A2%98%E8%A7%A3%EF%BC%9AP2056-ZJOI2007-%E6%8D%89%E8%BF%B7%E8%97%8F/" target="_self">
+      <a class="index-excerpt index-excerpt__noimg" href="/2026/08/24/%E9%A2%98%E8%A7%A3%EF%BC%9AP11598-NOISG-2018-Finals-Safety/" target="_self">
         <div>
-          前言 洛谷题目传送门 1。 洛谷题目传送门 2。 AtCoder 题目传送门 赛时只有 Wxb dalao 做出来了，极短时间场切紫题，还是人类吗。                      ▶题目                                  P2056 [ZJOI2007] 捉迷藏Jiajia 和 Wind 是一对恩爱的夫妻，并且他们有很多孩子。某天，Jiajia、Wind
+          前言 Slope trick 经典题型。 题目传送门。                      ▶题目                                  题目背景 译自 NOISG 2018 Finals E. Safety。 题目描述 小老鼠 Squeaky 最近开始欣赏视觉艺术，并尝试创作自己的艺术作品，在城里最负盛名的艺术节上展出！ 他的作品由若干发光柱组成，其中每个发光柱
         </div>
       </a>
 
@@ -248,8 +392,8 @@
         
           <div class="post-meta mr-3">
             <i class="iconfont icon-date"></i>
-            <time datetime="2026-05-31 16:56" pubdate>
-              2026-05-31
+            <time datetime="2026-08-24 07:18" pubdate>
+              2026-08-24
             </time>
           </div>
         
@@ -279,9 +423,7 @@
           <div class="post-meta">
             <i class="iconfont icon-tags"></i>
             
-              <a href="/tags/%E7%BA%BF%E6%AE%B5%E6%A0%91%E5%88%86%E6%B2%BB/">#线段树分治</a>
-            
-              <a href="/tags/%E7%82%B9%E5%88%86%E6%B2%BB/">#点分治</a>
+              <a href="/tags/Slope-trick/">#Slope trick</a>
             
           </div>
         
@@ -295,15 +437,15 @@
     <article class="col-12 col-md-12 mx-auto index-info">
       <h2 class="index-header">
         
-        <a href="/2026/05/29/%E9%A2%98%E8%A7%A3%EF%BC%9AAT-abc160-f-ABC160F-Distributing-Integers/" target="_self">
-          题解：AT_abc160_f [ABC160F] Distributing Integers
+        <a href="/2026/08/21/%E9%A2%98%E8%A7%A3%EF%BC%9AP4311-BalticOI-2004-Sequence-Day1/" target="_self">
+          题解：P4311 [BalticOI 2004] Sequence (Day1)
         </a>
       </h2>
 
       
-      <a class="index-excerpt index-excerpt__noimg" href="/2026/05/29/%E9%A2%98%E8%A7%A3%EF%BC%9AAT-abc160-f-ABC160F-Distributing-Integers/" target="_self">
+      <a class="index-excerpt index-excerpt__noimg" href="/2026/08/21/%E9%A2%98%E8%A7%A3%EF%BC%9AP4311-BalticOI-2004-Sequence-Day1/" target="_self">
         <div>
-          前言 洛谷题目传送门。 AtCoder 题目传送门。                      ▶题目                                  题目描述有一棵包含 NNN 个顶点的树，顶点编号为 111 到 NNN。这棵树的第 iii 条边连接了顶点 aia_iai​ 和顶点 bib_ibi​。对于 k=1,…,Nk=1,\ldots,Nk=1,…,N，请解决以下问题：按
+          前言 题目传送门。 此题存在多倍经验：   CF13C Sequence。   P4597 序列 sequence。   P2748 [USACO16OPEN] Landscaping P。   P2893 [USACO08FEB] Making the Grade G。   CF713C Sonya and Problem Without a Legend。   我挑了一个最强的写。 此题不仅可
         </div>
       </a>
 
@@ -311,8 +453,8 @@
         
           <div class="post-meta mr-3">
             <i class="iconfont icon-date"></i>
-            <time datetime="2026-05-29 15:28" pubdate>
-              2026-05-29
+            <time datetime="2026-08-21 08:02" pubdate>
+              2026-08-21
             </time>
           </div>
         
@@ -337,6 +479,467 @@
 </span>
 
           </div>
+        
+        
+          <div class="post-meta">
+            <i class="iconfont icon-tags"></i>
+            
+              <a href="/tags/Slope-trick/">#Slope trick</a>
+            
+              <a href="/tags/%E5%8F%AF%E5%B9%B6%E5%A0%86/">#可并堆</a>
+            
+          </div>
+        
+      </div>
+    </article>
+  </div>
+
+  <div class="row mx-auto index-card">
+    
+    
+    <article class="col-12 col-md-12 mx-auto index-info">
+      <h2 class="index-header">
+        
+        <a href="/2026/08/20/%E9%A2%98%E8%A7%A3%EF%BC%9AP2748-USACO16OPEN-Landscaping-P/" target="_self">
+          题解：P2748 [USACO16OPEN] Landscaping P]
+        </a>
+      </h2>
+
+      
+      <a class="index-excerpt index-excerpt__noimg" href="/2026/08/20/%E9%A2%98%E8%A7%A3%EF%BC%9AP2748-USACO16OPEN-Landscaping-P/" target="_self">
+        <div>
+          前言 题目传送门。 有一个 弱化版，可以水一题。 存在反悔贪心的做法。                      ▶题目                                  题目背景 本题与 2012 年 3 月月赛银组同名题目 在题意上一致，唯一的差别是数据范围。 题目描述 Farmer John 打算修建一座花园，他需要移动不少泥土。 花园由 NNN 个花坛组成（1≤N≤1051
+        </div>
+      </a>
+
+      <div class="index-btm post-metas">
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-date"></i>
+            <time datetime="2026-08-20 21:11" pubdate>
+              2026-08-20
+            </time>
+          </div>
+        
+        
+          <div class="post-meta mr-3 d-flex align-items-center">
+            <i class="iconfont icon-category"></i>
+            
+
+<span class="category-chains">
+  
+  
+    
+      <span class="category-chain">
+        
+  <a href="/categories/%E9%A2%98%E8%A7%A3/" class="category-chain-item">题解</a>
+  
+  
+
+      </span>
+    
+  
+</span>
+
+          </div>
+        
+        
+          <div class="post-meta">
+            <i class="iconfont icon-tags"></i>
+            
+              <a href="/tags/Slope-trick/">#Slope trick</a>
+            
+          </div>
+        
+      </div>
+    </article>
+  </div>
+
+  <div class="row mx-auto index-card">
+    
+    
+    <article class="col-12 col-md-12 mx-auto index-info">
+      <h2 class="index-header">
+        
+        <a href="/2026/08/19/Slope-trick-%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/" target="_self">
+          Slope trick 学习笔记
+        </a>
+      </h2>
+
+      
+      <a class="index-excerpt index-excerpt__noimg" href="/2026/08/19/Slope-trick-%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/" target="_self">
+        <div>
+          前言 一种很有意思的 DP 优化方法，考验脑子和细节，同时给我目前的黑题数量翻倍。 Slope trick 是一种思想，通过函数的凸性，将状态的转移变成斜率的变化，向左右平移等操作，然后根据需求，用一些数据结构维护。 一般都是优化二维 DP，把每次 O(n)O(n)O(n) 的转移进行优化。 Slope trick 的题一般分为 333 部：   进行 DP，并尽可能简化状态及转移。   考虑对整
+        </div>
+      </a>
+
+      <div class="index-btm post-metas">
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-date"></i>
+            <time datetime="2026-08-19 11:36" pubdate>
+              2026-08-19
+            </time>
+          </div>
+        
+        
+          <div class="post-meta mr-3 d-flex align-items-center">
+            <i class="iconfont icon-category"></i>
+            
+
+<span class="category-chains">
+  
+  
+    
+      <span class="category-chain">
+        
+  <a href="/categories/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/" class="category-chain-item">学习笔记</a>
+  
+  
+
+      </span>
+    
+  
+</span>
+
+          </div>
+        
+        
+      </div>
+    </article>
+  </div>
+
+  <div class="row mx-auto index-card">
+    
+    
+    <article class="col-12 col-md-12 mx-auto index-info">
+      <h2 class="index-header">
+        
+        <a href="/2026/08/15/%E9%A2%98%E8%A7%A3%EF%BC%9AP1552-APIO-2012-%E6%B4%BE%E9%81%A3/" target="_self">
+          题解：P1552 [APIO 2012] 派遣
+        </a>
+      </h2>
+
+      
+      <a class="index-excerpt index-excerpt__noimg" href="/2026/08/15/%E9%A2%98%E8%A7%A3%EF%BC%9AP1552-APIO-2012-%E6%B4%BE%E9%81%A3/" target="_self">
+        <div>
+          前言 带简单贪心的可并堆。 题目传送门。                      ▶题目                                  题目背景 在一个忍者的帮派里，一些忍者们被选中派遣给顾客，然后依据自己的工作获取报偿。 题目描述 在这个帮派里，有一名忍者被称之为 Master。除了 Master 以外，每名忍者都有且仅有一个上级。为保密，同时增强忍者们的领导力，所有与他们
+        </div>
+      </a>
+
+      <div class="index-btm post-metas">
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-date"></i>
+            <time datetime="2026-08-15 16:25" pubdate>
+              2026-08-15
+            </time>
+          </div>
+        
+        
+          <div class="post-meta mr-3 d-flex align-items-center">
+            <i class="iconfont icon-category"></i>
+            
+
+<span class="category-chains">
+  
+  
+    
+      <span class="category-chain">
+        
+  <a href="/categories/%E9%A2%98%E8%A7%A3/" class="category-chain-item">题解</a>
+  
+  
+
+      </span>
+    
+  
+</span>
+
+          </div>
+        
+        
+          <div class="post-meta">
+            <i class="iconfont icon-tags"></i>
+            
+              <a href="/tags/%E5%8F%AF%E5%B9%B6%E5%A0%86/">#可并堆</a>
+            
+          </div>
+        
+      </div>
+    </article>
+  </div>
+
+  <div class="row mx-auto index-card">
+    
+    
+    <article class="col-12 col-md-12 mx-auto index-info">
+      <h2 class="index-header">
+        
+        <a href="/2026/08/15/%E9%A2%98%E8%A7%A3%EF%BC%9AP3261-JLOI2015-%E5%9F%8E%E6%B1%A0%E6%94%BB%E5%8D%A0/" target="_self">
+          题解：P3261 [JLOI2015] 城池攻占
+        </a>
+      </h2>
+
+      
+      <a class="index-excerpt index-excerpt__noimg" href="/2026/08/15/%E9%A2%98%E8%A7%A3%EF%BC%9AP3261-JLOI2015-%E5%9F%8E%E6%B1%A0%E6%94%BB%E5%8D%A0/" target="_self">
+        <div>
+          前言 比较板的可并堆。 题目传送门。                      ▶题目                                  题目描述 小铭铭最近获得了一副新的桌游，游戏中需要用 mmm 个骑士攻占 nnn 个城池。 这 nnn 个城池用 111 到 nnn 的整数表示。除 111 号城池外，城池 iii 会受到另一座城池 fif_ifi​ 的管辖，其中 fi&lt;i
+        </div>
+      </a>
+
+      <div class="index-btm post-metas">
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-date"></i>
+            <time datetime="2026-08-15 16:15" pubdate>
+              2026-08-15
+            </time>
+          </div>
+        
+        
+          <div class="post-meta mr-3 d-flex align-items-center">
+            <i class="iconfont icon-category"></i>
+            
+
+<span class="category-chains">
+  
+  
+    
+      <span class="category-chain">
+        
+  <a href="/categories/%E9%A2%98%E8%A7%A3/" class="category-chain-item">题解</a>
+  
+  
+
+      </span>
+    
+  
+</span>
+
+          </div>
+        
+        
+          <div class="post-meta">
+            <i class="iconfont icon-tags"></i>
+            
+              <a href="/tags/%E5%8F%AF%E5%B9%B6%E5%A0%86/">#可并堆</a>
+            
+          </div>
+        
+      </div>
+    </article>
+  </div>
+
+  <div class="row mx-auto index-card">
+    
+    
+    <article class="col-12 col-md-12 mx-auto index-info">
+      <h2 class="index-header">
+        
+        <a href="/2026/08/15/%E5%8F%AF%E5%B9%B6%E5%A0%86%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/" target="_self">
+          可并堆学习笔记
+        </a>
+      </h2>
+
+      
+      <a class="index-excerpt index-excerpt__noimg" href="/2026/08/15/%E5%8F%AF%E5%B9%B6%E5%A0%86%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/" target="_self">
+        <div>
+          前言 在研究 Slope trick 时学习它，因为它来实现 Slope trick 还是比较常见。 实现可并堆有几种常见的方法，比如左偏树，斐波那契堆，斜堆，配对堆，二项堆等。本文主要讲解左偏树，以后学了别的方法再补上。 很多可并堆的题都是模板，我就不一一写题解，整理了一个 题单。好像好多题都是远古题欸。 定义 普通堆的高为 log⁡n\log nlogn 来保证时间复杂度，但容易发现堆的性质太
+        </div>
+      </a>
+
+      <div class="index-btm post-metas">
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-date"></i>
+            <time datetime="2026-08-15 14:19" pubdate>
+              2026-08-15
+            </time>
+          </div>
+        
+        
+          <div class="post-meta mr-3 d-flex align-items-center">
+            <i class="iconfont icon-category"></i>
+            
+
+<span class="category-chains">
+  
+  
+    
+      <span class="category-chain">
+        
+  <a href="/categories/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/" class="category-chain-item">学习笔记</a>
+  
+  
+
+      </span>
+    
+  
+</span>
+
+          </div>
+        
+        
+      </div>
+    </article>
+  </div>
+
+  <div class="row mx-auto index-card">
+    
+    
+    <article class="col-12 col-md-12 mx-auto index-info">
+      <h2 class="index-header">
+        
+        <a href="/2026/08/14/%E9%A2%98%E8%A7%A3%EF%BC%9AP5508-%E5%AF%BB%E5%AE%9D/" target="_self">
+          题解：P5508 寻宝
+        </a>
+      </h2>
+
+      
+      <a class="index-excerpt index-excerpt__noimg" href="/2026/08/14/%E9%A2%98%E8%A7%A3%EF%BC%9AP5508-%E5%AF%BB%E5%AE%9D/" target="_self">
+        <div>
+          前言 代码也是一坨。 题目传送门。                      ▶题目                                  题目背景 Steve成功打开了机关，发现机关后是一个巨大的迷宫。 题目描述 这个迷宫一共有 nnn 个洞穴，洞穴之间有很多单向隧道，很难数清。 但经过分析，发现： 这些隧道可以分为 mmm 组，对于每一组，编号在区间 [sl,sr][s_l,s_r
+        </div>
+      </a>
+
+      <div class="index-btm post-metas">
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-date"></i>
+            <time datetime="2026-08-14 15:24" pubdate>
+              2026-08-14
+            </time>
+          </div>
+        
+        
+          <div class="post-meta mr-3 d-flex align-items-center">
+            <i class="iconfont icon-category"></i>
+            
+
+<span class="category-chains">
+  
+  
+    
+      <span class="category-chain">
+        
+  <a href="/categories/%E9%A2%98%E8%A7%A3/" class="category-chain-item">题解</a>
+  
+  
+
+      </span>
+    
+  
+</span>
+
+          </div>
+        
+        
+          <div class="post-meta">
+            <i class="iconfont icon-tags"></i>
+            
+              <a href="/tags/%E6%9C%80%E7%9F%AD%E8%B7%AF/">#最短路</a>
+            
+              <a href="/tags/%E7%BA%BF%E6%AE%B5%E6%A0%91/">#线段树</a>
+            
+              <a href="/tags/%E6%9D%8E%E8%B6%85%E7%BA%BF%E6%AE%B5%E6%A0%91/">#李超线段树</a>
+            
+          </div>
+        
+      </div>
+    </article>
+  </div>
+
+  <div class="row mx-auto index-card">
+    
+    
+    <article class="col-12 col-md-12 mx-auto index-info">
+      <h2 class="index-header">
+        
+        <a href="/2026/08/13/%E9%A2%98%E8%A7%A3%EF%BC%9AP4069-SDOI2016-%E6%B8%B8%E6%88%8F/" target="_self">
+          题解：P4069 [SDOI2016] 游戏
+        </a>
+      </h2>
+
+      
+      <a class="index-excerpt index-excerpt__noimg" href="/2026/08/13/%E9%A2%98%E8%A7%A3%EF%BC%9AP4069-SDOI2016-%E6%B8%B8%E6%88%8F/" target="_self">
+        <div>
+          前言 代码就是一坨，调了我 nnn 年。 题目传送门。                      ▶题目                                  题目描述 Alice 和 Bob 在玩一个游戏。 游戏在一棵有 nnn 个点的树上进行。最初，每个点上都只有一个数字，那个数字是 1234567891234567891234567891234567891234567891234
+        </div>
+      </a>
+
+      <div class="index-btm post-metas">
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-date"></i>
+            <time datetime="2026-08-13 21:02" pubdate>
+              2026-08-13
+            </time>
+          </div>
+        
+        
+          <div class="post-meta mr-3 d-flex align-items-center">
+            <i class="iconfont icon-category"></i>
+            
+
+<span class="category-chains">
+  
+  
+    
+      <span class="category-chain">
+        
+  <a href="/categories/%E9%A2%98%E8%A7%A3/" class="category-chain-item">题解</a>
+  
+  
+
+      </span>
+    
+  
+</span>
+
+          </div>
+        
+        
+          <div class="post-meta">
+            <i class="iconfont icon-tags"></i>
+            
+              <a href="/tags/%E6%9D%8E%E8%B6%85%E7%BA%BF%E6%AE%B5%E6%A0%91/">#李超线段树</a>
+            
+              <a href="/tags/%E6%A0%91%E9%93%BE%E5%89%96%E5%88%86/">#树链剖分</a>
+            
+          </div>
+        
+      </div>
+    </article>
+  </div>
+
+  <div class="row mx-auto index-card">
+    
+    
+    <article class="col-12 col-md-12 mx-auto index-info">
+      <h2 class="index-header">
+        
+        <a href="/2026/08/13/%E9%A2%98%E8%A7%A3%EF%BC%9AP6047-%E4%B8%9D%E4%B9%8B%E6%AD%8C/" target="_self">
+          题解：P6047 丝之歌
+        </a>
+      </h2>
+
+      
+      <a class="index-excerpt index-excerpt__noimg" href="/2026/08/13/%E9%A2%98%E8%A7%A3%EF%BC%9AP6047-%E4%B8%9D%E4%B9%8B%E6%AD%8C/" target="_self">
+        <div>
+          前言 此题的 DP 有点难度。 题目传送门。                      ▶题目                                  P6047 丝之割 题目背景 Pharloom 是一个神秘的王国，丝线与歌是那里最强大的力量。多弦琴是 Pharloom 的一种强大武器，正如多项式是 OI 中的强大武器。 因为你很讨厌多项式，你决定摧毁多弦琴。 下面这部分题面只是为了帮
+        </div>
+      </a>
+
+      <div class="index-btm post-metas">
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-date"></i>
+            <time datetime="2026-08-13 08:53" pubdate>
+              2026-08-13
+            </time>
+          </div>
+        
         
         
           <div class="post-meta">
@@ -344,499 +947,7 @@
             
               <a href="/tags/%E5%8A%A8%E6%80%81%E8%A7%84%E5%88%92/">#动态规划</a>
             
-          </div>
-        
-      </div>
-    </article>
-  </div>
-
-  <div class="row mx-auto index-card">
-    
-    
-    <article class="col-12 col-md-12 mx-auto index-info">
-      <h2 class="index-header">
-        
-        <a href="/2026/05/27/%E9%A2%98%E8%A7%A3%EF%BC%9AP6453-COCI-2008-2009-4-PERIODNI/" target="_self">
-          题解：P6453 [COCI 2008/2009 #4] PERIODNI
-        </a>
-      </h2>
-
-      
-      <a class="index-excerpt index-excerpt__noimg" href="/2026/05/27/%E9%A2%98%E8%A7%A3%EF%BC%9AP6453-COCI-2008-2009-4-PERIODNI/" target="_self">
-        <div>
-          前言 又是一道难以独立想出的题。 洛谷题目传送门1。 洛谷题目传送门2。 SPOJ 题目传送门。                      ▶题目                                  题目描述如图，给定一个由 nnn 列组成的表格，每一列的底部都是对齐的。你需要在里面填入 kkk 个相同的数。但不得有任意两个数在同一行或者同一列。比如，上图中 b 的填写就是不合法的；
-        </div>
-      </a>
-
-      <div class="index-btm post-metas">
-        
-          <div class="post-meta mr-3">
-            <i class="iconfont icon-date"></i>
-            <time datetime="2026-05-27 17:09" pubdate>
-              2026-05-27
-            </time>
-          </div>
-        
-        
-          <div class="post-meta mr-3 d-flex align-items-center">
-            <i class="iconfont icon-category"></i>
-            
-
-<span class="category-chains">
-  
-  
-    
-      <span class="category-chain">
-        
-  <a href="/categories/%E9%A2%98%E8%A7%A3/" class="category-chain-item">题解</a>
-  
-  
-
-      </span>
-    
-  
-</span>
-
-          </div>
-        
-        
-          <div class="post-meta">
-            <i class="iconfont icon-tags"></i>
-            
-              <a href="/tags/%E5%8A%A8%E6%80%81%E8%A7%84%E5%88%92/">#动态规划</a>
-            
-              <a href="/tags/%E7%AC%9B%E5%8D%A1%E5%B0%94%E6%A0%91/">#笛卡尔树</a>
-            
-          </div>
-        
-      </div>
-    </article>
-  </div>
-
-  <div class="row mx-auto index-card">
-    
-    
-    <article class="col-12 col-md-12 mx-auto index-info">
-      <h2 class="index-header">
-        
-        <a href="/2026/05/27/%E9%A2%98%E8%A7%A3%EF%BC%9ACF1842G-Tenzing-and-Random-Operations/" target="_self">
-          题解：CF1842G Tenzing and Random Operations
-        </a>
-      </h2>
-
-      
-      <a class="index-excerpt index-excerpt__noimg" href="/2026/05/27/%E9%A2%98%E8%A7%A3%EF%BC%9ACF1842G-Tenzing-and-Random-Operations/" target="_self">
-        <div>
-          前言 神秘组合意义题。 洛谷题目传送门。 Codeforces 题目传送门。                      ▶题目                                  题目描述又一道随机问题。Tenzing 有一个长度为 nnn 的数组 aaa 和一个整数 vvv。Tenzing 将进行 mmm 次如下操作：每次等概率随机选择一个整数 iii，满足 1≤i≤n1 \leq
-        </div>
-      </a>
-
-      <div class="index-btm post-metas">
-        
-          <div class="post-meta mr-3">
-            <i class="iconfont icon-date"></i>
-            <time datetime="2026-05-27 15:12" pubdate>
-              2026-05-27
-            </time>
-          </div>
-        
-        
-          <div class="post-meta mr-3 d-flex align-items-center">
-            <i class="iconfont icon-category"></i>
-            
-
-<span class="category-chains">
-  
-  
-    
-      <span class="category-chain">
-        
-  <a href="/categories/%E9%A2%98%E8%A7%A3/" class="category-chain-item">题解</a>
-  
-  
-
-      </span>
-    
-  
-</span>
-
-          </div>
-        
-        
-          <div class="post-meta">
-            <i class="iconfont icon-tags"></i>
-            
-              <a href="/tags/%E5%8A%A8%E6%80%81%E8%A7%84%E5%88%92/">#动态规划</a>
-            
-          </div>
-        
-      </div>
-    </article>
-  </div>
-
-  <div class="row mx-auto index-card">
-    
-    
-    <article class="col-12 col-md-12 mx-auto index-info">
-      <h2 class="index-header">
-        
-        <a href="/2026/05/27/%E9%A2%98%E8%A7%A3%EF%BC%9AP5999-CEOI-2016-kangaroo/" target="_self">
-          题解：P5999 [CEOI 2016] kangaroo
-        </a>
-      </h2>
-
-      
-      <a class="index-excerpt index-excerpt__noimg" href="/2026/05/27/%E9%A2%98%E8%A7%A3%EF%BC%9AP5999-CEOI-2016-kangaroo/" target="_self">
-        <div>
-          前言 比较 trick 的一道计数题。 题目传送门。                      ▶题目                                  题目描述有一个园子，里面有 nnn 个草丛排成一排，标号 1∼n1\sim n1∼n，有一个袋鼠，从 sss 出发，每次跳一步跳到一个其他的草丛，经过每个草丛恰好一次，最终到达 ttt。显然他会跳跃 n−1n-1n−1 次。为了不
-        </div>
-      </a>
-
-      <div class="index-btm post-metas">
-        
-          <div class="post-meta mr-3">
-            <i class="iconfont icon-date"></i>
-            <time datetime="2026-05-27 14:03" pubdate>
-              2026-05-27
-            </time>
-          </div>
-        
-        
-          <div class="post-meta mr-3 d-flex align-items-center">
-            <i class="iconfont icon-category"></i>
-            
-
-<span class="category-chains">
-  
-  
-    
-      <span class="category-chain">
-        
-  <a href="/categories/%E9%A2%98%E8%A7%A3/" class="category-chain-item">题解</a>
-  
-  
-
-      </span>
-    
-  
-</span>
-
-          </div>
-        
-        
-          <div class="post-meta">
-            <i class="iconfont icon-tags"></i>
-            
-              <a href="/tags/%E5%8A%A8%E6%80%81%E8%A7%84%E5%88%92/">#动态规划</a>
-            
-          </div>
-        
-      </div>
-    </article>
-  </div>
-
-  <div class="row mx-auto index-card">
-    
-    
-    <article class="col-12 col-md-12 mx-auto index-info">
-      <h2 class="index-header">
-        
-        <a href="/2026/05/27/%E9%A2%98%E8%A7%A3%EF%BC%9AP6326-Shopping/" target="_self">
-          题解：P6326 Shopping
-        </a>
-      </h2>
-
-      
-      <a class="index-excerpt index-excerpt__noimg" href="/2026/05/27/%E9%A2%98%E8%A7%A3%EF%BC%9AP6326-Shopping/" target="_self">
-        <div>
-          前言 比较难的一道题。 题目传送门。                      ▶题目                                  题目描述马上就是小苗的生日了，为了给小苗准备礼物，小葱兴冲冲地来到了商店街。商店街有 nnn 个商店，并且它们之间的道路构成了一棵树的形状。第 iii 个商店只卖第 iii 种物品，小苗对于这种物品的喜爱度是 wiw_iwi​，物品的价格为 ci
-        </div>
-      </a>
-
-      <div class="index-btm post-metas">
-        
-          <div class="post-meta mr-3">
-            <i class="iconfont icon-date"></i>
-            <time datetime="2026-05-27 09:56" pubdate>
-              2026-05-27
-            </time>
-          </div>
-        
-        
-          <div class="post-meta mr-3 d-flex align-items-center">
-            <i class="iconfont icon-category"></i>
-            
-
-<span class="category-chains">
-  
-  
-    
-      <span class="category-chain">
-        
-  <a href="/categories/%E9%A2%98%E8%A7%A3/" class="category-chain-item">题解</a>
-  
-  
-
-      </span>
-    
-  
-</span>
-
-          </div>
-        
-        
-          <div class="post-meta">
-            <i class="iconfont icon-tags"></i>
-            
-              <a href="/tags/%E5%8A%A8%E6%80%81%E8%A7%84%E5%88%92/">#动态规划</a>
-            
-              <a href="/tags/%E7%82%B9%E5%88%86%E6%B2%BB/">#点分治</a>
-            
-          </div>
-        
-      </div>
-    </article>
-  </div>
-
-  <div class="row mx-auto index-card">
-    
-    
-    <article class="col-12 col-md-12 mx-auto index-info">
-      <h2 class="index-header">
-        
-        <a href="/2026/05/24/%E9%A2%98%E8%A7%A3%EF%BC%9AAT-agc030-d-AGC030D-Inversion-Sum/" target="_self">
-          题解：AT_agc030_d [AGC030D] Inversion Sum
-        </a>
-      </h2>
-
-      
-      <a class="index-excerpt index-excerpt__noimg" href="/2026/05/24/%E9%A2%98%E8%A7%A3%EF%BC%9AAT-agc030-d-AGC030D-Inversion-Sum/" target="_self">
-        <div>
-          前言 洛谷题目传送门。 AtCoder 题目传送门。 非常妙的 trick 题。                      ▶题目                                  题目描述给定一个长度为 NNN 的整数序列 A1,A2,…,ANA_1,A_2,\ldots,A_NA1​,A2​,…,AN​。你需要依次进行 QQQ 次操作。第 iii 次操作由两个整数 Xi,YiX
-        </div>
-      </a>
-
-      <div class="index-btm post-metas">
-        
-          <div class="post-meta mr-3">
-            <i class="iconfont icon-date"></i>
-            <time datetime="2026-05-24 15:38" pubdate>
-              2026-05-24
-            </time>
-          </div>
-        
-        
-          <div class="post-meta mr-3 d-flex align-items-center">
-            <i class="iconfont icon-category"></i>
-            
-
-<span class="category-chains">
-  
-  
-    
-      <span class="category-chain">
-        
-  <a href="/categories/%E9%A2%98%E8%A7%A3/" class="category-chain-item">题解</a>
-  
-  
-
-      </span>
-    
-  
-</span>
-
-          </div>
-        
-        
-          <div class="post-meta">
-            <i class="iconfont icon-tags"></i>
-            
-              <a href="/tags/%E5%8A%A8%E6%80%81%E8%A7%84%E5%88%92/">#动态规划</a>
-            
-          </div>
-        
-      </div>
-    </article>
-  </div>
-
-  <div class="row mx-auto index-card">
-    
-    
-    <article class="col-12 col-md-12 mx-auto index-info">
-      <h2 class="index-header">
-        
-        <a href="/2026/05/24/%E9%A2%98%E8%A7%A3%EF%BC%9AAT-abc281g-ABC251G-Farthest-City/" target="_self">
-          题解：AT_abc281g [ABC251G] Farthest City
-        </a>
-      </h2>
-
-      
-      <a class="index-excerpt index-excerpt__noimg" href="/2026/05/24/%E9%A2%98%E8%A7%A3%EF%BC%9AAT-abc281g-ABC251G-Farthest-City/" target="_self">
-        <div>
-          前言 洛谷题目传送门。 AtCoder 题目传送门。                      ▶题目                                  题目描述给定正整数 N, MN,\ MN, M。请计算满足以下条件的 NNN 个顶点的简单连通无向图（顶点编号为 1,…,N1,\dots,N1,…,N）的总数，并输出其对 MMM 取余的结果。对于所有 u=2,…,N−1u=2,
-        </div>
-      </a>
-
-      <div class="index-btm post-metas">
-        
-          <div class="post-meta mr-3">
-            <i class="iconfont icon-date"></i>
-            <time datetime="2026-05-24 11:53" pubdate>
-              2026-05-24
-            </time>
-          </div>
-        
-        
-          <div class="post-meta mr-3 d-flex align-items-center">
-            <i class="iconfont icon-category"></i>
-            
-
-<span class="category-chains">
-  
-  
-    
-      <span class="category-chain">
-        
-  <a href="/categories/%E9%A2%98%E8%A7%A3/" class="category-chain-item">题解</a>
-  
-  
-
-      </span>
-    
-  
-</span>
-
-          </div>
-        
-        
-          <div class="post-meta">
-            <i class="iconfont icon-tags"></i>
-            
-              <a href="/tags/%E5%8A%A8%E6%80%81%E8%A7%84%E5%88%92/">#动态规划</a>
-            
-          </div>
-        
-      </div>
-    </article>
-  </div>
-
-  <div class="row mx-auto index-card">
-    
-    
-    <article class="col-12 col-md-12 mx-auto index-info">
-      <h2 class="index-header">
-        
-        <a href="/2026/05/22/%E9%A2%98%E8%A7%A3%EF%BC%9ACF1228E-Another-Filling-the-Grid/" target="_self">
-          题解：CF1228E Another Filling the Grid
-        </a>
-      </h2>
-
-      
-      <a class="index-excerpt index-excerpt__noimg" href="/2026/05/22/%E9%A2%98%E8%A7%A3%EF%BC%9ACF1228E-Another-Filling-the-Grid/" target="_self">
-        <div>
-          前言 洛谷题目传送门。 Codeforces 题目传送门。 简单容斥题，但是我太菜了，还是无法轻松做出。                      ▶题目                                  题目描述给定一个 n×nn \times nn×n 的正方形网格和一个整数 kkk。请在每个格子中填入一个整数，要求满足以下条件：网格中所有数字都在 111 到 kkk 之间（包
-        </div>
-      </a>
-
-      <div class="index-btm post-metas">
-        
-          <div class="post-meta mr-3">
-            <i class="iconfont icon-date"></i>
-            <time datetime="2026-05-22 16:04" pubdate>
-              2026-05-22
-            </time>
-          </div>
-        
-        
-          <div class="post-meta mr-3 d-flex align-items-center">
-            <i class="iconfont icon-category"></i>
-            
-
-<span class="category-chains">
-  
-  
-    
-      <span class="category-chain">
-        
-  <a href="/categories/%E9%A2%98%E8%A7%A3/" class="category-chain-item">题解</a>
-  
-  
-
-      </span>
-    
-  
-</span>
-
-          </div>
-        
-        
-          <div class="post-meta">
-            <i class="iconfont icon-tags"></i>
-            
-              <a href="/tags/%E5%AE%B9%E6%96%A5%E5%8E%9F%E7%90%86/">#容斥原理</a>
-            
-          </div>
-        
-      </div>
-    </article>
-  </div>
-
-  <div class="row mx-auto index-card">
-    
-    
-    <article class="col-12 col-md-12 mx-auto index-info">
-      <h2 class="index-header">
-        
-        <a href="/2026/05/22/%E9%A2%98%E8%A7%A3%EF%BC%9AP6478-NOI-Online-2-%E6%8F%90%E9%AB%98%E7%BB%84-%E6%B8%B8%E6%88%8F/" target="_self">
-          题解：P6478 [NOI Online #2 提高组] 游戏
-        </a>
-      </h2>
-
-      
-      <a class="index-excerpt index-excerpt__noimg" href="/2026/05/22/%E9%A2%98%E8%A7%A3%EF%BC%9AP6478-NOI-Online-2-%E6%8F%90%E9%AB%98%E7%BB%84-%E6%B8%B8%E6%88%8F/" target="_self">
-        <div>
-          前言 题目传送门。 此题比较板，但是我太菜了，还是无法轻松做出。                      ▶题目                                  题目背景1s 512M题目描述小 A 和小 B 正在玩一个游戏：有一棵包含 n=2mn=2mn=2m 个点的有根树（点从 1∼n1\sim n1∼n 编号），它的根是 111 号点，初始时两人各拥有 mmm 个点。游戏
-        </div>
-      </a>
-
-      <div class="index-btm post-metas">
-        
-          <div class="post-meta mr-3">
-            <i class="iconfont icon-date"></i>
-            <time datetime="2026-05-22 15:31" pubdate>
-              2026-05-22
-            </time>
-          </div>
-        
-        
-          <div class="post-meta mr-3 d-flex align-items-center">
-            <i class="iconfont icon-category"></i>
-            
-
-<span class="category-chains">
-  
-  
-    
-      <span class="category-chain">
-        
-  <a href="/categories/%E9%A2%98%E8%A7%A3/" class="category-chain-item">题解</a>
-  
-  
-
-      </span>
-    
-  
-</span>
-
-          </div>
-        
-        
-          <div class="post-meta">
-            <i class="iconfont icon-tags"></i>
-            
-              <a href="/tags/%E5%8A%A8%E6%80%81%E8%A7%84%E5%88%92/">#动态规划</a>
-            
-              <a href="/tags/%E4%BA%8C%E9%A1%B9%E5%BC%8F%E5%8F%8D%E6%BC%94/">#二项式反演</a>
+              <a href="/tags/%E6%9D%8E%E8%B6%85%E7%BA%BF%E6%AE%B5%E6%A0%91/">#李超线段树</a>
             
           </div>
         
@@ -848,7 +959,7 @@
 
   <nav aria-label="navigation">
     <span class="pagination" id="pagination">
-      <a class="extend prev" rel="prev" href="/"><i class="iconfont icon-arrowleft"></i></a><a class="page-number" href="/">1</a><span class="page-number current">2</span><a class="page-number" href="/page/3/#board">3</a><a class="page-number" href="/page/4/#board">4</a><span class="space">&hellip;</span><a class="page-number" href="/page/7/#board">7</a><a class="extend next" rel="next" href="/page/3/#board"><i class="iconfont icon-arrowright"></i></a>
+      <a class="extend prev" rel="prev" href="/"><i class="iconfont icon-arrowleft"></i></a><a class="page-number" href="/">1</a><span class="page-number current">2</span><a class="page-number" href="/page/3/#board">3</a><a class="page-number" href="/page/4/#board">4</a><span class="space">&hellip;</span><a class="page-number" href="/page/12/#board">12</a><a class="extend next" rel="next" href="/page/3/#board"><i class="iconfont icon-arrowright"></i></a>
     </span>
   </nav>
 
@@ -909,17 +1020,6 @@
 
   <!-- Scripts -->
   
-  <script  src="https://lib.baomitu.com/nprogress/0.2.0/nprogress.min.js" ></script>
-  <link  rel="stylesheet" href="https://lib.baomitu.com/nprogress/0.2.0/nprogress.min.css" />
-
-  <script>
-    NProgress.configure({"showSpinner":false,"trickleSpeed":100})
-    NProgress.start()
-    window.addEventListener('load', function() {
-      NProgress.done();
-    })
-  </script>
-
 
 <script  src="https://lib.baomitu.com/jquery/3.6.4/jquery.min.js" ></script>
 <script  src="https://lib.baomitu.com/twitter-bootstrap/4.6.1/js/bootstrap.min.js" ></script>

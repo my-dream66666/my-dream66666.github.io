@@ -65,7 +65,7 @@
   <script id="fluid-configs">
     var Fluid = window.Fluid || {};
     Fluid.ctx = Object.assign({}, Fluid.ctx)
-    var CONFIG = {"hostname":"starseaeternal.dpdns.org","root":"/","version":"1.9.8","typing":{"enable":true,"typeSpeed":70,"cursorChar":"⭐","loop":false,"scope":[]},"anchorjs":{"enable":true,"element":"h1,h2,h3,h4,h5,h6","placement":"left","visible":"hover","icon":""},"progressbar":{"enable":true,"height_px":3,"color":"#29d","options":{"showSpinner":false,"trickleSpeed":100}},"code_language":{"enable":true,"default":"TEXT"},"copy_btn":true,"image_caption":{"enable":true},"image_zoom":{"enable":true,"img_url_replace":["",""]},"toc":{"enable":true,"placement":"right","headingSelector":"h1,h2,h3,h4,h5,h6","collapseDepth":0},"lazyload":{"enable":true,"loading_img":"/img/loading.gif","onlypost":false,"offset_factor":2},"web_analytics":{"enable":false,"follow_dnt":true,"baidu":null,"google":{"measurement_id":null},"tencent":{"sid":null,"cid":null},"leancloud":{"app_id":null,"app_key":null,"server_url":null,"path":"window.location.pathname","ignore_local":false},"umami":{"src":null,"website_id":null,"domains":null,"start_time":"2024-01-01T00:00:00.000Z","token":null,"api_server":null}},"search_path":"/local-search.xml","include_content_in_search":true};
+    var CONFIG = {"hostname":"starseaeternal.dpdns.org","root":"/","version":"1.9.9","typing":{"enable":true,"typeSpeed":91,"cursorChar":"⭐","loop":true,"scope":[]},"anchorjs":{"enable":true,"element":"h1,h2,h3,h4,h5,h6","placement":"left","visible":"hover","icon":""},"progressbar":{"enable":false,"height_px":3,"color":"#29d","options":{"showSpinner":false,"trickleSpeed":100}},"code_language":{"enable":true,"default":"TEXT"},"copy_btn":true,"image_caption":{"enable":true},"image_zoom":{"enable":true,"img_url_replace":["",""]},"toc":{"enable":true,"expand_all":true,"placement":"right","headingSelector":"h1,h2,h3,h4,h5,h6","collapseDepth":0},"lazyload":{"enable":true,"loading_img":"/img/loading.gif","onlypost":false,"offset_factor":2},"web_analytics":{"enable":false,"follow_dnt":true,"baidu":null,"google":{"measurement_id":null},"tencent":{"sid":null,"cid":null},"leancloud":{"app_id":null,"app_key":null,"server_url":null,"path":"window.location.pathname","ignore_local":false},"openkounter":{"server_url":"https://open-kounter.mintimate.cn","path":"window.location.pathname","ignore_local":false},"umami":{"src":null,"website_id":null,"domains":null,"start_time":"2024-01-01T00:00:00.000Z","token":null,"api_server":null}},"search_path":"/local-search.xml","include_content_in_search":true};
 
     if (CONFIG.web_analytics.follow_dnt) {
       var dntVal = navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack;
@@ -78,11 +78,10 @@
 
 
   
+
 <meta name="generator" content="Hexo 8.1.1"></head>
 
-
 <body>
-
   
 
   <header>
@@ -101,7 +100,7 @@
       <div class="animated-icon"><span></span><span></span><span></span></div>
     </button>
 
-    <!-- Collapsible content -->
+    <!-- Collapsible content (desktop) -->
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav ml-auto text-center">
         
@@ -165,6 +164,18 @@
             </li>
           
         
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/links/" target="_self">
+                <i class="iconfont icon-link-fill"></i>
+                <span>Links</span>
+              </a>
+            </li>
+          
+        
         
           <li class="nav-item" id="search-btn">
             <a class="nav-link" target="_self" href="javascript:;" data-toggle="modal" data-target="#modalSearch" aria-label="Search">
@@ -185,10 +196,127 @@
   </div>
 </nav>
 
+<!-- Mobile grid menu overlay -->
+<div id="mobile-grid-menu" class="d-lg-none">
+  <div class="mobile-grid-menu-inner">
+    <div class="container">
+      <div class="row">
+        
+          
+          
+          
+          
+            <div class="col-4 mobile-grid-cell">
+              <a href="/" target="_self">
+                <div class="mobile-grid-item">
+                  <i class="iconfont icon-home-fill"></i>
+                  <span>Home</span>
+                </div>
+              </a>
+            </div>
+          
+        
+          
+          
+          
+          
+            <div class="col-4 mobile-grid-cell">
+              <a href="/archives/" target="_self">
+                <div class="mobile-grid-item">
+                  <i class="iconfont icon-user-fill"></i>
+                  <span>Archives</span>
+                </div>
+              </a>
+            </div>
+          
+        
+          
+          
+          
+          
+            <div class="col-4 mobile-grid-cell">
+              <a href="/categories/" target="_self">
+                <div class="mobile-grid-item">
+                  <i class="iconfont icon-user-fill"></i>
+                  <span>Categories</span>
+                </div>
+              </a>
+            </div>
+          
+        
+          
+          
+          
+          
+            <div class="col-4 mobile-grid-cell">
+              <a href="/tags/" target="_self">
+                <div class="mobile-grid-item">
+                  <i class="iconfont icon-tags-fill"></i>
+                  <span>Tag</span>
+                </div>
+              </a>
+            </div>
+          
+        
+          
+          
+          
+          
+            <div class="col-4 mobile-grid-cell">
+              <a href="/about/" target="_self">
+                <div class="mobile-grid-item">
+                  <i class="iconfont icon-user-fill"></i>
+                  <span>About</span>
+                </div>
+              </a>
+            </div>
+          
+        
+          
+          
+          
+          
+            <div class="col-4 mobile-grid-cell">
+              <a href="/links/" target="_self">
+                <div class="mobile-grid-item">
+                  <i class="iconfont icon-link-fill"></i>
+                  <span>Links</span>
+                </div>
+              </a>
+            </div>
+          
+        
+        
+          <div class="col-4 mobile-grid-cell" id="mobile-search-btn">
+            <a href="javascript:;" data-toggle="modal" data-target="#modalSearch" aria-label="Search">
+              <div class="mobile-grid-item">
+                <i class="iconfont icon-search"></i>
+                <span>Search</span>
+              </div>
+            </a>
+          </div>
+        
+        
+          <div class="col-4 mobile-grid-cell" id="mobile-color-toggle-btn"
+               data-label-light="Light"
+               data-label-dark="Dark">
+            <a href="javascript:;" aria-label="Color Toggle">
+              <div class="mobile-grid-item">
+                <i class="iconfont icon-dark" id="mobile-color-toggle-icon"></i>
+                <span id="mobile-color-toggle-label">Dark</span>
+              </div>
+            </a>
+          </div>
+        
+      </div>
+    </div>
+  </div>
+</div>
+
   
 
-<div id="banner" class="banner" parallax=true
-     style="background: url('/img/bg/15.jpg') no-repeat center center; background-size: cover;">
+<div id="banner" class="banner" parallax=true data-random-banner='/img/random/10.jpg,/img/random/11.jpg,/img/random/12.jpg,/img/random/13.jpg,/img/random/14.jpg,/img/random/15.jpg,/img/random/16.jpg,/img/random/17.jpg,/img/random/18.jpg,/img/random/19.jpg,/img/random/20.jpg,/img/random/21.jpg,/img/random/22.jpg,/img/random/23.jpg,/img/random/24.jpg,/img/random/25.jpg,/img/random/26.jpg,/img/random/27.jpg,/img/random/28.jpg,/img/random/29.jpg,/img/random/3.jpg,/img/random/30.jpg,/img/random/31.jpg,/img/random/32.jpg,/img/random/33.jpg,/img/random/34.jpg,/img/random/35.jpg,/img/random/36.jpg,/img/random/37.jpg,/img/random/38.jpg,/img/random/39.jpg,/img/random/40.jpg,/img/random/41.jpg,/img/random/42.jpg,/img/random/43.jpg,/img/random/44.jpg,/img/random/45.jpg,/img/random/46.jpg,/img/random/47.jpg,/img/random/48.jpg,/img/random/49.jpg,/img/random/50.jpg,/img/random/51.jpg,/img/random/52.jpg,/img/random/53.jpg,/img/random/54.jpg,/img/random/55.jpg,/img/random/56.jpg,/img/random/57.jpg,/img/random/58.jpg,/img/random/59.jpg,/img/random/6.jpg,/img/random/60.jpg,/img/random/61.jpg,/img/random/7.jpg,/img/random/8.jpg,/img/random/9.jpg,/img/random/default.png,/img/random/t1.jpg'
+     style="background: url('/img/random/10.jpg') no-repeat center center; background-size: cover;">
   <div class="full-bg-img">
     <div class="mask flex-center" style="background-color: rgba(0, 0, 0, 0.3)">
       <div class="banner-text text-center fade-in-up">
@@ -210,6 +338,21 @@
   </div>
 </div>
 
+
+  <script>
+    (function() {
+      var banner = document.getElementById('banner');
+      if (!banner) return;
+      var list = banner.getAttribute('data-random-banner');
+      if (!list) return;
+      list = list.split(',').filter(Boolean);
+      if (list.length === 0) return;
+      var pick = list[Math.floor(Math.random() * list.length)];
+      banner.style.backgroundImage = "url('" + pick + "')";
+    })();
+  </script>
+
+
 </div>
 
   </header>
@@ -225,6 +368,7 @@
               <div class="col-12 col-md-10 m-auto">
                 
 
+<h1 style="display: none">my_dream666&#39;s Blog</h1>
 
   <div class="row mx-auto index-card">
     
@@ -232,15 +376,15 @@
     <article class="col-12 col-md-12 mx-auto index-info">
       <h2 class="index-header">
         
-        <a href="/2026/02/03/%E9%A2%98%E8%A7%A3%EF%BC%9AP3350-ZJOI2016-%E6%97%85%E8%A1%8C%E8%80%85/" target="_self">
-          题解：P3350 [ZJOI2016] 旅行者
+        <a href="/2026/06/14/VS-Code-%E7%9A%84%E4%B8%80%E4%BA%9B%E9%85%8D%E7%BD%AE/" target="_self">
+          VS Code 的一些配置
         </a>
       </h2>
 
       
-      <a class="index-excerpt index-excerpt__noimg" href="/2026/02/03/%E9%A2%98%E8%A7%A3%EF%BC%9AP3350-ZJOI2016-%E6%97%85%E8%A1%8C%E8%80%85/" target="_self">
+      <a class="index-excerpt index-excerpt__noimg" href="/2026/06/14/VS-Code-%E7%9A%84%E4%B8%80%E4%BA%9B%E9%85%8D%E7%BD%AE/" target="_self">
         <div>
-          前言 题目传送门。 前置知识：分治，最短路。                      ▶题目                                  题目描述小 Y 来到了一个新的城市旅行。她发现了这个城市的布局是网格状的，也就是有  nnn 条从东到西的道路和  mmm 条从南到北的道路，这些道路两两相交形成  n×mn\times mn×m 个路口  (i,j)(i,j)(i,j)
+          前言 以前的 VS Code 的配置我在这里就不写了，从现在开始记录。 更改文件换行类型 文件换行类型有两种：   LF，就是 \n。   CRLF，就是 \r\n。   其中 LF 的文件空间小一点，造数据时需要使用 \n，所以推荐使用。 更改方法就是打开 User（别的也可以，看你需要改哪个地方）的 setting.json，在里面加上： 1&quot;files.eol&quot;: &qu
         </div>
       </a>
 
@@ -248,8 +392,62 @@
         
           <div class="post-meta mr-3">
             <i class="iconfont icon-date"></i>
-            <time datetime="2026-02-03 19:30" pubdate>
-              2026-02-03
+            <time datetime="2026-06-14 14:20" pubdate>
+              2026-06-14
+            </time>
+          </div>
+        
+        
+          <div class="post-meta mr-3 d-flex align-items-center">
+            <i class="iconfont icon-category"></i>
+            
+
+<span class="category-chains">
+  
+  
+    
+      <span class="category-chain">
+        
+  <a href="/categories/%E9%85%8D%E7%BD%AE/" class="category-chain-item">配置</a>
+  
+  
+
+      </span>
+    
+  
+</span>
+
+          </div>
+        
+        
+      </div>
+    </article>
+  </div>
+
+  <div class="row mx-auto index-card">
+    
+    
+    <article class="col-12 col-md-12 mx-auto index-info">
+      <h2 class="index-header">
+        
+        <a href="/2026/06/14/%E9%A2%98%E8%A7%A3%EF%BC%9ACF547D-Mike-and-Fish/" target="_self">
+          题解：CF547D Mike and Fish
+        </a>
+      </h2>
+
+      
+      <a class="index-excerpt index-excerpt__noimg" href="/2026/06/14/%E9%A2%98%E8%A7%A3%EF%BC%9ACF547D-Mike-and-Fish/" target="_self">
+        <div>
+          前言 神奇构造题。 洛谷题目传送门。 Codeforces 题目传送门。                      ▶题目                                  题目描述 众所周知，熊非常喜欢吃鱼。但 Mike 是一只奇怪的熊，他讨厌鱼！更奇怪的是，他拥有无限条蓝色和红色的鱼。  他在平面上标记了 nnn 个不同的点，第 iii 个点的坐标为 (xi,yi)(x_{i}
+        </div>
+      </a>
+
+      <div class="index-btm post-metas">
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-date"></i>
+            <time datetime="2026-06-14 11:49" pubdate>
+              2026-06-14
             </time>
           </div>
         
@@ -279,9 +477,9 @@
           <div class="post-meta">
             <i class="iconfont icon-tags"></i>
             
-              <a href="/tags/%E5%88%86%E6%B2%BB/">#分治</a>
+              <a href="/tags/%E6%9E%84%E9%80%A0/">#构造</a>
             
-              <a href="/tags/%E4%B8%BB%E5%AE%9A%E7%90%86/">#主定理</a>
+              <a href="/tags/%E6%AC%A7%E6%8B%89%E8%BF%B9/">#欧拉迹</a>
             
           </div>
         
@@ -295,15 +493,15 @@
     <article class="col-12 col-md-12 mx-auto index-info">
       <h2 class="index-header">
         
-        <a href="/2026/02/03/CF1903D2%EF%BC%88%E9%AB%98%E7%BB%B4%E5%89%8D%E7%BC%80%E5%92%8C%E8%87%AA%E6%88%91%E5%B0%8F%E7%BB%93-1%EF%BC%89/" target="_self">
-          CF1903D2（高维前缀和自我小结 1）
+        <a href="/2026/06/14/%E9%A2%98%E8%A7%A3%EF%BC%9AAT-abc462-f-ABC462F-More-ABC/" target="_self">
+          题解：AT_abc462_f [ABC462F] More ABC
         </a>
       </h2>
 
       
-      <a class="index-excerpt index-excerpt__noimg" href="/2026/02/03/CF1903D2%EF%BC%88%E9%AB%98%E7%BB%B4%E5%89%8D%E7%BC%80%E5%92%8C%E8%87%AA%E6%88%91%E5%B0%8F%E7%BB%93-1%EF%BC%89/" target="_self">
+      <a class="index-excerpt index-excerpt__noimg" href="/2026/06/14/%E9%A2%98%E8%A7%A3%EF%BC%9AAT-abc462-f-ABC462F-More-ABC/" target="_self">
         <div>
-          CF1903D2 （高维前缀和自我小结1） 题意简述 给定一个长度为 nnn 的数组和一个整数 kkk，可以至多对数组进行 kkk 次操作，每次操作都是从数组中选择一个元素加 111。求所得的数组的 and⁡\operatorname{and}and 和（∧i=1nai\land_{i=1}^{n}a_i∧i=1n​ai​）的最大值。 做法 首先考虑贪心，我们尽可能要高位的 and⁡\operat
+          前言 赛时还是只有强者 Wxb 做出来了。 洛谷题目传送门。 AtCoder 题目传送门。                      ▶题目                                  题目描述 You are given a string  SSS  consisting of uppercase English letters. Takahashi’s goal is t
         </div>
       </a>
 
@@ -311,8 +509,8 @@
         
           <div class="post-meta mr-3">
             <i class="iconfont icon-date"></i>
-            <time datetime="2026-02-03 19:27" pubdate>
-              2026-02-03
+            <time datetime="2026-06-14 09:29" pubdate>
+              2026-06-14
             </time>
           </div>
         
@@ -342,7 +540,7 @@
           <div class="post-meta">
             <i class="iconfont icon-tags"></i>
             
-              <a href="/tags/%E9%AB%98%E7%BB%B4%E5%89%8D%E7%BC%80%E5%92%8C/">#高维前缀和</a>
+              <a href="/tags/%E5%8A%A8%E6%80%81%E8%A7%84%E5%88%92/">#动态规划</a>
             
           </div>
         
@@ -356,15 +554,15 @@
     <article class="col-12 col-md-12 mx-auto index-info">
       <h2 class="index-header">
         
-        <a href="/2026/02/03/NOIP-%E7%82%BC%E7%9F%B3%E8%AE%A1%E5%88%92%E7%AC%AC-21-%E5%9C%BA-T2%EF%BC%88%E6%95%B4%E9%99%A4%E5%88%86%E5%9D%97%E8%87%AA%E6%88%91%E5%B0%8F%E7%BB%93-1%EF%BC%89/" target="_self">
-          NOIP 炼石计划第 21 场 T2（整除分块自我小结 1）
+        <a href="/2026/06/10/%E9%A2%98%E8%A7%A3%EF%BC%9ACF1404D-Game-of-Pairs/" target="_self">
+          题解：CF1404D Game of Pairs
         </a>
       </h2>
 
       
-      <a class="index-excerpt index-excerpt__noimg" href="/2026/02/03/NOIP-%E7%82%BC%E7%9F%B3%E8%AE%A1%E5%88%92%E7%AC%AC-21-%E5%9C%BA-T2%EF%BC%88%E6%95%B4%E9%99%A4%E5%88%86%E5%9D%97%E8%87%AA%E6%88%91%E5%B0%8F%E7%BB%93-1%EF%BC%89/" target="_self">
+      <a class="index-excerpt index-excerpt__noimg" href="/2026/06/10/%E9%A2%98%E8%A7%A3%EF%BC%9ACF1404D-Game-of-Pairs/" target="_self">
         <div>
-          题目 给定 n,ai,bin,a_i,b_in,ai​,bi​,令 ci=(∑j=1ia⌊ij⌋bi mod j) mod 109+7c_i=(\sum_{j=1}^{i}a_{\lfloor\frac{i}{j}\rfloor}b_{i\bmod j})\bmod 10^9+7ci​=(∑j=1i​a⌊ji​⌋​bimodj​)mod109+7，求出所有的 cic_ici​。 1≤n≤105,0
+          前言 神秘构造题，真的是大胆猜想，小心证明吗？ 洛谷题目传送门。 Codeforces 题目传送门。                      ▶题目                                  题目描述 这是一个交互题。 给定一个固定的正整数 nnn。有两位玩家，First 和 Second，按照如下规则进行游戏：  First 取 2n2n2n 个数 1,2,…,2n1,
         </div>
       </a>
 
@@ -372,8 +570,8 @@
         
           <div class="post-meta mr-3">
             <i class="iconfont icon-date"></i>
-            <time datetime="2026-02-03 19:24" pubdate>
-              2026-02-03
+            <time datetime="2026-06-10 16:04" pubdate>
+              2026-06-10
             </time>
           </div>
         
@@ -403,7 +601,7 @@
           <div class="post-meta">
             <i class="iconfont icon-tags"></i>
             
-              <a href="/tags/%E5%88%86%E5%9D%97/">#分块</a>
+              <a href="/tags/%E6%9E%84%E9%80%A0/">#构造</a>
             
           </div>
         
@@ -417,15 +615,15 @@
     <article class="col-12 col-md-12 mx-auto index-info">
       <h2 class="index-header">
         
-        <a href="/2026/02/03/hash-%E6%8A%80%E5%B7%A7/" target="_self">
-          hash 技巧
+        <a href="/2026/06/10/%E9%85%8D%E7%BD%AE-Coudflare/" target="_self">
+          Coudflare 配置
         </a>
       </h2>
 
       
-      <a class="index-excerpt index-excerpt__noimg" href="/2026/02/03/hash-%E6%8A%80%E5%B7%A7/" target="_self">
+      <a class="index-excerpt index-excerpt__noimg" href="/2026/06/10/%E9%85%8D%E7%BD%AE-Coudflare/" target="_self">
         <div>
-          判断一个字符串的循环节可以通过 hashhashhash，我们先把字符串 hashhashhash 一遍，  如图，如果设循环节长度为3时，s1s_1s1​ 和 s2s_2s2​ 的 hashhashhash 值是相等的 所以只需要判断 lenlenlen 是否使得 hash(l+len,r)=hash(l,r−len)hash(l+len,r)=hash(l,r−len)hash(l+len
+          前言 Cloudflare 在 OI 界最著名的莫过于 CF 盾，但是此处介绍的是一些其他的东西。当然都是免费的。 域名配置 CDN Cloudflare 在全球都有节点，所以 CDN 还是很快的，连接上可以其加速和保护作用。 具体的，先注册一个账号，需要一个邮箱，然后其他的就随便写，我注册的是美国的账户。 然后添加域名，选择 Free，然后一直搞下去，出现 N1 和 N2，把它填写在注册自己域名
         </div>
       </a>
 
@@ -433,8 +631,8 @@
         
           <div class="post-meta mr-3">
             <i class="iconfont icon-date"></i>
-            <time datetime="2026-02-03 19:21" pubdate>
-              2026-02-03
+            <time datetime="2026-06-10 07:03" pubdate>
+              2026-06-10
             </time>
           </div>
         
@@ -449,7 +647,7 @@
     
       <span class="category-chain">
         
-  <a href="/categories/trick/" class="category-chain-item">trick</a>
+  <a href="/categories/%E9%85%8D%E7%BD%AE/" class="category-chain-item">配置</a>
   
   
 
@@ -461,13 +659,6 @@
           </div>
         
         
-          <div class="post-meta">
-            <i class="iconfont icon-tags"></i>
-            
-              <a href="/tags/hash/">#hash</a>
-            
-          </div>
-        
       </div>
     </article>
   </div>
@@ -478,15 +669,15 @@
     <article class="col-12 col-md-12 mx-auto index-info">
       <h2 class="index-header">
         
-        <a href="/2026/02/03/AC-%E8%87%AA%E5%8A%A8%E6%9C%BA%E6%8A%80%E5%B7%A7/" target="_self">
-          AC 自动机技巧
+        <a href="/2026/06/09/%E5%85%B3%E4%BA%8E-C-%E7%9A%84%E4%B8%80%E4%BA%9B%E5%B0%8F%E7%9F%A5%E8%AF%86/" target="_self">
+          关于 C++ 的一些小知识
         </a>
       </h2>
 
       
-      <a class="index-excerpt index-excerpt__noimg" href="/2026/02/03/AC-%E8%87%AA%E5%8A%A8%E6%9C%BA%E6%8A%80%E5%B7%A7/" target="_self">
+      <a class="index-excerpt index-excerpt__noimg" href="/2026/06/09/%E5%85%B3%E4%BA%8E-C-%E7%9A%84%E4%B8%80%E4%BA%9B%E5%B0%8F%E7%9F%A5%E8%AF%86/" target="_self">
         <div>
-          给定一系列字符串 s1,s2,⋯ ,sns_1,s_2,\cdots,s_ns1​,s2​,⋯,sn​，存不存在一种方式能构造出一个无限长的字符串并不包含 s1s_1s1​ 到 sns_nsn​ 的任意一个。 首先建立 AC 自动机，我们要尽量不匹配，那么就要尽可能地走 fail 边，所以我们弄出 fail 后，在形成的图上跑 dfs，开两个 bool 数组，一个记录节点是否走过，另一个记录是
+          使用 map 函数 [ ] 查找 key 时，系统会自动加入这个 key 并赋初始值为0，但用 find 函数或 count 会避免这种情况。\\[1.5em]   用 memset(a,0x3f,sizeof(a)) 赋值时只能赋整数数组，若要给小数数组赋初始值，必用 127127127（对应 0x7f ）不能用 636363（对应 0x3f）这个数字，因为实际中用 636363 得到的数字
         </div>
       </a>
 
@@ -494,8 +685,8 @@
         
           <div class="post-meta mr-3">
             <i class="iconfont icon-date"></i>
-            <time datetime="2026-02-03 19:20" pubdate>
-              2026-02-03
+            <time datetime="2026-06-09 21:28" pubdate>
+              2026-06-09
             </time>
           </div>
         
@@ -510,7 +701,7 @@
     
       <span class="category-chain">
         
-  <a href="/categories/trick/" class="category-chain-item">trick</a>
+  <a href="/categories/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/" class="category-chain-item">学习笔记</a>
   
   
 
@@ -522,13 +713,6 @@
           </div>
         
         
-          <div class="post-meta">
-            <i class="iconfont icon-tags"></i>
-            
-              <a href="/tags/AC-%E8%87%AA%E5%8A%A8%E6%9C%BA/">#AC 自动机</a>
-            
-          </div>
-        
       </div>
     </article>
   </div>
@@ -539,15 +723,15 @@
     <article class="col-12 col-md-12 mx-auto index-info">
       <h2 class="index-header">
         
-        <a href="/2026/02/03/%E7%BD%91%E7%BB%9C%E6%B5%81-%E6%9C%80%E5%A4%A7%E6%B5%81%E6%8A%80%E5%B7%A7/" target="_self">
-          网络流- 最大流技巧
+        <a href="/2026/06/09/%E9%A2%98%E8%A7%A3%EF%BC%9ACF1270G-Subset-with-Zero-Sum/" target="_self">
+          题解：CF1270G Subset with Zero Sum
         </a>
       </h2>
 
       
-      <a class="index-excerpt index-excerpt__noimg" href="/2026/02/03/%E7%BD%91%E7%BB%9C%E6%B5%81-%E6%9C%80%E5%A4%A7%E6%B5%81%E6%8A%80%E5%B7%A7/" target="_self">
+      <a class="index-excerpt index-excerpt__noimg" href="/2026/06/09/%E9%A2%98%E8%A7%A3%EF%BC%9ACF1270G-Subset-with-Zero-Sum/" target="_self">
         <div>
-          对于难以刻画并且是随时间变化而变化的状态，可以对每个时间的每一个点建立一个节点，相当于按时间轴建立分层图。详情见 此题。
+          前言 神秘构造题，好像 tourist 场上都没做出来，这题没点灵光一现做不出来。 洛谷题目传送门。 Codeforces 题目传送门。                      ▶题目                                  题目描述 给定 nnn 个整数 a1,a2,…,ana_1, a_2, \dots, a_na1​,a2​,…,an​，其中对于每个 1≤i≤n1
         </div>
       </a>
 
@@ -555,8 +739,8 @@
         
           <div class="post-meta mr-3">
             <i class="iconfont icon-date"></i>
-            <time datetime="2026-02-03 19:19" pubdate>
-              2026-02-03
+            <time datetime="2026-06-09 21:21" pubdate>
+              2026-06-09
             </time>
           </div>
         
@@ -571,7 +755,7 @@
     
       <span class="category-chain">
         
-  <a href="/categories/trick/" class="category-chain-item">trick</a>
+  <a href="/categories/%E9%A2%98%E8%A7%A3/" class="category-chain-item">题解</a>
   
   
 
@@ -586,7 +770,7 @@
           <div class="post-meta">
             <i class="iconfont icon-tags"></i>
             
-              <a href="/tags/%E7%BD%91%E7%BB%9C%E6%B5%81/">#网络流</a>
+              <a href="/tags/%E6%9E%84%E9%80%A0/">#构造</a>
             
           </div>
         
@@ -600,15 +784,15 @@
     <article class="col-12 col-md-12 mx-auto index-info">
       <h2 class="index-header">
         
-        <a href="/2026/02/03/%E7%BA%BF%E6%AE%B5%E6%A0%91%E6%8A%80%E5%B7%A7/" target="_self">
-          线段树技巧
+        <a href="/2026/06/09/%E4%BA%A4%E4%BA%92%E9%80%9A%E4%BF%A1%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/" target="_self">
+          交互通信学习笔记
         </a>
       </h2>
 
       
-      <a class="index-excerpt index-excerpt__noimg" href="/2026/02/03/%E7%BA%BF%E6%AE%B5%E6%A0%91%E6%8A%80%E5%B7%A7/" target="_self">
+      <a class="index-excerpt index-excerpt__noimg" href="/2026/06/09/%E4%BA%A4%E4%BA%92%E9%80%9A%E4%BF%A1%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/" target="_self">
         <div>
-          对于操作非常多的时候，普通的 lazy 标记已经不够用了，那么我们就考虑将其统一成   矩阵。能否使用矩阵主要看其是否是线性运算（肯定不能带平方之类的），例如 +,-,×\texttt{+},\texttt{-},\times+,-,× 和赋值等。 特别要说明的是对于常数的操作，例如要对其加 xxx，这是我们的矩阵就要多维护一个值：111。 这样变成了： (a1,a2,a3,1)\begin{
+          前言 此文主要介绍一些交互通信题的代码规范。 交互 交互按交互类型分成两种，一种是函数式交互，一种是IO 式交互（输入输出式）。 IO 式交互 刷新缓冲区 交互的过程通过输入和输入实现。 通常需要刷新缓冲区。缓冲区是将你的输出先放在一个地方，等到一定数量后再真正输出。   cout 可以通过 cout.flush() 和 std::flush 实现，而且 endl 不但可以换行，还会刷新缓冲区。
         </div>
       </a>
 
@@ -616,8 +800,8 @@
         
           <div class="post-meta mr-3">
             <i class="iconfont icon-date"></i>
-            <time datetime="2026-02-03 19:18" pubdate>
-              2026-02-03
+            <time datetime="2026-06-09 15:35" pubdate>
+              2026-06-09
             </time>
           </div>
         
@@ -632,7 +816,7 @@
     
       <span class="category-chain">
         
-  <a href="/categories/trick/" class="category-chain-item">trick</a>
+  <a href="/categories/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/" class="category-chain-item">学习笔记</a>
   
   
 
@@ -644,13 +828,6 @@
           </div>
         
         
-          <div class="post-meta">
-            <i class="iconfont icon-tags"></i>
-            
-              <a href="/tags/%E7%BA%BF%E6%AE%B5%E6%A0%91/">#线段树</a>
-            
-          </div>
-        
       </div>
     </article>
   </div>
@@ -661,15 +838,15 @@
     <article class="col-12 col-md-12 mx-auto index-info">
       <h2 class="index-header">
         
-        <a href="/2026/02/03/%E6%A0%91%E7%8A%B6%E6%95%B0%E7%BB%84%E6%8A%80%E5%B7%A7/" target="_self">
-          树状数组技巧
+        <a href="/2026/06/09/%E9%A2%98%E8%A7%A3%EF%BC%9AAT-arc154-d-ARC154D-A-B-C/" target="_self">
+          题解：AT_arc154_d [ARC154D] A + B &gt; C ?
         </a>
       </h2>
 
       
-      <a class="index-excerpt index-excerpt__noimg" href="/2026/02/03/%E6%A0%91%E7%8A%B6%E6%95%B0%E7%BB%84%E6%8A%80%E5%B7%A7/" target="_self">
+      <a class="index-excerpt index-excerpt__noimg" href="/2026/06/09/%E9%A2%98%E8%A7%A3%EF%BC%9AAT-arc154-d-ARC154D-A-B-C/" target="_self">
         <div>
-          这里讲的是 O(nlog⁡n)O(n\log n)O(nlogn) 实现树状数组加二分。 众所周知，一个二分是 O(log⁡n)O(\log n )O(logn)，一次树状数组也是 O(log⁡n)O(\log n)O(logn)，两个套起来自然是 O(nlog⁡2n)O(n\log^2 n)O(nlog2n)，但是采用一些方式可以少一个 log⁡n\log nlogn。   将二分转化成倍增
+          前言 有点意思的构造题。 洛谷题目传送门。 AtCoder 题目传送门。                      ▶题目                                  AT_arc154_d [ARC154D] A + B &gt; C ? 题目描述 PCT 君有一个 (1,2,…,N)(1,2,\dots,N)(1,2,…,N) 的排列 (P1,P2,…,PN)(P_1,P
         </div>
       </a>
 
@@ -677,8 +854,8 @@
         
           <div class="post-meta mr-3">
             <i class="iconfont icon-date"></i>
-            <time datetime="2026-02-03 19:17" pubdate>
-              2026-02-03
+            <time datetime="2026-06-09 15:13" pubdate>
+              2026-06-09
             </time>
           </div>
         
@@ -693,7 +870,7 @@
     
       <span class="category-chain">
         
-  <a href="/categories/trick/" class="category-chain-item">trick</a>
+  <a href="/categories/%E9%A2%98%E8%A7%A3/" class="category-chain-item">题解</a>
   
   
 
@@ -708,7 +885,7 @@
           <div class="post-meta">
             <i class="iconfont icon-tags"></i>
             
-              <a href="/tags/%E6%A0%91%E7%8A%B6%E6%95%B0%E7%BB%84/">#树状数组</a>
+              <a href="/tags/%E6%9E%84%E9%80%A0/">#构造</a>
             
           </div>
         
@@ -722,15 +899,15 @@
     <article class="col-12 col-md-12 mx-auto index-info">
       <h2 class="index-header">
         
-        <a href="/2026/02/03/%E6%89%AB%E6%8F%8F%E7%BA%BF%E6%8A%80%E5%B7%A7/" target="_self">
-          扫描线技巧
+        <a href="/2026/06/09/%E9%A2%98%E8%A7%A3%EF%BC%9AAT-abc166-f-ABC166F-Three-Variables-Game/" target="_self">
+          题解：AT_abc166_f [ABC166F] Three Variables Game
         </a>
       </h2>
 
       
-      <a class="index-excerpt index-excerpt__noimg" href="/2026/02/03/%E6%89%AB%E6%8F%8F%E7%BA%BF%E6%8A%80%E5%B7%A7/" target="_self">
+      <a class="index-excerpt index-excerpt__noimg" href="/2026/06/09/%E9%A2%98%E8%A7%A3%EF%BC%9AAT-abc166-f-ABC166F-Three-Variables-Game/" target="_self">
         <div>
-          如果在一个平面直角坐标系中，用一个固定大小的矩形框点，一定要想到 窗口的星星，将题目转化成矩形的面积的并，遇到平面直角坐标系和矩形，多少往扫描线上想。
+          前言 比较简单的构造题。 洛谷题目传送门。 AtCoder 题目传送门。                      ▶题目                                  题目描述 在某个游戏中，有三个变量，分别用 AAA、BBB、CCC 表示。 随着游戏的进行，你需要进行 NNN 次选择。每一次选择由字符串 sis_isi​ 表示，当 sis_isi​ 为 AB 时，表示你可以
         </div>
       </a>
 
@@ -738,8 +915,8 @@
         
           <div class="post-meta mr-3">
             <i class="iconfont icon-date"></i>
-            <time datetime="2026-02-03 19:16" pubdate>
-              2026-02-03
+            <time datetime="2026-06-09 15:05" pubdate>
+              2026-06-09
             </time>
           </div>
         
@@ -754,7 +931,7 @@
     
       <span class="category-chain">
         
-  <a href="/categories/trick/" class="category-chain-item">trick</a>
+  <a href="/categories/%E9%A2%98%E8%A7%A3/" class="category-chain-item">题解</a>
   
   
 
@@ -769,68 +946,7 @@
           <div class="post-meta">
             <i class="iconfont icon-tags"></i>
             
-              <a href="/tags/%E6%89%AB%E6%8F%8F%E7%BA%BF/">#扫描线</a>
-            
-          </div>
-        
-      </div>
-    </article>
-  </div>
-
-  <div class="row mx-auto index-card">
-    
-    
-    <article class="col-12 col-md-12 mx-auto index-info">
-      <h2 class="index-header">
-        
-        <a href="/2026/02/03/%E5%B9%B6%E6%9F%A5%E9%9B%86%E6%8A%80%E5%B7%A7/" target="_self">
-          并查集技巧
-        </a>
-      </h2>
-
-      
-      <a class="index-excerpt index-excerpt__noimg" href="/2026/02/03/%E5%B9%B6%E6%9F%A5%E9%9B%86%E6%8A%80%E5%B7%A7/" target="_self">
-        <div>
-          这里提供一种用一种颜色区间覆盖原区间的方法，虽然看上去没用什么用处，但实际上非常有用。原题 和 我的代码分析。 对于上述问题，可以用并查集在 O(n)O(n)O(n) 内快速解决，比线段树又快又好写，主要思想是将一段连续的覆盖后的区间看成一个连通块，这个连通块的顶点是一个没有覆盖的节点，细节看题目和代码。   这里主要讲应用，虽然这个方法处理的是用一种颜色覆盖，但是我们观察这个方法的实现过程，
-        </div>
-      </a>
-
-      <div class="index-btm post-metas">
-        
-          <div class="post-meta mr-3">
-            <i class="iconfont icon-date"></i>
-            <time datetime="2026-02-03 19:16" pubdate>
-              2026-02-03
-            </time>
-          </div>
-        
-        
-          <div class="post-meta mr-3 d-flex align-items-center">
-            <i class="iconfont icon-category"></i>
-            
-
-<span class="category-chains">
-  
-  
-    
-      <span class="category-chain">
-        
-  <a href="/categories/trick/" class="category-chain-item">trick</a>
-  
-  
-
-      </span>
-    
-  
-</span>
-
-          </div>
-        
-        
-          <div class="post-meta">
-            <i class="iconfont icon-tags"></i>
-            
-              <a href="/tags/%E5%B9%B6%E6%9F%A5%E9%9B%86/">#并查集</a>
+              <a href="/tags/%E6%9E%84%E9%80%A0/">#构造</a>
             
           </div>
         
@@ -842,7 +958,7 @@
 
   <nav aria-label="navigation">
     <span class="pagination" id="pagination">
-      <a class="extend prev" rel="prev" href="/page/4/#board"><i class="iconfont icon-arrowleft"></i></a><a class="page-number" href="/">1</a><span class="space">&hellip;</span><a class="page-number" href="/page/3/#board">3</a><a class="page-number" href="/page/4/#board">4</a><span class="page-number current">5</span><a class="page-number" href="/page/6/#board">6</a><a class="page-number" href="/page/7/#board">7</a><a class="extend next" rel="next" href="/page/6/#board"><i class="iconfont icon-arrowright"></i></a>
+      <a class="extend prev" rel="prev" href="/page/4/#board"><i class="iconfont icon-arrowleft"></i></a><a class="page-number" href="/">1</a><span class="space">&hellip;</span><a class="page-number" href="/page/3/#board">3</a><a class="page-number" href="/page/4/#board">4</a><span class="page-number current">5</span><a class="page-number" href="/page/6/#board">6</a><a class="page-number" href="/page/7/#board">7</a><span class="space">&hellip;</span><a class="page-number" href="/page/12/#board">12</a><a class="extend next" rel="next" href="/page/6/#board"><i class="iconfont icon-arrowright"></i></a>
     </span>
   </nav>
 
@@ -903,17 +1019,6 @@
 
   <!-- Scripts -->
   
-  <script  src="https://lib.baomitu.com/nprogress/0.2.0/nprogress.min.js" ></script>
-  <link  rel="stylesheet" href="https://lib.baomitu.com/nprogress/0.2.0/nprogress.min.css" />
-
-  <script>
-    NProgress.configure({"showSpinner":false,"trickleSpeed":100})
-    NProgress.start()
-    window.addEventListener('load', function() {
-      NProgress.done();
-    })
-  </script>
-
 
 <script  src="https://lib.baomitu.com/jquery/3.6.4/jquery.min.js" ></script>
 <script  src="https://lib.baomitu.com/twitter-bootstrap/4.6.1/js/bootstrap.min.js" ></script>

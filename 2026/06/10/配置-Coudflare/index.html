@@ -1,0 +1,927 @@
+
+
+<!DOCTYPE html>
+<html lang="en" data-default-color-scheme=auto>
+
+
+
+<head>
+  <meta charset="UTF-8">
+
+  <link rel="apple-touch-icon" sizes="76x76" href="/img/fluid.png">
+  <link rel="icon" href="/img/fluid.png">
+  
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  
+  <meta name="theme-color" content="#2f4154">
+  <meta name="author" content="my_dream666">
+  <meta name="keywords" content="">
+  
+    <meta name="description" content="前言 Cloudflare 在 OI 界最著名的莫过于 CF 盾，但是此处介绍的是一些其他的东西。当然都是免费的。 域名配置 CDN Cloudflare 在全球都有节点，所以 CDN 还是很快的，连接上可以其加速和保护作用。 具体的，先注册一个账号，需要一个邮箱，然后其他的就随便写，我注册的是美国的账户。 然后添加域名，选择 Free，然后一直搞下去，出现 N1 和 N2，把它填写在注册自己域名">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Coudflare 配置">
+<meta property="og:url" content="https://starseaeternal.dpdns.org/2026/06/10/%E9%85%8D%E7%BD%AE-Coudflare/index.html">
+<meta property="og:site_name" content="my_dream666&#39;s Blog">
+<meta property="og:description" content="前言 Cloudflare 在 OI 界最著名的莫过于 CF 盾，但是此处介绍的是一些其他的东西。当然都是免费的。 域名配置 CDN Cloudflare 在全球都有节点，所以 CDN 还是很快的，连接上可以其加速和保护作用。 具体的，先注册一个账号，需要一个邮箱，然后其他的就随便写，我注册的是美国的账户。 然后添加域名，选择 Free，然后一直搞下去，出现 N1 和 N2，把它填写在注册自己域名">
+<meta property="og:locale" content="en_US">
+<meta property="article:published_time" content="2026-06-09T23:03:21.000Z">
+<meta property="article:modified_time" content="2026-06-24T07:36:36.419Z">
+<meta property="article:author" content="my_dream666">
+<meta name="twitter:card" content="summary_large_image">
+  
+  
+  
+  <title>Coudflare 配置 - my_dream666&#39;s Blog</title>
+
+  <link  rel="stylesheet" href="https://lib.baomitu.com/twitter-bootstrap/4.6.1/css/bootstrap.min.css" />
+
+
+
+  <link  rel="stylesheet" href="https://lib.baomitu.com/github-markdown-css/4.0.0/github-markdown.min.css" />
+
+  <link  rel="stylesheet" href="https://lib.baomitu.com/hint.css/2.7.0/hint.min.css" />
+
+  <link  rel="stylesheet" href="https://lib.baomitu.com/fancybox/3.5.7/jquery.fancybox.min.css" />
+
+  <link  rel="stylesheet" href="https://lib.baomitu.com/KaTeX/0.16.2/katex.min.css" />
+
+
+
+<!-- 主题依赖的图标库，不要自行修改 -->
+<!-- Do not modify the link that theme dependent icons -->
+
+<link rel="stylesheet" href="//at.alicdn.com/t/c/font_1749284_5i9bdhy70f8.css">
+
+
+
+<link rel="stylesheet" href="//at.alicdn.com/t/c/font_1736178_k526ubmyhba.css">
+
+
+<link  rel="stylesheet" href="/css/main.css" />
+
+
+  <link id="highlight-css" rel="stylesheet" href="/css/highlight.css" />
+  
+    <link id="highlight-css-dark" rel="stylesheet" href="/css/highlight-dark.css" />
+  
+
+
+
+  
+<link rel="stylesheet" href="/css/fluore.css">
+
+
+
+  <script id="fluid-configs">
+    var Fluid = window.Fluid || {};
+    Fluid.ctx = Object.assign({}, Fluid.ctx)
+    var CONFIG = {"hostname":"starseaeternal.dpdns.org","root":"/","version":"1.9.9","typing":{"enable":true,"typeSpeed":91,"cursorChar":"⭐","loop":true,"scope":[]},"anchorjs":{"enable":true,"element":"h1,h2,h3,h4,h5,h6","placement":"left","visible":"hover","icon":""},"progressbar":{"enable":false,"height_px":3,"color":"#29d","options":{"showSpinner":false,"trickleSpeed":100}},"code_language":{"enable":true,"default":"TEXT"},"copy_btn":true,"image_caption":{"enable":true},"image_zoom":{"enable":true,"img_url_replace":["",""]},"toc":{"enable":true,"expand_all":true,"placement":"right","headingSelector":"h1,h2,h3,h4,h5,h6","collapseDepth":0},"lazyload":{"enable":true,"loading_img":"/img/loading.gif","onlypost":false,"offset_factor":2},"web_analytics":{"enable":false,"follow_dnt":true,"baidu":null,"google":{"measurement_id":null},"tencent":{"sid":null,"cid":null},"leancloud":{"app_id":null,"app_key":null,"server_url":null,"path":"window.location.pathname","ignore_local":false},"openkounter":{"server_url":"https://open-kounter.mintimate.cn","path":"window.location.pathname","ignore_local":false},"umami":{"src":null,"website_id":null,"domains":null,"start_time":"2024-01-01T00:00:00.000Z","token":null,"api_server":null}},"search_path":"/local-search.xml","include_content_in_search":true};
+
+    if (CONFIG.web_analytics.follow_dnt) {
+      var dntVal = navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack;
+      Fluid.ctx.dnt = dntVal && (dntVal.startsWith('1') || dntVal.startsWith('yes') || dntVal.startsWith('on'));
+    }
+  </script>
+  <script  src="/js/utils.js" ></script>
+  <script  src="/js/color-schema.js" ></script>
+  
+
+
+  
+
+<meta name="generator" content="Hexo 8.1.1"></head>
+
+<body>
+  
+
+  <header>
+    
+
+<div class="header-inner" style="height: 70vh;">
+  <nav id="navbar" class="navbar fixed-top  navbar-expand-lg navbar-dark scrolling-navbar">
+  <div class="container">
+    <a class="navbar-brand" href="/">
+      <strong>Fluid</strong>
+    </a>
+
+    <button id="navbar-toggler-btn" class="navbar-toggler" type="button" data-toggle="collapse"
+            data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <div class="animated-icon"><span></span><span></span><span></span></div>
+    </button>
+
+    <!-- Collapsible content (desktop) -->
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ml-auto text-center">
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/" target="_self">
+                <i class="iconfont icon-home-fill"></i>
+                <span>Home</span>
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/archives/" target="_self">
+                <i class="iconfont icon-user-fill"></i>
+                <span>Archives</span>
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/categories/" target="_self">
+                <i class="iconfont icon-user-fill"></i>
+                <span>Categories</span>
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/tags/" target="_self">
+                <i class="iconfont icon-tags-fill"></i>
+                <span>Tag</span>
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/about/" target="_self">
+                <i class="iconfont icon-user-fill"></i>
+                <span>About</span>
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/links/" target="_self">
+                <i class="iconfont icon-link-fill"></i>
+                <span>Links</span>
+              </a>
+            </li>
+          
+        
+        
+          <li class="nav-item" id="search-btn">
+            <a class="nav-link" target="_self" href="javascript:;" data-toggle="modal" data-target="#modalSearch" aria-label="Search">
+              <i class="iconfont icon-search"></i>
+            </a>
+          </li>
+          
+        
+        
+          <li class="nav-item" id="color-toggle-btn">
+            <a class="nav-link" target="_self" href="javascript:;" aria-label="Color Toggle">
+              <i class="iconfont icon-dark" id="color-toggle-icon"></i>
+            </a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- Mobile grid menu overlay -->
+<div id="mobile-grid-menu" class="d-lg-none">
+  <div class="mobile-grid-menu-inner">
+    <div class="container">
+      <div class="row">
+        
+          
+          
+          
+          
+            <div class="col-4 mobile-grid-cell">
+              <a href="/" target="_self">
+                <div class="mobile-grid-item">
+                  <i class="iconfont icon-home-fill"></i>
+                  <span>Home</span>
+                </div>
+              </a>
+            </div>
+          
+        
+          
+          
+          
+          
+            <div class="col-4 mobile-grid-cell">
+              <a href="/archives/" target="_self">
+                <div class="mobile-grid-item">
+                  <i class="iconfont icon-user-fill"></i>
+                  <span>Archives</span>
+                </div>
+              </a>
+            </div>
+          
+        
+          
+          
+          
+          
+            <div class="col-4 mobile-grid-cell">
+              <a href="/categories/" target="_self">
+                <div class="mobile-grid-item">
+                  <i class="iconfont icon-user-fill"></i>
+                  <span>Categories</span>
+                </div>
+              </a>
+            </div>
+          
+        
+          
+          
+          
+          
+            <div class="col-4 mobile-grid-cell">
+              <a href="/tags/" target="_self">
+                <div class="mobile-grid-item">
+                  <i class="iconfont icon-tags-fill"></i>
+                  <span>Tag</span>
+                </div>
+              </a>
+            </div>
+          
+        
+          
+          
+          
+          
+            <div class="col-4 mobile-grid-cell">
+              <a href="/about/" target="_self">
+                <div class="mobile-grid-item">
+                  <i class="iconfont icon-user-fill"></i>
+                  <span>About</span>
+                </div>
+              </a>
+            </div>
+          
+        
+          
+          
+          
+          
+            <div class="col-4 mobile-grid-cell">
+              <a href="/links/" target="_self">
+                <div class="mobile-grid-item">
+                  <i class="iconfont icon-link-fill"></i>
+                  <span>Links</span>
+                </div>
+              </a>
+            </div>
+          
+        
+        
+          <div class="col-4 mobile-grid-cell" id="mobile-search-btn">
+            <a href="javascript:;" data-toggle="modal" data-target="#modalSearch" aria-label="Search">
+              <div class="mobile-grid-item">
+                <i class="iconfont icon-search"></i>
+                <span>Search</span>
+              </div>
+            </a>
+          </div>
+        
+        
+          <div class="col-4 mobile-grid-cell" id="mobile-color-toggle-btn"
+               data-label-light="Light"
+               data-label-dark="Dark">
+            <a href="javascript:;" aria-label="Color Toggle">
+              <div class="mobile-grid-item">
+                <i class="iconfont icon-dark" id="mobile-color-toggle-icon"></i>
+                <span id="mobile-color-toggle-label">Dark</span>
+              </div>
+            </a>
+          </div>
+        
+      </div>
+    </div>
+  </div>
+</div>
+
+  
+
+<div id="banner" class="banner" parallax=true data-random-banner='/img/random/10.jpg,/img/random/11.jpg,/img/random/12.jpg,/img/random/13.jpg,/img/random/14.jpg,/img/random/15.jpg,/img/random/16.jpg,/img/random/17.jpg,/img/random/18.jpg,/img/random/19.jpg,/img/random/20.jpg,/img/random/21.jpg,/img/random/22.jpg,/img/random/23.jpg,/img/random/24.jpg,/img/random/25.jpg,/img/random/26.jpg,/img/random/27.jpg,/img/random/28.jpg,/img/random/29.jpg,/img/random/3.jpg,/img/random/30.jpg,/img/random/31.jpg,/img/random/32.jpg,/img/random/33.jpg,/img/random/34.jpg,/img/random/35.jpg,/img/random/36.jpg,/img/random/37.jpg,/img/random/38.jpg,/img/random/39.jpg,/img/random/40.jpg,/img/random/41.jpg,/img/random/42.jpg,/img/random/43.jpg,/img/random/44.jpg,/img/random/45.jpg,/img/random/46.jpg,/img/random/47.jpg,/img/random/48.jpg,/img/random/49.jpg,/img/random/50.jpg,/img/random/51.jpg,/img/random/52.jpg,/img/random/53.jpg,/img/random/54.jpg,/img/random/55.jpg,/img/random/56.jpg,/img/random/57.jpg,/img/random/58.jpg,/img/random/59.jpg,/img/random/6.jpg,/img/random/60.jpg,/img/random/61.jpg,/img/random/7.jpg,/img/random/8.jpg,/img/random/9.jpg,/img/random/default.png,/img/random/t1.jpg'
+     style="background: url('/img/random/10.jpg') no-repeat center center; background-size: cover;">
+  <div class="full-bg-img">
+    <div class="mask flex-center" style="background-color: rgba(0, 0, 0, 0.3)">
+      <div class="banner-text text-center fade-in-up">
+        <div class="h2">
+          
+            <span id="subtitle" data-typed-text="Coudflare 配置"></span>
+          
+        </div>
+
+        
+          
+  <div class="mt-3">
+    
+    
+      <span class="post-meta">
+        <i class="iconfont icon-date-fill" aria-hidden="true"></i>
+        <time datetime="2026-06-10 07:03" pubdate>
+          June 10, 2026 am
+        </time>
+      </span>
+    
+  </div>
+
+  <div class="mt-1">
+    
+      <span class="post-meta mr-2">
+        <i class="iconfont icon-chart"></i>
+        
+          2.8k words
+        
+      </span>
+    
+
+    
+      <span class="post-meta mr-2">
+        <i class="iconfont icon-clock-fill"></i>
+        
+        
+        
+          24 mins
+        
+      </span>
+    
+
+    
+    
+  </div>
+
+
+        
+      </div>
+
+      
+    </div>
+  </div>
+</div>
+
+
+  <script>
+    (function() {
+      var banner = document.getElementById('banner');
+      if (!banner) return;
+      var list = banner.getAttribute('data-random-banner');
+      if (!list) return;
+      list = list.split(',').filter(Boolean);
+      if (list.length === 0) return;
+      var pick = list[Math.floor(Math.random() * list.length)];
+      banner.style.backgroundImage = "url('" + pick + "')";
+    })();
+  </script>
+
+
+</div>
+
+  </header>
+
+  <main>
+    
+      
+
+<div class="container-fluid nopadding-x">
+  <div class="row nomargin-x">
+    <div class="side-col d-none d-lg-block col-lg-2">
+      
+
+    </div>
+
+    <div class="col-lg-8 nopadding-x-md">
+      <div class="container nopadding-x-md" id="board-ctn">
+        <div id="board">
+          <article class="post-content mx-auto">
+            <h1 id="seo-header">Coudflare 配置</h1>
+            
+            
+              <div class="markdown-body">
+                
+                <h2 id="前言">前言</h2>
+<p>Cloudflare 在 OI 界最著名的莫过于 CF 盾，但是此处介绍的是一些其他的东西。当然都是免费的。</p>
+<h2 id="域名配置-CDN">域名配置 CDN</h2>
+<p>Cloudflare 在全球都有节点，所以 CDN 还是很快的，连接上可以其加速和保护作用。</p>
+<p>具体的，先注册一个账号，需要一个邮箱，然后其他的就随便写，我注册的是美国的账户。</p>
+<p>然后添加域名，选择 Free，然后一直搞下去，出现 N1 和 N2，把它填写在注册自己域名那里，自己域名的 CDN 就大功告成了。</p>
+<h2 id="部署博客到-Cloudflare-Pages">部署博客到 Cloudflare Pages</h2>
+<p>本来我的 hexo 博客是用 Github Pages，但是因为我要加密码并且使用了自定义域名，所以用 Cloudflare Workers 会造成死循环问题。因此我把它迁移到了 Cloudflare Pages 上。</p>
+<h3 id="本地和-Github-上操作">本地和 Github 上操作</h3>
+<p>具体的，在 Github 上再开一个仓库（可以不公开），用来存储 hexo 源代码，在本地的 hexo 文件夹，打开 Git Bash，输入：</p>
+<figure class="highlight csharp"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs csharp">git <span class="hljs-keyword">init</span><br></code></pre></td></tr></table></figure>
+<p>然后和之前配置类似，搞一下 ssh 和用户名邮箱这些信息，能连接上就行。我用了以下命令：</p>
+
+    <div class="fold">
+      <div class="fold-title fold-info collapsed" data-toggle="collapse" href="#collapse-28ab9646" role="button" aria-expanded="false" aria-controls="collapse-28ab9646">
+        <div class="fold-arrow">▶</div>命令
+      </div>
+      <div class="fold-collapse collapse" id="collapse-28ab9646">
+        <div class="fold-content">
+          <figure class="highlight routeros"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><code class="hljs routeros"><span class="hljs-comment"># 1. 启动 ssh-agent</span><br>eval <span class="hljs-string">&quot;<span class="hljs-variable">$(ssh-agent -s)</span>&quot;</span><br><br><span class="hljs-comment"># 2. 添加私钥到 agent</span><br>ssh-<span class="hljs-built_in">add</span> ~/.ssh/id_rsa1<br><br><span class="hljs-comment"># 3. 确认已加载的密钥</span><br>ssh-<span class="hljs-built_in">add</span> -l<br><br><span class="hljs-comment"># 4. 查看公钥内容，复制到 GitHub</span><br>cat ~/.ssh/id_rsa1.pub<br><br><br>git<span class="hljs-built_in"> config </span>--global user.name <span class="hljs-string">&quot;Github 用户名&quot;</span><br>git<span class="hljs-built_in"> config </span>--global user.email <span class="hljs-string">&quot;Github 注册邮箱&quot;</span><br></code></pre></td></tr></table></figure> 
+        </div>
+      </div>
+    </div>
+<p>然后三步部署自己代码（以后更新博客也是这三步走，而不是原来 <code>hexo</code> 那些命令）：</p>
+<figure class="highlight armasm"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><code class="hljs armasm"><span class="hljs-symbol">git</span> <span class="hljs-keyword">add</span> .<br><span class="hljs-symbol">git</span> commit -m <span class="hljs-string">&quot;此处填写部署的目的（就是随便填）&quot;</span><br><span class="hljs-symbol">git</span> <span class="hljs-keyword">push</span> -u origin main<br></code></pre></td></tr></table></figure>
+<p>这里最后一个操作不一定要写 <code>main</code>，看自己仓库的分支名，如果是 <code>master</code>，就写 <code>master</code>。</p>
+<h3 id="Cloudflare-上操作">Cloudflare 上操作</h3>
+<p>点击 Workers and Pages，然后创建应用程序，选择连接 Github，然后就能弄到自己仓库。</p>
+<p>它会让你填写一些东西，你只用填“构建命令”和“构建输出项目”，分别写 <code>hexo generater</code> 和 <code>public</code> 就行，这就和我们原来的 hexo 保持一致，避免遗忘。</p>
+<p>然后可以绑定自定义域名，也就是我们第一个作用中提到的。</p>
+<p>对于原来的博客呢，它不是也可以自定义域名吗。确实，我把它也自定义为那个域名，他的 CNAME 是写在 source 文件夹中。</p>
+<p>在实际访问时，访问的还是 Cloudflare Pages 的页面，因为两个 CNAME 有个优先级，Github 上的优先级低一些（毕竟我的域名都在 Cloudflare 上）。</p>
+<h3 id="设置密码">设置密码</h3>
+<p>我给我的网站设置了密码，这个 Cloudflare Pages 太良心了，可以直接在 hexo 的目录下新建 functions 文件夹，并在其下建立 _middleware.js 文件，让 AI 写一个 JS 就行了，不需要使用 Workers。</p>
+<p>但是为了有尝试次数超过限制有锁定 IP 功能，还需要使用 “存储与数据库”中的 Workers KV，新建一个就行。</p>
+<p>然后在 Workers and Pages 下的自己的仓库的设置找到 Bindings，加入那个 KV，把 KV namespace 和 Variable name 告诉 AI。</p>
+
+    <div class="fold">
+      <div class="fold-title fold-warning collapsed" data-toggle="collapse" href="#collapse-9e0454a4" role="button" aria-expanded="false" aria-controls="collapse-9e0454a4">
+        <div class="fold-arrow">▶</div>注意
+      </div>
+      <div class="fold-collapse collapse" id="collapse-9e0454a4">
+        <div class="fold-content">
+          <p>Cloudflare 不会读取 node_modules，但是我的主题在那里面，导致我的美化没有被正常读取。</p> <p>所以我采用的方法是将美化的 js 和 css 都复制到 hexo 目录下的 source 文件夹。</p> 
+        </div>
+      </div>
+    </div>
+<p>参考资料：<a target="_blank" rel="noopener" href="https://anyun.org/a/xitongwendang/2023/1226/16295.html">将 Hexo 博客部署至 CloudFlare Pages</a>。</p>
+<h2 id="免费-VPN">免费 VPN</h2>
+<p>Cloudflare WARP 现在改名成 Cloudflare One Client，搭配 Cloudflare Zero Trust 可以实现无限流量的免费 VPN，可以畅通访问 YouTube，<a target="_blank" rel="noopener" href="http://Google.com">Google.com</a>，Twitter，Github，greasyfork 等网站，我认为是最 NB 的一个功能。</p>
+<h3 id="注册-Zero-Trust">注册 Zero Trust</h3>
+<p>首先最难的是弄一个 Zero Trust，他会让你绑定银行卡，这里可以使用假的信息，具体见 <a target="_blank" rel="noopener" href="https://www.zkcoi.com/idea/skills/3452.html">这个</a>。</p>
+<p><a target="_blank" rel="noopener" href="https://chkr.cc/">这个</a> 检验银行卡信息是否正确合法，它显示 Unknown 或 Live 就是能够使用的。<a target="_blank" rel="noopener" href="https://namsogen.org/#google_vignette">这个</a> 用来生成银行卡 BIN 可以填写 <code>622759531087</code>，我是用这个过的，CVV 填写一个三位数，我写的是 <code>153</code>，DATA 肯定要超过目前时间，我选的是 <code>2030</code>。生成 <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>50</mn></mrow><annotation encoding="application/x-tex">50</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6444em;"></span><span class="mord">50</span></span></span></span> 个测试就行，一般会出现几个 Unknown。</p>
+<p>虚拟人名、地址、邮编在网上找一个生成网站就好，但是我试了几次，都太假了，显示错误。所以我用 Deepseek 弄了一个可靠的地址、邮编。</p>
+<p>这一步就应该可以轻松通过了。</p>
+<h3 id="下载-Cloudflare-One-Client">下载 Cloudflare One Client</h3>
+<p>打开 Zero Trust 页面，在左侧栏中选择 integrations（集成），点击服务提供商，在最下面那个方框点击“加入一个设备”，然后就会有 <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>7</mn></mrow><annotation encoding="application/x-tex">7</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6444em;"></span><span class="mord">7</span></span></span></span> 个步骤。</p>
+<p>先按照第一步下载最新版本，第二步填写一个可用邮箱，剩下的选择默认的就行。</p>
+<p>然后打开下载好的 Cloudflare One Client，不要在上面的步骤搞好前就注册，不然会出现 <code>Enrollment request is invalid</code>。选择 Cloudflare 那个注册方式，填写自己的团队名，Zero Trust 的主页面的 Account Details 就有，可以在设置里更改。这样就会注册成功。</p>
+<h3 id="一些-Bug">一些 Bug</h3>
+<p>连接时可能会出现：正在连接，正在使用 Happy eyeballs 算法。进度一直卡在 <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>26</mn><mi mathvariant="normal">%</mi></mrow><annotation encoding="application/x-tex">26\%</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8056em;vertical-align:-0.0556em;"></span><span class="mord">26%</span></span></span></span>，根据 <a target="_blank" rel="noopener" href="https://www.cnblogs.com/pxblog/p/17856473.html">这个</a>，打开 Zero Trust，点击 Team and Resources，选择 Device，点击 Device Profiles，在 General profiles 中点击我们我们刚注册设备旁边的三个点，选择 Configure，在 Device tunnel protocol 从 WireGuard 改成 MASQUE，滑到最下面点击 Save profile。</p>
+<p>我还对网络设置进行了操作，右键自己电脑网络上那个图标，打开“网络和 Internet 设置”，在高级网络设置选择“适配器选项”，右键点击自己电脑的那个网，选择属性，把 Internet 协议版本 6（TCP/IPv6）的勾划掉，保存以下即可。因为据说好像 IPv6 会拖慢其速度，因为中国大陆的某些原因？到时候可以试一下不改这个行不行。</p>
+<p>做完这些后可能还是无法成功，需要耐心等待一段时间，我好像差不多 <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>10</mn></mrow><annotation encoding="application/x-tex">10</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6444em;"></span><span class="mord">10</span></span></span></span> 分钟后就突然好了吧。</p>
+<p>参考资料：<a target="_blank" rel="noopener" href="https://imsuk.cn/archives/209/">Cloudflare WARP 免费安全网络复活了！Zero Trust 最新完整设置教程</a>。</p>
+<p>现在终于有一个无限免费好用的类 VPN（因为 IP 还是不变的），效果非常好，速度和稳定性都可以。</p>
+<h2 id="后记">后记</h2>
+<p>以上这些东西 Deepseek 和 easychat 的客户端的 gpt-5-free 也有很大功劳。</p>
+
+                
+              </div>
+            
+            <hr/>
+            <div>
+              <div class="post-metas my-3">
+  
+    <div class="post-meta mr-3 d-flex align-items-center">
+      <i class="iconfont icon-category"></i>
+      
+
+<span class="category-chains">
+  
+  
+    
+      <span class="category-chain">
+        
+  <a href="/categories/%E9%85%8D%E7%BD%AE/" class="category-chain-item">配置</a>
+  
+  
+
+      </span>
+    
+  
+</span>
+
+    </div>
+  
+  
+</div>
+
+
+              
+  
+
+  <div class="license-box my-3">
+    <div class="license-title">
+      <div>Coudflare 配置</div>
+      <div>https://starseaeternal.dpdns.org/2026/06/10/配置-Coudflare/</div>
+    </div>
+    <div class="license-meta">
+      
+        <div class="license-meta-item">
+          <div>Author</div>
+          <div>my_dream666</div>
+        </div>
+      
+      
+        <div class="license-meta-item license-meta-date">
+          <div>Posted on</div>
+          <div>June 10, 2026</div>
+        </div>
+      
+      
+        <div class="license-meta-item license-meta-date">
+          <div>Updated on</div>
+          <div>June 24, 2026</div>
+        </div>
+      
+      
+        <div class="license-meta-item">
+          <div>Licensed under</div>
+          <div>
+            
+              
+              
+                <a class="print-no-link" target="_blank" href="https://creativecommons.org/licenses/by/4.0/">
+                  <span class="hint--top hint--rounded" aria-label="BY - Attribution">
+                    <i class="iconfont icon-cc-by"></i>
+                  </span>
+                </a>
+              
+            
+          </div>
+        </div>
+      
+    </div>
+    <div class="license-icon iconfont"></div>
+  </div>
+
+
+
+              
+                <div class="post-prevnext my-3">
+                  <article class="post-prev col-6">
+                    
+                    
+                      <a href="/2026/06/10/%E9%A2%98%E8%A7%A3%EF%BC%9ACF1404D-Game-of-Pairs/" title="题解：CF1404D Game of Pairs">
+                        <i class="iconfont icon-arrowleft"></i>
+                        <span class="hidden-mobile">题解：CF1404D Game of Pairs</span>
+                        <span class="visible-mobile">Previous</span>
+                      </a>
+                    
+                  </article>
+                  <article class="post-next col-6">
+                    
+                    
+                      <a href="/2026/06/09/%E5%85%B3%E4%BA%8E-C-%E7%9A%84%E4%B8%80%E4%BA%9B%E5%B0%8F%E7%9F%A5%E8%AF%86/" title="关于 C++ 的一些小知识">
+                        <span class="hidden-mobile">关于 C++ 的一些小知识</span>
+                        <span class="visible-mobile">Next</span>
+                        <i class="iconfont icon-arrowright"></i>
+                      </a>
+                    
+                  </article>
+                </div>
+              
+            </div>
+
+            
+          </article>
+        </div>
+      </div>
+    </div>
+
+    <div class="side-col d-none d-lg-block col-lg-2">
+      
+  <aside class="sidebar" style="margin-left: -1rem">
+    <div id="toc">
+  <p class="toc-header">
+    <i class="iconfont icon-list"></i>
+    <span>Table of Contents</span>
+  </p>
+  <div class="toc-body" id="toc-body"></div>
+</div>
+
+
+
+  </aside>
+
+
+    </div>
+  </div>
+</div>
+
+
+
+
+
+  
+
+
+
+  
+
+
+
+  
+
+
+
+  
+
+
+
+  
+
+
+  
+  
+
+
+
+
+
+
+
+
+    
+
+    
+      <a id="scroll-top-button" aria-label="TOP" href="#" role="button">
+        <i class="iconfont icon-arrowup" aria-hidden="true"></i>
+      </a>
+    
+
+    
+      <div class="modal fade" id="modalSearch" tabindex="-1" role="dialog" aria-labelledby="ModalLabel"
+     aria-hidden="true">
+  <div class="modal-dialog modal-dialog-scrollable modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header text-center">
+        <h4 class="modal-title w-100 font-weight-bold">Search</h4>
+        <button type="button" id="local-search-close" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body mx-3">
+        <div class="md-form mb-5">
+          <input type="text" id="local-search-input" class="form-control validate">
+          <label data-error="x" data-success="v" for="local-search-input">Keyword</label>
+        </div>
+        <div class="list-group" id="local-search-result"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+    
+
+    
+  </main>
+
+  <footer>
+    <div class="footer-inner">
+  
+    <div class="footer-content">
+       <a href="https://hexo.io" target="_blank" rel="nofollow noopener"><span>Hexo</span></a> <i class="iconfont icon-love"></i> <a href="https://github.com/fluid-dev/hexo-theme-fluid" target="_blank" rel="nofollow noopener"><span>Fluid</span></a> 
+    </div>
+  
+  
+  
+</div>
+
+  </footer>
+
+  <!-- Scripts -->
+  
+
+<script  src="https://lib.baomitu.com/jquery/3.6.4/jquery.min.js" ></script>
+<script  src="https://lib.baomitu.com/twitter-bootstrap/4.6.1/js/bootstrap.min.js" ></script>
+<script  src="/js/events.js" ></script>
+<script  src="/js/plugins.js" ></script>
+
+
+  <script  src="https://lib.baomitu.com/typed.js/2.0.12/typed.min.js" ></script>
+  <script>
+    (function (window, document) {
+      var typing = Fluid.plugins.typing;
+      var subtitle = document.getElementById('subtitle');
+      if (!subtitle || !typing) {
+        return;
+      }
+      var text = subtitle.getAttribute('data-typed-text');
+      
+        typing(text);
+      
+    })(window, document);
+  </script>
+
+
+
+
+  
+    <script  src="/js/img-lazyload.js" ></script>
+  
+
+
+
+
+  
+<script>
+  Fluid.utils.createScript('https://lib.baomitu.com/tocbot/4.20.1/tocbot.min.js', function() {
+    var toc = jQuery('#toc');
+    if (toc.length === 0 || !window.tocbot) { return; }
+    var boardCtn = jQuery('#board-ctn');
+    var boardTop = boardCtn.offset().top;
+
+    function isExpandAllEnabled() {
+      return CONFIG.toc && CONFIG.toc.expand_all === true;
+    }
+    function expandAllToc() {
+      if (!isExpandAllEnabled()) { return; }
+      jQuery('#toc-body .tocbot-is-collapsed').removeClass('tocbot-is-collapsed');
+    }
+    function updateTocToggle($li, $childList) {
+      var $toggle = $li.children('.toc-toggle');
+      if ($toggle.length === 0) { return; }
+      var collapsed = $childList.hasClass('tocbot-is-collapsed');
+      $toggle
+        .toggleClass('toc-toggle-collapsed', collapsed)
+        .toggleClass('toc-toggle-expanded', !collapsed);
+    }
+    function bindTocToggle() {
+      if (!isExpandAllEnabled()) { return; }
+      jQuery('#toc-body .toc-list-item').each(function() {
+        var $li = jQuery(this);
+        var $childList = $li.children('ol');
+        if ($childList.length === 0) {
+          if ($li.children('.toc-toggle').length === 0) {
+            $li.prepend('<span class="toc-toggle toc-toggle-placeholder" aria-hidden="true">›</span>');
+          }
+          return;
+        }
+
+        if ($li.children('.toc-toggle').length === 0) {
+          $li.prepend('<span class="toc-toggle toc-toggle-expanded" aria-hidden="true">›</span>');
+        }
+        updateTocToggle($li, $childList);
+      });
+      jQuery('#toc-body').off('click.tocToggle').on('click.tocToggle', '.toc-toggle', function(e) {
+        e.preventDefault();
+        e.stopPropagation();
+        var $li = jQuery(this).parent('.toc-list-item');
+        var $childList = $li.children('ol');
+        if ($childList.length === 0) { return; }
+        $childList.toggleClass('tocbot-is-collapsed');
+        updateTocToggle($li, $childList);
+      });
+      if (!window.__tocToggleObserver) {
+        window.__tocToggleObserver = new MutationObserver(function(mutations) {
+          mutations.forEach(function(mutation) {
+            if (mutation.type !== 'attributes' || mutation.attributeName !== 'class') { return; }
+            var $list = jQuery(mutation.target);
+            var $li = $list.parent('.toc-list-item');
+            if ($li.length === 0) { return; }
+            updateTocToggle($li, $list);
+          });
+        });
+        jQuery('#toc-body ol').each(function() {
+          window.__tocToggleObserver.observe(this, { attributes: true });
+        });
+      }
+    }
+    var tocConfig = Object.assign({
+      tocSelector     : '#toc-body',
+      contentSelector : '.markdown-body',
+      linkClass       : 'tocbot-link',
+      activeLinkClass : 'tocbot-active-link',
+      listClass       : 'tocbot-list',
+      isCollapsedClass: 'tocbot-is-collapsed',
+      collapsibleClass: 'tocbot-is-collapsible',
+      scrollSmooth    : true,
+      includeTitleTags: true,
+      headingsOffset  : -boardTop,
+    }, CONFIG.toc);
+    if (isExpandAllEnabled()) {
+      tocConfig.collapseDepth = 6;
+    }
+    window.tocbot.init(tocConfig);
+    if (toc.find('.toc-list-item').length > 0) {
+      toc.css('visibility', 'visible');
+    }
+    expandAllToc();
+    bindTocToggle();
+
+    Fluid.events.registerRefreshCallback(function() {
+      if ('tocbot' in window) {
+        tocbot.refresh();
+        var toc = jQuery('#toc');
+        if (toc.length === 0 || !tocbot) {
+          return;
+        }
+        if (toc.find('.toc-list-item').length > 0) {
+          toc.css('visibility', 'visible');
+        }
+        expandAllToc();
+        bindTocToggle();
+      }
+    });
+  });
+</script>
+
+
+  <script src=https://lib.baomitu.com/clipboard.js/2.0.11/clipboard.min.js></script>
+
+  <script>Fluid.plugins.codeWidget();</script>
+
+
+  
+<script>
+  Fluid.utils.createScript('https://lib.baomitu.com/anchor-js/5.0.0/anchor.min.js', function() {
+    window.anchors.options = {
+      placement: CONFIG.anchorjs.placement,
+      visible  : CONFIG.anchorjs.visible
+    };
+    if (CONFIG.anchorjs.icon) {
+      window.anchors.options.icon = CONFIG.anchorjs.icon;
+    }
+    var el = (CONFIG.anchorjs.element || 'h1,h2,h3,h4,h5,h6').split(',');
+    var res = [];
+    for (var item of el) {
+      res.push('.markdown-body > ' + item.trim());
+    }
+    if (CONFIG.anchorjs.placement === 'left') {
+      window.anchors.options.class = 'anchorjs-link-left';
+    }
+    window.anchors.add(res.join(', '));
+
+    Fluid.events.registerRefreshCallback(function() {
+      if ('anchors' in window) {
+        anchors.removeAll();
+        var el = (CONFIG.anchorjs.element || 'h1,h2,h3,h4,h5,h6').split(',');
+        var res = [];
+        for (var item of el) {
+          res.push('.markdown-body > ' + item.trim());
+        }
+        if (CONFIG.anchorjs.placement === 'left') {
+          anchors.options.class = 'anchorjs-link-left';
+        }
+        anchors.add(res.join(', '));
+      }
+    });
+  });
+</script>
+
+
+  
+<script>
+  Fluid.utils.createScript('https://lib.baomitu.com/fancybox/3.5.7/jquery.fancybox.min.js', function() {
+    Fluid.plugins.fancyBox();
+  });
+</script>
+
+
+  <script>Fluid.plugins.imageCaption();</script>
+
+  <script  src="/js/local-search.js" ></script>
+
+
+
+
+  
+<script src="/js/DynamicLine.js"></script>
+<script src="/js/snowflake.js"></script>
+<script src="/js/bottom.js"></script>
+<script src="/js/bubble.js"></script>
+<script src="/js/runtime.js"></script>
+
+
+
+<!-- 主题的启动项，将它保持在最底部 -->
+<!-- the boot of the theme, keep it at the bottom -->
+<script  src="/js/boot.js" ></script>
+
+
+  
+
+  <noscript>
+    <div class="noscript-warning">Blog works best with JavaScript enabled</div>
+  </noscript>
+</body>
+</html>

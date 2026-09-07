@@ -65,7 +65,7 @@
   <script id="fluid-configs">
     var Fluid = window.Fluid || {};
     Fluid.ctx = Object.assign({}, Fluid.ctx)
-    var CONFIG = {"hostname":"starseaeternal.dpdns.org","root":"/","version":"1.9.8","typing":{"enable":true,"typeSpeed":70,"cursorChar":"⭐","loop":false,"scope":[]},"anchorjs":{"enable":true,"element":"h1,h2,h3,h4,h5,h6","placement":"left","visible":"hover","icon":""},"progressbar":{"enable":true,"height_px":3,"color":"#29d","options":{"showSpinner":false,"trickleSpeed":100}},"code_language":{"enable":true,"default":"TEXT"},"copy_btn":true,"image_caption":{"enable":true},"image_zoom":{"enable":true,"img_url_replace":["",""]},"toc":{"enable":true,"placement":"right","headingSelector":"h1,h2,h3,h4,h5,h6","collapseDepth":0},"lazyload":{"enable":true,"loading_img":"/img/loading.gif","onlypost":false,"offset_factor":2},"web_analytics":{"enable":false,"follow_dnt":true,"baidu":null,"google":{"measurement_id":null},"tencent":{"sid":null,"cid":null},"leancloud":{"app_id":null,"app_key":null,"server_url":null,"path":"window.location.pathname","ignore_local":false},"umami":{"src":null,"website_id":null,"domains":null,"start_time":"2024-01-01T00:00:00.000Z","token":null,"api_server":null}},"search_path":"/local-search.xml","include_content_in_search":true};
+    var CONFIG = {"hostname":"starseaeternal.dpdns.org","root":"/","version":"1.9.9","typing":{"enable":true,"typeSpeed":91,"cursorChar":"⭐","loop":true,"scope":[]},"anchorjs":{"enable":true,"element":"h1,h2,h3,h4,h5,h6","placement":"left","visible":"hover","icon":""},"progressbar":{"enable":false,"height_px":3,"color":"#29d","options":{"showSpinner":false,"trickleSpeed":100}},"code_language":{"enable":true,"default":"TEXT"},"copy_btn":true,"image_caption":{"enable":true},"image_zoom":{"enable":true,"img_url_replace":["",""]},"toc":{"enable":true,"expand_all":true,"placement":"right","headingSelector":"h1,h2,h3,h4,h5,h6","collapseDepth":0},"lazyload":{"enable":true,"loading_img":"/img/loading.gif","onlypost":false,"offset_factor":2},"web_analytics":{"enable":false,"follow_dnt":true,"baidu":null,"google":{"measurement_id":null},"tencent":{"sid":null,"cid":null},"leancloud":{"app_id":null,"app_key":null,"server_url":null,"path":"window.location.pathname","ignore_local":false},"openkounter":{"server_url":"https://open-kounter.mintimate.cn","path":"window.location.pathname","ignore_local":false},"umami":{"src":null,"website_id":null,"domains":null,"start_time":"2024-01-01T00:00:00.000Z","token":null,"api_server":null}},"search_path":"/local-search.xml","include_content_in_search":true};
 
     if (CONFIG.web_analytics.follow_dnt) {
       var dntVal = navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack;
@@ -78,11 +78,10 @@
 
 
   
+
 <meta name="generator" content="Hexo 8.1.1"></head>
 
-
 <body>
-
   
 
   <header>
@@ -101,7 +100,7 @@
       <div class="animated-icon"><span></span><span></span><span></span></div>
     </button>
 
-    <!-- Collapsible content -->
+    <!-- Collapsible content (desktop) -->
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav ml-auto text-center">
         
@@ -165,6 +164,18 @@
             </li>
           
         
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/links/" target="_self">
+                <i class="iconfont icon-link-fill"></i>
+                <span>Links</span>
+              </a>
+            </li>
+          
+        
         
           <li class="nav-item" id="search-btn">
             <a class="nav-link" target="_self" href="javascript:;" data-toggle="modal" data-target="#modalSearch" aria-label="Search">
@@ -185,10 +196,127 @@
   </div>
 </nav>
 
+<!-- Mobile grid menu overlay -->
+<div id="mobile-grid-menu" class="d-lg-none">
+  <div class="mobile-grid-menu-inner">
+    <div class="container">
+      <div class="row">
+        
+          
+          
+          
+          
+            <div class="col-4 mobile-grid-cell">
+              <a href="/" target="_self">
+                <div class="mobile-grid-item">
+                  <i class="iconfont icon-home-fill"></i>
+                  <span>Home</span>
+                </div>
+              </a>
+            </div>
+          
+        
+          
+          
+          
+          
+            <div class="col-4 mobile-grid-cell">
+              <a href="/archives/" target="_self">
+                <div class="mobile-grid-item">
+                  <i class="iconfont icon-user-fill"></i>
+                  <span>Archives</span>
+                </div>
+              </a>
+            </div>
+          
+        
+          
+          
+          
+          
+            <div class="col-4 mobile-grid-cell">
+              <a href="/categories/" target="_self">
+                <div class="mobile-grid-item">
+                  <i class="iconfont icon-user-fill"></i>
+                  <span>Categories</span>
+                </div>
+              </a>
+            </div>
+          
+        
+          
+          
+          
+          
+            <div class="col-4 mobile-grid-cell">
+              <a href="/tags/" target="_self">
+                <div class="mobile-grid-item">
+                  <i class="iconfont icon-tags-fill"></i>
+                  <span>Tag</span>
+                </div>
+              </a>
+            </div>
+          
+        
+          
+          
+          
+          
+            <div class="col-4 mobile-grid-cell">
+              <a href="/about/" target="_self">
+                <div class="mobile-grid-item">
+                  <i class="iconfont icon-user-fill"></i>
+                  <span>About</span>
+                </div>
+              </a>
+            </div>
+          
+        
+          
+          
+          
+          
+            <div class="col-4 mobile-grid-cell">
+              <a href="/links/" target="_self">
+                <div class="mobile-grid-item">
+                  <i class="iconfont icon-link-fill"></i>
+                  <span>Links</span>
+                </div>
+              </a>
+            </div>
+          
+        
+        
+          <div class="col-4 mobile-grid-cell" id="mobile-search-btn">
+            <a href="javascript:;" data-toggle="modal" data-target="#modalSearch" aria-label="Search">
+              <div class="mobile-grid-item">
+                <i class="iconfont icon-search"></i>
+                <span>Search</span>
+              </div>
+            </a>
+          </div>
+        
+        
+          <div class="col-4 mobile-grid-cell" id="mobile-color-toggle-btn"
+               data-label-light="Light"
+               data-label-dark="Dark">
+            <a href="javascript:;" aria-label="Color Toggle">
+              <div class="mobile-grid-item">
+                <i class="iconfont icon-dark" id="mobile-color-toggle-icon"></i>
+                <span id="mobile-color-toggle-label">Dark</span>
+              </div>
+            </a>
+          </div>
+        
+      </div>
+    </div>
+  </div>
+</div>
+
   
 
-<div id="banner" class="banner" parallax=true
-     style="background: url('/img/bg/15.jpg') no-repeat center center; background-size: cover;">
+<div id="banner" class="banner" parallax=true data-random-banner='/img/random/10.jpg,/img/random/11.jpg,/img/random/12.jpg,/img/random/13.jpg,/img/random/14.jpg,/img/random/15.jpg,/img/random/16.jpg,/img/random/17.jpg,/img/random/18.jpg,/img/random/19.jpg,/img/random/20.jpg,/img/random/21.jpg,/img/random/22.jpg,/img/random/23.jpg,/img/random/24.jpg,/img/random/25.jpg,/img/random/26.jpg,/img/random/27.jpg,/img/random/28.jpg,/img/random/29.jpg,/img/random/3.jpg,/img/random/30.jpg,/img/random/31.jpg,/img/random/32.jpg,/img/random/33.jpg,/img/random/34.jpg,/img/random/35.jpg,/img/random/36.jpg,/img/random/37.jpg,/img/random/38.jpg,/img/random/39.jpg,/img/random/40.jpg,/img/random/41.jpg,/img/random/42.jpg,/img/random/43.jpg,/img/random/44.jpg,/img/random/45.jpg,/img/random/46.jpg,/img/random/47.jpg,/img/random/48.jpg,/img/random/49.jpg,/img/random/50.jpg,/img/random/51.jpg,/img/random/52.jpg,/img/random/53.jpg,/img/random/54.jpg,/img/random/55.jpg,/img/random/56.jpg,/img/random/57.jpg,/img/random/58.jpg,/img/random/59.jpg,/img/random/6.jpg,/img/random/60.jpg,/img/random/61.jpg,/img/random/7.jpg,/img/random/8.jpg,/img/random/9.jpg,/img/random/default.png,/img/random/t1.jpg'
+     style="background: url('/img/random/10.jpg') no-repeat center center; background-size: cover;">
   <div class="full-bg-img">
     <div class="mask flex-center" style="background-color: rgba(0, 0, 0, 0.3)">
       <div class="banner-text text-center fade-in-up">
@@ -210,6 +338,21 @@
   </div>
 </div>
 
+
+  <script>
+    (function() {
+      var banner = document.getElementById('banner');
+      if (!banner) return;
+      var list = banner.getAttribute('data-random-banner');
+      if (!list) return;
+      list = list.split(',').filter(Boolean);
+      if (list.length === 0) return;
+      var pick = list[Math.floor(Math.random() * list.length)];
+      banner.style.backgroundImage = "url('" + pick + "')";
+    })();
+  </script>
+
+
 </div>
 
   </header>
@@ -225,6 +368,7 @@
               <div class="col-12 col-md-10 m-auto">
                 
 
+<h1 style="display: none">my_dream666&#39;s Blog</h1>
 
   <div class="row mx-auto index-card">
     
@@ -232,15 +376,15 @@
     <article class="col-12 col-md-12 mx-auto index-info">
       <h2 class="index-header">
         
-        <a href="/2026/02/09/%E6%A0%91%E4%B8%8A%E6%93%8D%E4%BD%9C%E6%8A%80%E5%B7%A7/" target="_self">
-          树上操作技巧
+        <a href="/2026/08/11/%E7%BA%BF%E6%80%A7%E5%9F%BA%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/" target="_self">
+          线性基学习笔记
         </a>
       </h2>
 
       
-      <a class="index-excerpt index-excerpt__noimg" href="/2026/02/09/%E6%A0%91%E4%B8%8A%E6%93%8D%E4%BD%9C%E6%8A%80%E5%B7%A7/" target="_self">
+      <a class="index-excerpt index-excerpt__noimg" href="/2026/08/11/%E7%BA%BF%E6%80%A7%E5%9F%BA%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/" target="_self">
         <div>
-          对于树上的叶子节点的大规模更新，比如维护 uuu 所在字树上所有点到它的距离，记作 dis(u,v)dis(u,v)dis(u,v)，所以我们要不断的将子树 +1+1+1，这样就炸掉了。 但是我们可以转化思路，dis(u,v)=dis(root,v)−dis(root,u)dis(u,v)=dis(root,v)-dis(root,u)dis(u,v)=dis(root,v)−dis(root
+          前言 笔者不会那些专业术语，故仅以通俗易懂的语言描述。本文的线性基讲的都是异或线性基。 线性基实际上是一个向量，进行的操作本质上是高斯消元，具体可以见 P3265 [JLOI2015] 装备购买，以及 我的题解。 概念和性质 性质一：设一个数集为 SSS，它的线性基为 BBB，SSS 的任意元素都可以通过 BBB 的某些元素异或而成。 性质二：但是 BBB 内部的元素不可能通过异或得到 000，因
         </div>
       </a>
 
@@ -248,8 +392,8 @@
         
           <div class="post-meta mr-3">
             <i class="iconfont icon-date"></i>
-            <time datetime="2026-02-09 21:44" pubdate>
-              2026-02-09
+            <time datetime="2026-08-11 18:09" pubdate>
+              2026-08-11
             </time>
           </div>
         
@@ -264,7 +408,7 @@
     
       <span class="category-chain">
         
-  <a href="/categories/trick/" class="category-chain-item">trick</a>
+  <a href="/categories/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/" class="category-chain-item">学习笔记</a>
   
   
 
@@ -286,15 +430,15 @@
     <article class="col-12 col-md-12 mx-auto index-info">
       <h2 class="index-header">
         
-        <a href="/2026/02/09/%E7%8F%82%E6%9C%B5%E8%8E%89%E6%A0%91%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/" target="_self">
-          珂朵莉树学习笔记
+        <a href="/2026/07/16/%E5%AD%97%E7%AC%A6%E4%B8%B2%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/" target="_self">
+          字符串学习笔记
         </a>
       </h2>
 
       
-      <a class="index-excerpt index-excerpt__noimg" href="/2026/02/09/%E7%8F%82%E6%9C%B5%E8%8E%89%E6%A0%91%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/" target="_self">
+      <a class="index-excerpt index-excerpt__noimg" href="/2026/07/16/%E5%AD%97%E7%AC%A6%E4%B8%B2%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/" target="_self">
         <div>
-          前言 总算学到了珂朵莉树。 珂朵莉树（Chtholly Tree），又名老司机树（Old Driver Tree, ODT），是一种非常暴力的维护序列信息的数据结构，特点是好写，可用于对拍，打 ABC 等。 例题 珂朵莉树最直接的应用便是区间赋值，这里给出一道简单的题目。 有 nnn 个苹果，初始在 aia_iai​ 位置上（aia_iai​ 互不相同），分别要在 tit_iti​ 时间内移动到
+          前言 此文主要讲解一些基础的字符串算法以及进阶字符串算法。 KMP KMP 算法用于字符串匹配，具体来说，就是看字符串 TTT 与字符串 SSS 的哪些子串相同。并且我们称 SSS 为文本串，TTT 为模式串。 这里会有一个重要的概念——border：一个字符串 TTT，满足 TTT 既是 SSS 的前缀，又是 SSS 的后缀。下面说的 border 通常是最长 border，请自行甄别。 有个小
         </div>
       </a>
 
@@ -302,8 +446,8 @@
         
           <div class="post-meta mr-3">
             <i class="iconfont icon-date"></i>
-            <time datetime="2026-02-09 21:22" pubdate>
-              2026-02-09
+            <time datetime="2026-07-16 09:02" pubdate>
+              2026-07-16
             </time>
           </div>
         
@@ -318,7 +462,7 @@
     
       <span class="category-chain">
         
-  <a href="/categories/%E7%9C%81%E9%80%89%E7%9F%A5%E8%AF%86%E7%82%B9%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/" class="category-chain-item">省选知识点学习笔记</a>
+  <a href="/categories/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/" class="category-chain-item">学习笔记</a>
   
   
 
@@ -330,13 +474,6 @@
           </div>
         
         
-          <div class="post-meta">
-            <i class="iconfont icon-tags"></i>
-            
-              <a href="/tags/%E7%8F%82%E6%9C%B5%E8%8E%89%E6%A0%91/">#珂朵莉树</a>
-            
-          </div>
-        
       </div>
     </article>
   </div>
@@ -347,15 +484,15 @@
     <article class="col-12 col-md-12 mx-auto index-info">
       <h2 class="index-header">
         
-        <a href="/2026/02/08/%E9%A2%98%E8%A7%A3%EF%BC%9AP6623-%E7%9C%81%E9%80%89%E8%81%94%E8%80%83-2020-A-%E5%8D%B7-%E6%A0%91/" target="_self">
-          题解：P6623 [省选联考 2020 A 卷] 树
+        <a href="/2026/07/15/%E9%A2%98%E8%A7%A3%EF%BC%9AP2414-NOI2011-%E9%98%BF%E7%8B%B8%E7%9A%84%E6%89%93%E5%AD%97%E6%9C%BA/" target="_self">
+          题解：P2414 [NOI2011] 阿狸的打字机
         </a>
       </h2>
 
       
-      <a class="index-excerpt index-excerpt__noimg" href="/2026/02/08/%E9%A2%98%E8%A7%A3%EF%BC%9AP6623-%E7%9C%81%E9%80%89%E8%81%94%E8%80%83-2020-A-%E5%8D%B7-%E6%A0%91/" target="_self">
+      <a class="index-excerpt index-excerpt__noimg" href="/2026/07/15/%E9%A2%98%E8%A7%A3%EF%BC%9AP2414-NOI2011-%E9%98%BF%E7%8B%B8%E7%9A%84%E6%89%93%E5%AD%97%E6%9C%BA/" target="_self">
         <div>
-          前言 题目传送门。 此题有所难度并教会了我很多，故做此题解。 本文将用两个方法做此题。                      ▶题目                                  题目描述给定一棵 nnn 个结点的有根树 TTT，结点从 111 开始编号，根结点为 111 号结点，每个结点有一个正整数权值 viv_ivi​。设 xxx 号结点的子树内（包含 xxx 自身）的
+          前言 有点难度的字符串题。                      ▶题目                                  题目描述 阿狸喜欢收藏各种稀奇古怪的东西，最近他淘到一台老式的打字机。打字机上只有 282828 个按键，分别印有 262626 个小写英文字母和 B、P 两个字母。经阿狸研究发现，这个打字机是这样工作的：  输入小写字母，打字机的一个凹槽中会加入这个字母
         </div>
       </a>
 
@@ -363,8 +500,8 @@
         
           <div class="post-meta mr-3">
             <i class="iconfont icon-date"></i>
-            <time datetime="2026-02-08 22:07" pubdate>
-              2026-02-08
+            <time datetime="2026-07-15 15:28" pubdate>
+              2026-07-15
             </time>
           </div>
         
@@ -393,443 +530,422 @@
         
           <div class="post-meta">
             <i class="iconfont icon-tags"></i>
-            
-              <a href="/tags/%E5%AD%97%E5%85%B8%E6%A0%91/">#字典树</a>
-            
-              <a href="/tags/%E6%A0%91%E4%B8%8A%E5%90%AF%E5%8F%91%E5%BC%8F%E5%90%88%E5%B9%B6/">#树上启发式合并</a>
-            
-          </div>
-        
-      </div>
-    </article>
-  </div>
-
-  <div class="row mx-auto index-card">
-    
-    
-    <article class="col-12 col-md-12 mx-auto index-info">
-      <h2 class="index-header">
-        
-        <a href="/2026/02/06/%E5%AD%97%E5%85%B8%E6%A0%91%E6%8A%80%E5%B7%A7/" target="_self">
-          字典树技巧
-        </a>
-      </h2>
-
-      
-      <a class="index-excerpt index-excerpt__noimg" href="/2026/02/06/%E5%AD%97%E5%85%B8%E6%A0%91%E6%8A%80%E5%B7%A7/" target="_self">
-        <div>
-          在对多个字符串中弄出一个新字符串，可以考虑按位枚举，将选择/构造性问题转化成判定性问题。例如从中只选 kkk 个字符串，弄出一个字典序最小的，此时字典序最小规定了判定的方法和步骤，kkk 个则变成了判定的条件。 例题。洛谷题解，博客题解。
-        </div>
-      </a>
-
-      <div class="index-btm post-metas">
-        
-          <div class="post-meta mr-3">
-            <i class="iconfont icon-date"></i>
-            <time datetime="2026-02-06 10:21" pubdate>
-              2026-02-06
-            </time>
-          </div>
-        
-        
-          <div class="post-meta mr-3 d-flex align-items-center">
-            <i class="iconfont icon-category"></i>
-            
-
-<span class="category-chains">
-  
-  
-    
-      <span class="category-chain">
-        
-  <a href="/categories/trick/" class="category-chain-item">trick</a>
-  
-  
-
-      </span>
-    
-  
-</span>
-
-          </div>
-        
-        
-          <div class="post-meta">
-            <i class="iconfont icon-tags"></i>
-            
-              <a href="/tags/%E5%AD%97%E5%85%B8%E6%A0%91/">#字典树</a>
-            
-          </div>
-        
-      </div>
-    </article>
-  </div>
-
-  <div class="row mx-auto index-card">
-    
-    
-    <article class="col-12 col-md-12 mx-auto index-info">
-      <h2 class="index-header">
-        
-        <a href="/2026/02/06/%E9%A2%98%E8%A7%A3%EF%BC%9AP9694-GDCPC-2023-New-but-Nostalgic-Problem/" target="_self">
-          题解：P9694 [GDCPC 2023] New but Nostalgic Problem
-        </a>
-      </h2>
-
-      
-      <a class="index-excerpt index-excerpt__noimg" href="/2026/02/06/%E9%A2%98%E8%A7%A3%EF%BC%9AP9694-GDCPC-2023-New-but-Nostalgic-Problem/" target="_self">
-        <div>
-          前言 题目传送门。                      ▶题目                                  题目描述给定 nnn 个字符串 w1,w2,⋯ ,wnw_1, w_2, \cdots, w_nw1​,w2​,⋯,wn​，请选出恰好 kkk 个字符串，最小化字符串 vvv 的字典序，并输出这个最优的字符串 vvv。其中 vvv 满足以下条件：vvv 是被选出的
-        </div>
-      </a>
-
-      <div class="index-btm post-metas">
-        
-          <div class="post-meta mr-3">
-            <i class="iconfont icon-date"></i>
-            <time datetime="2026-02-06 09:52" pubdate>
-              2026-02-06
-            </time>
-          </div>
-        
-        
-          <div class="post-meta mr-3 d-flex align-items-center">
-            <i class="iconfont icon-category"></i>
-            
-
-<span class="category-chains">
-  
-  
-    
-      <span class="category-chain">
-        
-  <a href="/categories/%E9%A2%98%E8%A7%A3/" class="category-chain-item">题解</a>
-  
-  
-
-      </span>
-    
-  
-</span>
-
-          </div>
-        
-        
-          <div class="post-meta">
-            <i class="iconfont icon-tags"></i>
-            
-              <a href="/tags/%E5%AD%97%E5%85%B8%E6%A0%91/">#字典树</a>
-            
-          </div>
-        
-      </div>
-    </article>
-  </div>
-
-  <div class="row mx-auto index-card">
-    
-    
-    <article class="col-12 col-md-12 mx-auto index-info">
-      <h2 class="index-header">
-        
-        <a href="/2026/02/05/%E6%A0%91%E5%93%88%E5%B8%8C%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/" target="_self">
-          树哈希学习笔记
-        </a>
-      </h2>
-
-      
-      <a class="index-excerpt index-excerpt__noimg" href="/2026/02/05/%E6%A0%91%E5%93%88%E5%B8%8C%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/" target="_self">
-        <div>
-          前言 以下涉及取模的话 unsigned long long 自然溢出就够了，因为这个 hash 不像字符串 hash，它的重点在 hash 函数的构造，它不可能卡你模数，要卡也是卡函数。 其实字符串 hash 的 hash 函数就是取模，所以要注重模数的选取。 因此涉及 hash 的，重要的都是 hash 函数。 简介 树哈希，顾名思义就是对一整棵树弄出一个哈希值。 这里有一个概念。如果一棵树将
-        </div>
-      </a>
-
-      <div class="index-btm post-metas">
-        
-          <div class="post-meta mr-3">
-            <i class="iconfont icon-date"></i>
-            <time datetime="2026-02-05 19:46" pubdate>
-              2026-02-05
-            </time>
-          </div>
-        
-        
-          <div class="post-meta mr-3 d-flex align-items-center">
-            <i class="iconfont icon-category"></i>
-            
-
-<span class="category-chains">
-  
-  
-    
-      <span class="category-chain">
-        
-  <a href="/categories/%E7%9C%81%E9%80%89%E7%9F%A5%E8%AF%86%E7%82%B9%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/" class="category-chain-item">省选知识点学习笔记</a>
-  
-  
-
-      </span>
-    
-  
-</span>
-
-          </div>
-        
-        
-          <div class="post-meta">
-            <i class="iconfont icon-tags"></i>
-            
-              <a href="/tags/hash/">#hash</a>
-            
-          </div>
-        
-      </div>
-    </article>
-  </div>
-
-  <div class="row mx-auto index-card">
-    
-    
-    <article class="col-12 col-md-12 mx-auto index-info">
-      <h2 class="index-header">
-        
-        <a href="/2026/02/05/Hash-%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/" target="_self">
-          Hash 学习笔记
-        </a>
-      </h2>
-
-      
-      <a class="index-excerpt index-excerpt__noimg" href="/2026/02/05/Hash-%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/" target="_self">
-        <div>
-          前言 本文主要讲得是如何防止卡哈希。 因为我在做 此题 时被卡得很惨。 以下讲得都是使用于 OI 的，CF 则更加严格。 单模 Hash 根据生日悖论，有 nnn 个字符串，模数为 ppp，那么冲突的概率是 P(conflict)=1−d!dn(d−n)!≈1−e−n(n−1)2pP(\text{conflict})=1-\frac{d!}{d^n(d-n)!}\approx 1-e^{-\fra
-        </div>
-      </a>
-
-      <div class="index-btm post-metas">
-        
-          <div class="post-meta mr-3">
-            <i class="iconfont icon-date"></i>
-            <time datetime="2026-02-05 10:04" pubdate>
-              2026-02-05
-            </time>
-          </div>
-        
-        
-          <div class="post-meta mr-3 d-flex align-items-center">
-            <i class="iconfont icon-category"></i>
-            
-
-<span class="category-chains">
-  
-  
-    
-      <span class="category-chain">
-        
-  <a href="/categories/%E7%9C%81%E9%80%89%E7%9F%A5%E8%AF%86%E7%82%B9%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/" class="category-chain-item">省选知识点学习笔记</a>
-  
-  
-
-      </span>
-    
-  
-</span>
-
-          </div>
-        
-        
-          <div class="post-meta">
-            <i class="iconfont icon-tags"></i>
-            
-              <a href="/tags/hash/">#hash</a>
-            
-          </div>
-        
-      </div>
-    </article>
-  </div>
-
-  <div class="row mx-auto index-card">
-    
-    
-    <article class="col-12 col-md-12 mx-auto index-info">
-      <h2 class="index-header">
-        
-        <a href="/2026/02/04/%E9%A2%98%E8%A7%A3%EF%BC%9AP9399-DBOI-Round-1-%E4%BA%BA%E7%94%9F%E5%A6%82%E6%A0%91/" target="_self">
-          题解：P9399 [DBOI] Round 1 人生如树
-        </a>
-      </h2>
-
-      
-      <a class="index-excerpt index-excerpt__noimg" href="/2026/02/04/%E9%A2%98%E8%A7%A3%EF%BC%9AP9399-DBOI-Round-1-%E4%BA%BA%E7%94%9F%E5%A6%82%E6%A0%91/" target="_self">
-        <div>
-          前言 题目传送门。 本题运用的算法有 hash\texttt{hash}hash 和倍增。                      ▶题目                                  题目背景永远这么酷 永远永远这么酷像个冒险家一样 不断探着山顶的路——《Hustle》张均好望着窗外，朱芝心走过来坐在他旁边，折了一架纸飞机飞出去。他对张均好说，要带着对未来的期待，往前走，别
-        </div>
-      </a>
-
-      <div class="index-btm post-metas">
-        
-          <div class="post-meta mr-3">
-            <i class="iconfont icon-date"></i>
-            <time datetime="2026-02-04 15:20" pubdate>
-              2026-02-04
-            </time>
-          </div>
-        
-        
-          <div class="post-meta mr-3 d-flex align-items-center">
-            <i class="iconfont icon-category"></i>
-            
-
-<span class="category-chains">
-  
-  
-    
-      <span class="category-chain">
-        
-  <a href="/categories/%E9%A2%98%E8%A7%A3/" class="category-chain-item">题解</a>
-  
-  
-
-      </span>
-    
-  
-</span>
-
-          </div>
-        
-        
-          <div class="post-meta">
-            <i class="iconfont icon-tags"></i>
-            
-              <a href="/tags/hash/">#hash</a>
-            
-              <a href="/tags/%E5%80%8D%E5%A2%9E/">#倍增</a>
-            
-          </div>
-        
-      </div>
-    </article>
-  </div>
-
-  <div class="row mx-auto index-card">
-    
-    
-    <article class="col-12 col-md-12 mx-auto index-info">
-      <h2 class="index-header">
-        
-        <a href="/2026/02/03/%E9%A2%98%E8%A7%A3%EF%BC%9AP13977-%E6%95%B0%E5%88%97%E5%88%86%E5%9D%97%E5%85%A5%E9%97%A8-2/" target="_self">
-          题解：P13977 数列分块入门 2
-        </a>
-      </h2>
-
-      
-      <a class="index-excerpt index-excerpt__noimg" href="/2026/02/03/%E9%A2%98%E8%A7%A3%EF%BC%9AP13977-%E6%95%B0%E5%88%97%E5%88%86%E5%9D%97%E5%85%A5%E9%97%A8-2/" target="_self">
-        <div>
-          前言 题目传送门，数列分块入门这 999 题好像是新出的，看没有人写题解，我就来写一篇时间复杂度为 O(nnlog⁡n)O(n \sqrt{n} \log{\sqrt{n}})O(nn​logn​) 的题解。 题意 题目描述得很清楚了，不再赘述。 前置知识 你既然点进来这题，肯定知道这题的方法是分块（虽然线段树显然能做），接下来我将进行详细介绍。（会的人可以自行跳过） 分块作为一种暴力数据结构，其
-        </div>
-      </a>
-
-      <div class="index-btm post-metas">
-        
-          <div class="post-meta mr-3">
-            <i class="iconfont icon-date"></i>
-            <time datetime="2026-02-03 19:36" pubdate>
-              2026-02-03
-            </time>
-          </div>
-        
-        
-          <div class="post-meta mr-3 d-flex align-items-center">
-            <i class="iconfont icon-category"></i>
-            
-
-<span class="category-chains">
-  
-  
-    
-      <span class="category-chain">
-        
-  <a href="/categories/%E9%A2%98%E8%A7%A3/" class="category-chain-item">题解</a>
-  
-  
-
-      </span>
-    
-  
-</span>
-
-          </div>
-        
-        
-          <div class="post-meta">
-            <i class="iconfont icon-tags"></i>
-            
-              <a href="/tags/%E5%88%86%E5%9D%97/">#分块</a>
-            
-          </div>
-        
-      </div>
-    </article>
-  </div>
-
-  <div class="row mx-auto index-card">
-    
-    
-    <article class="col-12 col-md-12 mx-auto index-info">
-      <h2 class="index-header">
-        
-        <a href="/2026/02/03/%E9%A2%98%E8%A7%A3%EF%BC%9AP14963-LBA-OI-R2-B-%E4%BD%95%E6%84%8F%E5%91%B3/" target="_self">
-          题解：P14963 [LBA-OI R2 B] 何意味
-        </a>
-      </h2>
-
-      
-      <a class="index-excerpt index-excerpt__noimg" href="/2026/02/03/%E9%A2%98%E8%A7%A3%EF%BC%9AP14963-LBA-OI-R2-B-%E4%BD%95%E6%84%8F%E5%91%B3/" target="_self">
-        <div>
-          前言 题目传送门。 感谢出题人的这道题，使我多积累一个 trick，并引发我的一系列思考。 不足或补充欢迎大家指出。 思路 注意到只要满足 ai=ai+1a_i=a_{i+1}ai​=ai+1​，那么这两个数就可以消去或增加。 所以对于一组询问 l,rl,rl,r，我们只要将 ala_lal​ 到 ara_rar​ 相邻相同的尽可能消去，bbb 的操作同理。比较 a,ba,ba,b 消去后的序列，
-        </div>
-      </a>
-
-      <div class="index-btm post-metas">
-        
-          <div class="post-meta mr-3">
-            <i class="iconfont icon-date"></i>
-            <time datetime="2026-02-03 19:32" pubdate>
-              2026-02-03
-            </time>
-          </div>
-        
-        
-          <div class="post-meta mr-3 d-flex align-items-center">
-            <i class="iconfont icon-category"></i>
-            
-
-<span class="category-chains">
-  
-  
-    
-      <span class="category-chain">
-        
-  <a href="/categories/%E9%A2%98%E8%A7%A3/" class="category-chain-item">题解</a>
-  
-  
-
-      </span>
-    
-  
-</span>
-
-          </div>
-        
-        
-          <div class="post-meta">
-            <i class="iconfont icon-tags"></i>
-            
-              <a href="/tags/%E7%9F%A9%E9%98%B5%E8%BF%90%E7%AE%97/">#矩阵运算</a>
             
               <a href="/tags/%E7%BA%BF%E6%AE%B5%E6%A0%91/">#线段树</a>
             
+              <a href="/tags/AC-%E8%87%AA%E5%8A%A8%E6%9C%BA/">#AC 自动机</a>
+            
+              <a href="/tags/%E6%A0%91%E7%8A%B6%E6%95%B0%E7%BB%84/">#树状数组</a>
+            
           </div>
+        
+      </div>
+    </article>
+  </div>
+
+  <div class="row mx-auto index-card">
+    
+    
+    <article class="col-12 col-md-12 mx-auto index-info">
+      <h2 class="index-header">
+        
+        <a href="/2026/07/15/%E9%A2%98%E8%A7%A3%EF%BC%9AP13790-%E3%80%8CCZOI-R6%E3%80%8DBorder/" target="_self">
+          题解：P13790 「CZOI-R6」Border
+        </a>
+      </h2>
+
+      
+      <a class="index-excerpt index-excerpt__noimg" href="/2026/07/15/%E9%A2%98%E8%A7%A3%EF%BC%9AP13790-%E3%80%8CCZOI-R6%E3%80%8DBorder/" target="_self">
+        <div>
+          前言 进阶字符串入门题。                      ▶题目                                  题目描述 给定一个仅包含小写字母的字符串 sss（下标从 111 开始），你可以将 不超过 1\boldsymbol{1}1 个位置 修改为任意小写字母，使得最大化其最长 border 长度。你只需输出这个最大化的长度即可。 字符串 bbb 是字符串 aaa
+        </div>
+      </a>
+
+      <div class="index-btm post-metas">
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-date"></i>
+            <time datetime="2026-07-15 08:31" pubdate>
+              2026-07-15
+            </time>
+          </div>
+        
+        
+          <div class="post-meta mr-3 d-flex align-items-center">
+            <i class="iconfont icon-category"></i>
+            
+
+<span class="category-chains">
+  
+  
+    
+      <span class="category-chain">
+        
+  <a href="/categories/%E9%A2%98%E8%A7%A3/" class="category-chain-item">题解</a>
+  
+  
+
+      </span>
+    
+  
+</span>
+
+          </div>
+        
+        
+          <div class="post-meta">
+            <i class="iconfont icon-tags"></i>
+            
+              <a href="/tags/Z-%E5%87%BD%E6%95%B0/">#Z 函数</a>
+            
+              <a href="/tags/hash/">#hash</a>
+            
+          </div>
+        
+      </div>
+    </article>
+  </div>
+
+  <div class="row mx-auto index-card">
+    
+    
+    <article class="col-12 col-md-12 mx-auto index-info">
+      <h2 class="index-header">
+        
+        <a href="/2026/06/22/%E5%A4%9A%E9%A1%B9%E5%BC%8F%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/" target="_self">
+          多项式学习笔记
+        </a>
+      </h2>
+
+      
+      <a class="index-excerpt index-excerpt__noimg" href="/2026/06/22/%E5%A4%9A%E9%A1%B9%E5%BC%8F%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/" target="_self">
+        <div>
+          拉格朗日插值 拉格朗日插值作为数学中一个重要的工具，用处非常多。 还原系数 这个用处目前见到的是用在通信题里，利用多项式将系数整合在一起，用较多的值求出 f(x)f(x)f(x)，经过一些删除后有足够的值还原出系数。 不然直接对每个系数进行保证的话，一着不慎，全盘皆输，成功的概率是指数级的，会变得非常小，这就是我们整合的原因。 而利用插值成功的概率可以变成二项分布之类的，会比较大。 例如：P916
+        </div>
+      </a>
+
+      <div class="index-btm post-metas">
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-date"></i>
+            <time datetime="2026-06-22 15:26" pubdate>
+              2026-06-22
+            </time>
+          </div>
+        
+        
+          <div class="post-meta mr-3 d-flex align-items-center">
+            <i class="iconfont icon-category"></i>
+            
+
+<span class="category-chains">
+  
+  
+    
+      <span class="category-chain">
+        
+  <a href="/categories/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/" class="category-chain-item">学习笔记</a>
+  
+  
+
+      </span>
+    
+  
+</span>
+
+          </div>
+        
+        
+      </div>
+    </article>
+  </div>
+
+  <div class="row mx-auto index-card">
+    
+    
+    <article class="col-12 col-md-12 mx-auto index-info">
+      <h2 class="index-header">
+        
+        <a href="/2026/06/21/%E9%A2%98%E8%A7%A3%EF%BC%9AP10539-APIO2024-%E9%AD%94%E6%9C%AF%E8%A1%A8%E6%BC%94/" target="_self">
+          题解：P10539 [APIO2024] 魔术表演
+        </a>
+      </h2>
+
+      
+      <a class="index-excerpt index-excerpt__noimg" href="/2026/06/21/%E9%A2%98%E8%A7%A3%EF%BC%9AP10539-APIO2024-%E9%AD%94%E6%9C%AF%E8%A1%A8%E6%BC%94/" target="_self">
+        <div>
+          前言 题目传送门。 前置题目传送门。 前置题目题解。 可以根据前置题目加上神奇脑洞直接秒掉。                      ▶题目                                  题目背景 在洛谷上提交时，只需要提交一个文件。 不要引入 alice.h 和 bob.h。在文件头加入以下内容： 1long long setN(int n); 只支持 C++17 / C+
+        </div>
+      </a>
+
+      <div class="index-btm post-metas">
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-date"></i>
+            <time datetime="2026-06-21 17:07" pubdate>
+              2026-06-21
+            </time>
+          </div>
+        
+        
+          <div class="post-meta mr-3 d-flex align-items-center">
+            <i class="iconfont icon-category"></i>
+            
+
+<span class="category-chains">
+  
+  
+    
+      <span class="category-chain">
+        
+  <a href="/categories/%E9%A2%98%E8%A7%A3/" class="category-chain-item">题解</a>
+  
+  
+
+      </span>
+    
+  
+</span>
+
+          </div>
+        
+        
+          <div class="post-meta">
+            <i class="iconfont icon-tags"></i>
+            
+              <a href="/tags/%E6%9E%84%E9%80%A0/">#构造</a>
+            
+          </div>
+        
+      </div>
+    </article>
+  </div>
+
+  <div class="row mx-auto index-card">
+    
+    
+    <article class="col-12 col-md-12 mx-auto index-info">
+      <h2 class="index-header">
+        
+        <a href="/2026/06/21/%E9%A2%98%E8%A7%A3%EF%BC%9AAT-abc463-f-ABC463F-Senshuraku/" target="_self">
+          题解：AT_abc463_f [ABC463F] Senshuraku
+        </a>
+      </h2>
+
+      
+      <a class="index-excerpt index-excerpt__noimg" href="/2026/06/21/%E9%A2%98%E8%A7%A3%EF%BC%9AAT-abc463-f-ABC463F-Senshuraku/" target="_self">
+        <div>
+          前言 洛谷题目传送门。 AtCoder 题目传送门。 还是只有强者 Wxb 做出来了。 这题就是个分类讨论，但是巨石。                      ▶题目                                  题目描述 A tournament is being held with  2N2N2N  players. From now on, each player wi
+        </div>
+      </a>
+
+      <div class="index-btm post-metas">
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-date"></i>
+            <time datetime="2026-06-21 13:58" pubdate>
+              2026-06-21
+            </time>
+          </div>
+        
+        
+          <div class="post-meta mr-3 d-flex align-items-center">
+            <i class="iconfont icon-category"></i>
+            
+
+<span class="category-chains">
+  
+  
+    
+      <span class="category-chain">
+        
+  <a href="/categories/%E9%A2%98%E8%A7%A3/" class="category-chain-item">题解</a>
+  
+  
+
+      </span>
+    
+  
+</span>
+
+          </div>
+        
+        
+          <div class="post-meta">
+            <i class="iconfont icon-tags"></i>
+            
+              <a href="/tags/%E5%8A%A8%E6%80%81%E8%A7%84%E5%88%92/">#动态规划</a>
+            
+          </div>
+        
+      </div>
+    </article>
+  </div>
+
+  <div class="row mx-auto index-card">
+    
+    
+    <article class="col-12 col-md-12 mx-auto index-info">
+      <h2 class="index-header">
+        
+        <a href="/2026/06/19/%E6%95%B0%E5%AD%A6%E6%9D%82%E9%A1%B9/" target="_self">
+          数学杂项
+        </a>
+      </h2>
+
+      
+      <a class="index-excerpt index-excerpt__noimg" href="/2026/06/19/%E6%95%B0%E5%AD%A6%E6%9D%82%E9%A1%B9/" target="_self">
+        <div>
+          前言 此篇主要用来写非算法的数学内容，比较杂，故称为数学杂项。 泰勒展开 f(x)=∑n=0∞f(n)(x0)n!(x−x0)nf(x) = \sum_{n=0}^{\infty} \frac{f^{(n)}(x_0)}{n!} (x-x_0)^n f(x)=n=0∑∞​n!f(n)(x0​)​(x−x0​)n f(n)(x0)f^{(n)}(x_0)f(n)(x0​) 表示 f(x)f(x)f(
+        </div>
+      </a>
+
+      <div class="index-btm post-metas">
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-date"></i>
+            <time datetime="2026-06-19 14:59" pubdate>
+              2026-06-19
+            </time>
+          </div>
+        
+        
+          <div class="post-meta mr-3 d-flex align-items-center">
+            <i class="iconfont icon-category"></i>
+            
+
+<span class="category-chains">
+  
+  
+    
+      <span class="category-chain">
+        
+  <a href="/categories/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/" class="category-chain-item">学习笔记</a>
+  
+  
+
+      </span>
+    
+  
+</span>
+
+          </div>
+        
+        
+      </div>
+    </article>
+  </div>
+
+  <div class="row mx-auto index-card">
+    
+    
+    <article class="col-12 col-md-12 mx-auto index-info">
+      <h2 class="index-header">
+        
+        <a href="/2026/06/17/%E9%A2%98%E8%A7%A3%EF%BC%9AP9165-%E3%80%8CINOH%E3%80%8DRound-1-%E6%84%8F%E5%A4%96/" target="_self">
+          题解：P9165 「INOH」Round 1 - 意外
+        </a>
+      </h2>
+
+      
+      <a class="index-excerpt index-excerpt__noimg" href="/2026/06/17/%E9%A2%98%E8%A7%A3%EF%BC%9AP9165-%E3%80%8CINOH%E3%80%8DRound-1-%E6%84%8F%E5%A4%96/" target="_self">
+        <div>
+          前言 非常妙的一道题，可以作为一些通信交互题的基本方法。 题目传送门。                      ▶题目                                  P9165 「INOH」Round 1 - 意外 题目背景 这是一道通信题。 由于一些原因，本题有特殊的时空限制，且只有三个测试点。 您的得分是三个测试点得分的最小值。 请选手注意不要用 C++14 (GCC 9
+        </div>
+      </a>
+
+      <div class="index-btm post-metas">
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-date"></i>
+            <time datetime="2026-06-17 16:52" pubdate>
+              2026-06-17
+            </time>
+          </div>
+        
+        
+          <div class="post-meta mr-3 d-flex align-items-center">
+            <i class="iconfont icon-category"></i>
+            
+
+<span class="category-chains">
+  
+  
+    
+      <span class="category-chain">
+        
+  <a href="/categories/%E9%A2%98%E8%A7%A3/" class="category-chain-item">题解</a>
+  
+  
+
+      </span>
+    
+  
+</span>
+
+          </div>
+        
+        
+          <div class="post-meta">
+            <i class="iconfont icon-tags"></i>
+            
+              <a href="/tags/%E6%9E%84%E9%80%A0/">#构造</a>
+            
+          </div>
+        
+      </div>
+    </article>
+  </div>
+
+  <div class="row mx-auto index-card">
+    
+    
+    <article class="col-12 col-md-12 mx-auto index-info">
+      <h2 class="index-header">
+        
+        <a href="/2026/06/14/%E5%9B%BE%E8%AE%BA%E6%8A%80%E5%B7%A7/" target="_self">
+          图论技巧
+        </a>
+      </h2>
+
+      
+      <a class="index-excerpt index-excerpt__noimg" href="/2026/06/14/%E5%9B%BE%E8%AE%BA%E6%8A%80%E5%B7%A7/" target="_self">
+        <div>
+          结论：对于任意无向图，一定存在一种边定向方案，使得每个顶点的出度与入度之差的绝对值不超过 1 。‌‌ 前置引理：对于任意所有点度数均为偶数的无向图，其每个连通分量都可以分解为若干个边不相交的简单环，从而整张图可以分解为若干欧拉回路。 意味着所有点度数为偶数的无向图，一定有一种边定向的方式，使得入度等于出度，定向的方式就是沿着欧拉回路的方向。                      ▶证明
+        </div>
+      </a>
+
+      <div class="index-btm post-metas">
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-date"></i>
+            <time datetime="2026-06-14 15:22" pubdate>
+              2026-06-14
+            </time>
+          </div>
+        
+        
+          <div class="post-meta mr-3 d-flex align-items-center">
+            <i class="iconfont icon-category"></i>
+            
+
+<span class="category-chains">
+  
+  
+    
+      <span class="category-chain">
+        
+  <a href="/categories/trick/" class="category-chain-item">trick</a>
+  
+  
+
+      </span>
+    
+  
+</span>
+
+          </div>
+        
         
       </div>
     </article>
@@ -839,7 +955,7 @@
 
   <nav aria-label="navigation">
     <span class="pagination" id="pagination">
-      <a class="extend prev" rel="prev" href="/page/3/#board"><i class="iconfont icon-arrowleft"></i></a><a class="page-number" href="/">1</a><a class="page-number" href="/page/2/#board">2</a><a class="page-number" href="/page/3/#board">3</a><span class="page-number current">4</span><a class="page-number" href="/page/5/#board">5</a><a class="page-number" href="/page/6/#board">6</a><a class="page-number" href="/page/7/#board">7</a><a class="extend next" rel="next" href="/page/5/#board"><i class="iconfont icon-arrowright"></i></a>
+      <a class="extend prev" rel="prev" href="/page/3/#board"><i class="iconfont icon-arrowleft"></i></a><a class="page-number" href="/">1</a><a class="page-number" href="/page/2/#board">2</a><a class="page-number" href="/page/3/#board">3</a><span class="page-number current">4</span><a class="page-number" href="/page/5/#board">5</a><a class="page-number" href="/page/6/#board">6</a><span class="space">&hellip;</span><a class="page-number" href="/page/12/#board">12</a><a class="extend next" rel="next" href="/page/5/#board"><i class="iconfont icon-arrowright"></i></a>
     </span>
   </nav>
 
@@ -900,17 +1016,6 @@
 
   <!-- Scripts -->
   
-  <script  src="https://lib.baomitu.com/nprogress/0.2.0/nprogress.min.js" ></script>
-  <link  rel="stylesheet" href="https://lib.baomitu.com/nprogress/0.2.0/nprogress.min.css" />
-
-  <script>
-    NProgress.configure({"showSpinner":false,"trickleSpeed":100})
-    NProgress.start()
-    window.addEventListener('load', function() {
-      NProgress.done();
-    })
-  </script>
-
 
 <script  src="https://lib.baomitu.com/jquery/3.6.4/jquery.min.js" ></script>
 <script  src="https://lib.baomitu.com/twitter-bootstrap/4.6.1/js/bootstrap.min.js" ></script>

@@ -65,7 +65,7 @@
   <script id="fluid-configs">
     var Fluid = window.Fluid || {};
     Fluid.ctx = Object.assign({}, Fluid.ctx)
-    var CONFIG = {"hostname":"starseaeternal.dpdns.org","root":"/","version":"1.9.8","typing":{"enable":true,"typeSpeed":70,"cursorChar":"⭐","loop":false,"scope":[]},"anchorjs":{"enable":true,"element":"h1,h2,h3,h4,h5,h6","placement":"left","visible":"hover","icon":""},"progressbar":{"enable":true,"height_px":3,"color":"#29d","options":{"showSpinner":false,"trickleSpeed":100}},"code_language":{"enable":true,"default":"TEXT"},"copy_btn":true,"image_caption":{"enable":true},"image_zoom":{"enable":true,"img_url_replace":["",""]},"toc":{"enable":true,"placement":"right","headingSelector":"h1,h2,h3,h4,h5,h6","collapseDepth":0},"lazyload":{"enable":true,"loading_img":"/img/loading.gif","onlypost":false,"offset_factor":2},"web_analytics":{"enable":false,"follow_dnt":true,"baidu":null,"google":{"measurement_id":null},"tencent":{"sid":null,"cid":null},"leancloud":{"app_id":null,"app_key":null,"server_url":null,"path":"window.location.pathname","ignore_local":false},"umami":{"src":null,"website_id":null,"domains":null,"start_time":"2024-01-01T00:00:00.000Z","token":null,"api_server":null}},"search_path":"/local-search.xml","include_content_in_search":true};
+    var CONFIG = {"hostname":"starseaeternal.dpdns.org","root":"/","version":"1.9.9","typing":{"enable":true,"typeSpeed":91,"cursorChar":"⭐","loop":true,"scope":[]},"anchorjs":{"enable":true,"element":"h1,h2,h3,h4,h5,h6","placement":"left","visible":"hover","icon":""},"progressbar":{"enable":false,"height_px":3,"color":"#29d","options":{"showSpinner":false,"trickleSpeed":100}},"code_language":{"enable":true,"default":"TEXT"},"copy_btn":true,"image_caption":{"enable":true},"image_zoom":{"enable":true,"img_url_replace":["",""]},"toc":{"enable":true,"expand_all":true,"placement":"right","headingSelector":"h1,h2,h3,h4,h5,h6","collapseDepth":0},"lazyload":{"enable":true,"loading_img":"/img/loading.gif","onlypost":false,"offset_factor":2},"web_analytics":{"enable":false,"follow_dnt":true,"baidu":null,"google":{"measurement_id":null},"tencent":{"sid":null,"cid":null},"leancloud":{"app_id":null,"app_key":null,"server_url":null,"path":"window.location.pathname","ignore_local":false},"openkounter":{"server_url":"https://open-kounter.mintimate.cn","path":"window.location.pathname","ignore_local":false},"umami":{"src":null,"website_id":null,"domains":null,"start_time":"2024-01-01T00:00:00.000Z","token":null,"api_server":null}},"search_path":"/local-search.xml","include_content_in_search":true};
 
     if (CONFIG.web_analytics.follow_dnt) {
       var dntVal = navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack;
@@ -78,11 +78,10 @@
 
 
   
+
 <meta name="generator" content="Hexo 8.1.1"></head>
 
-
 <body>
-
   
 
   <header>
@@ -101,7 +100,7 @@
       <div class="animated-icon"><span></span><span></span><span></span></div>
     </button>
 
-    <!-- Collapsible content -->
+    <!-- Collapsible content (desktop) -->
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav ml-auto text-center">
         
@@ -165,6 +164,18 @@
             </li>
           
         
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/links/" target="_self">
+                <i class="iconfont icon-link-fill"></i>
+                <span>Links</span>
+              </a>
+            </li>
+          
+        
         
           <li class="nav-item" id="search-btn">
             <a class="nav-link" target="_self" href="javascript:;" data-toggle="modal" data-target="#modalSearch" aria-label="Search">
@@ -185,10 +196,127 @@
   </div>
 </nav>
 
+<!-- Mobile grid menu overlay -->
+<div id="mobile-grid-menu" class="d-lg-none">
+  <div class="mobile-grid-menu-inner">
+    <div class="container">
+      <div class="row">
+        
+          
+          
+          
+          
+            <div class="col-4 mobile-grid-cell">
+              <a href="/" target="_self">
+                <div class="mobile-grid-item">
+                  <i class="iconfont icon-home-fill"></i>
+                  <span>Home</span>
+                </div>
+              </a>
+            </div>
+          
+        
+          
+          
+          
+          
+            <div class="col-4 mobile-grid-cell">
+              <a href="/archives/" target="_self">
+                <div class="mobile-grid-item">
+                  <i class="iconfont icon-user-fill"></i>
+                  <span>Archives</span>
+                </div>
+              </a>
+            </div>
+          
+        
+          
+          
+          
+          
+            <div class="col-4 mobile-grid-cell">
+              <a href="/categories/" target="_self">
+                <div class="mobile-grid-item">
+                  <i class="iconfont icon-user-fill"></i>
+                  <span>Categories</span>
+                </div>
+              </a>
+            </div>
+          
+        
+          
+          
+          
+          
+            <div class="col-4 mobile-grid-cell">
+              <a href="/tags/" target="_self">
+                <div class="mobile-grid-item">
+                  <i class="iconfont icon-tags-fill"></i>
+                  <span>Tag</span>
+                </div>
+              </a>
+            </div>
+          
+        
+          
+          
+          
+          
+            <div class="col-4 mobile-grid-cell">
+              <a href="/about/" target="_self">
+                <div class="mobile-grid-item">
+                  <i class="iconfont icon-user-fill"></i>
+                  <span>About</span>
+                </div>
+              </a>
+            </div>
+          
+        
+          
+          
+          
+          
+            <div class="col-4 mobile-grid-cell">
+              <a href="/links/" target="_self">
+                <div class="mobile-grid-item">
+                  <i class="iconfont icon-link-fill"></i>
+                  <span>Links</span>
+                </div>
+              </a>
+            </div>
+          
+        
+        
+          <div class="col-4 mobile-grid-cell" id="mobile-search-btn">
+            <a href="javascript:;" data-toggle="modal" data-target="#modalSearch" aria-label="Search">
+              <div class="mobile-grid-item">
+                <i class="iconfont icon-search"></i>
+                <span>Search</span>
+              </div>
+            </a>
+          </div>
+        
+        
+          <div class="col-4 mobile-grid-cell" id="mobile-color-toggle-btn"
+               data-label-light="Light"
+               data-label-dark="Dark">
+            <a href="javascript:;" aria-label="Color Toggle">
+              <div class="mobile-grid-item">
+                <i class="iconfont icon-dark" id="mobile-color-toggle-icon"></i>
+                <span id="mobile-color-toggle-label">Dark</span>
+              </div>
+            </a>
+          </div>
+        
+      </div>
+    </div>
+  </div>
+</div>
+
   
 
-<div id="banner" class="banner" parallax=true
-     style="background: url('/img/bg/15.jpg') no-repeat center center; background-size: cover;">
+<div id="banner" class="banner" parallax=true data-random-banner='/img/random/10.jpg,/img/random/11.jpg,/img/random/12.jpg,/img/random/13.jpg,/img/random/14.jpg,/img/random/15.jpg,/img/random/16.jpg,/img/random/17.jpg,/img/random/18.jpg,/img/random/19.jpg,/img/random/20.jpg,/img/random/21.jpg,/img/random/22.jpg,/img/random/23.jpg,/img/random/24.jpg,/img/random/25.jpg,/img/random/26.jpg,/img/random/27.jpg,/img/random/28.jpg,/img/random/29.jpg,/img/random/3.jpg,/img/random/30.jpg,/img/random/31.jpg,/img/random/32.jpg,/img/random/33.jpg,/img/random/34.jpg,/img/random/35.jpg,/img/random/36.jpg,/img/random/37.jpg,/img/random/38.jpg,/img/random/39.jpg,/img/random/40.jpg,/img/random/41.jpg,/img/random/42.jpg,/img/random/43.jpg,/img/random/44.jpg,/img/random/45.jpg,/img/random/46.jpg,/img/random/47.jpg,/img/random/48.jpg,/img/random/49.jpg,/img/random/50.jpg,/img/random/51.jpg,/img/random/52.jpg,/img/random/53.jpg,/img/random/54.jpg,/img/random/55.jpg,/img/random/56.jpg,/img/random/57.jpg,/img/random/58.jpg,/img/random/59.jpg,/img/random/6.jpg,/img/random/60.jpg,/img/random/61.jpg,/img/random/7.jpg,/img/random/8.jpg,/img/random/9.jpg,/img/random/default.png,/img/random/t1.jpg'
+     style="background: url('/img/random/10.jpg') no-repeat center center; background-size: cover;">
   <div class="full-bg-img">
     <div class="mask flex-center" style="background-color: rgba(0, 0, 0, 0.3)">
       <div class="banner-text text-center fade-in-up">
@@ -210,6 +338,21 @@
   </div>
 </div>
 
+
+  <script>
+    (function() {
+      var banner = document.getElementById('banner');
+      if (!banner) return;
+      var list = banner.getAttribute('data-random-banner');
+      if (!list) return;
+      list = list.split(',').filter(Boolean);
+      if (list.length === 0) return;
+      var pick = list[Math.floor(Math.random() * list.length)];
+      banner.style.backgroundImage = "url('" + pick + "')";
+    })();
+  </script>
+
+
 </div>
 
   </header>
@@ -225,6 +368,7 @@
               <div class="col-12 col-md-10 m-auto">
                 
 
+<h1 style="display: none">my_dream666&#39;s Blog</h1>
 
   <div class="row mx-auto index-card">
     
@@ -232,15 +376,15 @@
     <article class="col-12 col-md-12 mx-auto index-info">
       <h2 class="index-header">
         
-        <a href="/2026/02/03/%E6%9D%82%E9%A1%B9(%E5%BA%8F%E5%88%97%EF%BC%89%E6%8A%80%E5%B7%A7/" target="_self">
-          杂项(序列）技巧
+        <a href="/2026/06/08/%E9%A2%98%E8%A7%A3%EF%BC%9AAT-arc122-e-ARC122E-Increasing-LCMs/" target="_self">
+          题解：AT_arc122_e [ARC122E] Increasing LCMs
         </a>
       </h2>
 
       
-      <a class="index-excerpt index-excerpt__noimg" href="/2026/02/03/%E6%9D%82%E9%A1%B9(%E5%BA%8F%E5%88%97%EF%BC%89%E6%8A%80%E5%B7%A7/" target="_self">
+      <a class="index-excerpt index-excerpt__noimg" href="/2026/06/08/%E9%A2%98%E8%A7%A3%EF%BC%9AAT-arc122-e-ARC122E-Increasing-LCMs/" target="_self">
         <div>
-          对于一个括号序列，最少需要反转多少个括号才能变成合法的括号序列。 对于一个括号序列，我们将其匹配的每一对抵消后，必然会出现 ))))(((\texttt{))))(((}))))((( 这样的情况，那么我们令 (\texttt{(}( 为 111，)\texttt{)}) 为 −1-1−1，则又令前缀最小值为 preminpre_{min}premin​，后缀最大值为 sufmaxsuf_{m
+          前言 AtCoder 的 Cloudflare 真石。 洛谷题目传送门。 AtCoder 题目传送门。                      ▶题目                                  AT_arc122_e [ARC122E] Increasing LCMs 有一个长度为 NNN 的正整数序列 A1,A2,⋯ ,ANA_1,A_2,\cdots,A_NA1​,A
         </div>
       </a>
 
@@ -248,8 +392,8 @@
         
           <div class="post-meta mr-3">
             <i class="iconfont icon-date"></i>
-            <time datetime="2026-02-03 19:12" pubdate>
-              2026-02-03
+            <time datetime="2026-06-08 21:56" pubdate>
+              2026-06-08
             </time>
           </div>
         
@@ -264,7 +408,7 @@
     
       <span class="category-chain">
         
-  <a href="/categories/trick/" class="category-chain-item">trick</a>
+  <a href="/categories/%E9%A2%98%E8%A7%A3/" class="category-chain-item">题解</a>
   
   
 
@@ -279,7 +423,7 @@
           <div class="post-meta">
             <i class="iconfont icon-tags"></i>
             
-              <a href="/tags/%E5%8C%85%E7%BD%97%E4%B8%87%E8%B1%A1/">#包罗万象</a>
+              <a href="/tags/%E6%9E%84%E9%80%A0/">#构造</a>
             
           </div>
         
@@ -293,15 +437,15 @@
     <article class="col-12 col-md-12 mx-auto index-info">
       <h2 class="index-header">
         
-        <a href="/2026/02/03/bitset%20%E6%8A%80%E5%B7%A7/" target="_self">
-          bitset 技巧
+        <a href="/2026/06/08/%E9%A2%98%E8%A7%A3%EF%BC%9AAT-agc031-c-AGC031C-Differ-by-1-Bit/" target="_self">
+          题解：AT_agc031_c [AGC031C] Differ by 1 Bit
         </a>
       </h2>
 
       
-      <a class="index-excerpt index-excerpt__noimg" href="/2026/02/03/bitset%20%E6%8A%80%E5%B7%A7/" target="_self">
+      <a class="index-excerpt index-excerpt__noimg" href="/2026/06/08/%E9%A2%98%E8%A7%A3%EF%BC%9AAT-agc031-c-AGC031C-Differ-by-1-Bit/" target="_self">
         <div>
-          可以用 bitset 优化传递闭包，具体是这样的，我们在使用 floyed 算法时，需要枚举断点，如果 iii 和 jjj 都与 kkk 联通，则 iii 和 jjj 就可以更新为 1，这时我们可以转化思路，如果我们枚举 kkk 和 iii，如果 kkk 和 iii 相连，那么可以将 kkk所有相连的都与 iii 相连，相当于 iii 相连的并上 kkk 相连的，集合操作我们可以用 bitset
+          前言 比较难的构造题。 洛谷题目传送门。 Atcoder 题目传送门。                      ▶题目                                  AT_agc031_c [AGC031C] Differ by 1 Bit 题目描述 给定整数 N, A, BN,\ A,\ BN, A, B。请判断是否存在一个 (0,1,…,2N−1)(0, 1, \ldot
         </div>
       </a>
 
@@ -309,8 +453,8 @@
         
           <div class="post-meta mr-3">
             <i class="iconfont icon-date"></i>
-            <time datetime="2026-02-03 19:11" pubdate>
-              2026-02-03
+            <time datetime="2026-06-08 19:20" pubdate>
+              2026-06-08
             </time>
           </div>
         
@@ -325,7 +469,7 @@
     
       <span class="category-chain">
         
-  <a href="/categories/trick/" class="category-chain-item">trick</a>
+  <a href="/categories/%E9%A2%98%E8%A7%A3/" class="category-chain-item">题解</a>
   
   
 
@@ -340,7 +484,7 @@
           <div class="post-meta">
             <i class="iconfont icon-tags"></i>
             
-              <a href="/tags/bitset/">#bitset</a>
+              <a href="/tags/%E6%9E%84%E9%80%A0/">#构造</a>
             
           </div>
         
@@ -354,15 +498,15 @@
     <article class="col-12 col-md-12 mx-auto index-info">
       <h2 class="index-header">
         
-        <a href="/2026/02/03/%E8%AE%A1%E6%95%B0%E6%8A%80%E5%B7%A7/" target="_self">
-          计数技巧
+        <a href="/2026/06/08/%E9%A2%98%E8%A7%A3%EF%BC%9ACF1470D-Strange-Housing/" target="_self">
+          题解：CF1470D Strange Housing
         </a>
       </h2>
 
       
-      <a class="index-excerpt index-excerpt__noimg" href="/2026/02/03/%E8%AE%A1%E6%95%B0%E6%8A%80%E5%B7%A7/" target="_self">
+      <a class="index-excerpt index-excerpt__noimg" href="/2026/06/08/%E9%A2%98%E8%A7%A3%EF%BC%9ACF1470D-Strange-Housing/" target="_self">
         <div>
-          在计数一类题目中，很容易想到正难则反，但是反确实好做，但是需要容斥。 如这些条件互不关联，那么我们可以“反难则正”，把每一段的不合法的方案求出来后，用总方案减去不就求出了合法的方案了吗，然后 ∏\prod∏ 就结束了。原题。   对于一些比较困难的计数问题，可以考虑将其转为期望，这样转移也许会容易很多。统计答案的时候乘上总的方案数就可以轻松转为计数。原题。
+          前言 洛谷题目传送门。 Codeforces 题目传送门。                      ▶题目                                  题目描述 冬季信息学学校的学生们将住在一组通过地下通道连接的房屋中。老师们也将住在其中一些房屋里，但他们不能随意安置。出于安全原因，必须满足以下条件：  如果两个房屋中都没有老师，则它们之间的所有通道都将关闭。其他通道保持开
         </div>
       </a>
 
@@ -370,8 +514,8 @@
         
           <div class="post-meta mr-3">
             <i class="iconfont icon-date"></i>
-            <time datetime="2026-02-03 19:11" pubdate>
-              2026-02-03
+            <time datetime="2026-06-08 07:39" pubdate>
+              2026-06-08
             </time>
           </div>
         
@@ -386,7 +530,7 @@
     
       <span class="category-chain">
         
-  <a href="/categories/trick/" class="category-chain-item">trick</a>
+  <a href="/categories/%E9%A2%98%E8%A7%A3/" class="category-chain-item">题解</a>
   
   
 
@@ -401,7 +545,7 @@
           <div class="post-meta">
             <i class="iconfont icon-tags"></i>
             
-              <a href="/tags/%E7%BB%84%E5%90%88%E6%95%B0%E5%AD%A6/">#组合数学</a>
+              <a href="/tags/%E6%9E%84%E9%80%A0/">#构造</a>
             
           </div>
         
@@ -415,15 +559,15 @@
     <article class="col-12 col-md-12 mx-auto index-info">
       <h2 class="index-header">
         
-        <a href="/2026/02/03/%E5%88%86%E6%B2%BB%E6%8A%80%E5%B7%A7/" target="_self">
-          分治技巧
+        <a href="/2026/06/07/%E9%A2%98%E8%A7%A3%EF%BC%9ACF1198C-Matching-vs-Independent-Set/" target="_self">
+          题解：CF1198C Matching vs Independent Set
         </a>
       </h2>
 
       
-      <a class="index-excerpt index-excerpt__noimg" href="/2026/02/03/%E5%88%86%E6%B2%BB%E6%8A%80%E5%B7%A7/" target="_self">
+      <a class="index-excerpt index-excerpt__noimg" href="/2026/06/07/%E9%A2%98%E8%A7%A3%EF%BC%9ACF1198C-Matching-vs-Independent-Set/" target="_self">
         <div>
-          对于矩形以及多次询问，一般要考虑分治。例如 这题，我的题解。 题解里讲了这题的做法以及主定理的使用。 大致来说就是，每次把较长的一条边分成两份，对分界线跑最短路，用分界线上的每个点更新递归到这层的询问。 查询分成这几类，按不同的方式处理。   该查询必须经过分界线。   该查询没有经过边界线。  该查询最短路经过边界线。 该查询最短路没有经过边界线，那么递归到左/右解决。    所以这题教会我
+          前言 算是比较简单的构造题吧。 洛谷题目传送门。 Codeforces 题目传送门。                      ▶题目                                  CF1198C Matching vs Independent Set 给定一个包含 3⋅n3 \cdot n3⋅n 个顶点和 mmm 条边的图。你需要找到一个大小为 nnn 的匹配，或者一个大小为
         </div>
       </a>
 
@@ -431,8 +575,8 @@
         
           <div class="post-meta mr-3">
             <i class="iconfont icon-date"></i>
-            <time datetime="2026-02-03 19:09" pubdate>
-              2026-02-03
+            <time datetime="2026-06-07 21:04" pubdate>
+              2026-06-07
             </time>
           </div>
         
@@ -447,7 +591,7 @@
     
       <span class="category-chain">
         
-  <a href="/categories/trick/" class="category-chain-item">trick</a>
+  <a href="/categories/%E9%A2%98%E8%A7%A3/" class="category-chain-item">题解</a>
   
   
 
@@ -462,7 +606,7 @@
           <div class="post-meta">
             <i class="iconfont icon-tags"></i>
             
-              <a href="/tags/%E5%88%86%E6%B2%BB/">#分治</a>
+              <a href="/tags/%E6%9E%84%E9%80%A0/">#构造</a>
             
           </div>
         
@@ -476,15 +620,15 @@
     <article class="col-12 col-md-12 mx-auto index-info">
       <h2 class="index-header">
         
-        <a href="/2026/02/03/%E5%88%86%E5%9D%97%E6%8A%80%E5%B7%A7/" target="_self">
-          分块技巧
+        <a href="/2026/06/07/%E9%A2%98%E8%A7%A3%EF%BC%9ACF643G-Choosing-Ads/" target="_self">
+          题解：CF643G Choosing Ads
         </a>
       </h2>
 
       
-      <a class="index-excerpt index-excerpt__noimg" href="/2026/02/03/%E5%88%86%E5%9D%97%E6%8A%80%E5%B7%A7/" target="_self">
+      <a class="index-excerpt index-excerpt__noimg" href="/2026/06/07/%E9%A2%98%E8%A7%A3%EF%BC%9ACF643G-Choosing-Ads/" target="_self">
         <div>
-          分块可以可以用于暴力的优化，相当于是暴力的平衡。 例如给定序列 a1,a2,⋯ ,ana_1,a_2,\cdots,a_na1​,a2​,⋯,an​，ai≥1a_i \ge 1ai​≥1，当绵羊在位置 jjj 时，它将会跳到 j+ajj+a_jj+aj​ 的位置上去。求要跳多少次才能跳出去 nnn。 无需多言，分成 n\sqrt{n}n​ 块，求出每个位置跳出其块的次数以及跳出去的到达的位置。
+          前言 比较妙的一道题。 洛谷题目传送门。 Codeforces 题目传送门。                      ▶题目                                  题目描述 一位社交网络开发人员最近提出了一种为用户选择广告的新算法。 广告商可以购买 nnn 个时段。他们可以一次性购买一段连续的时段。拥有的时段越多，广告向用户展示的机会就越大。 每次需要选择要展示的广告
         </div>
       </a>
 
@@ -492,8 +636,8 @@
         
           <div class="post-meta mr-3">
             <i class="iconfont icon-date"></i>
-            <time datetime="2026-02-03 19:08" pubdate>
-              2026-02-03
+            <time datetime="2026-06-07 20:05" pubdate>
+              2026-06-07
             </time>
           </div>
         
@@ -508,7 +652,7 @@
     
       <span class="category-chain">
         
-  <a href="/categories/trick/" class="category-chain-item">trick</a>
+  <a href="/categories/%E9%A2%98%E8%A7%A3/" class="category-chain-item">题解</a>
   
   
 
@@ -523,7 +667,7 @@
           <div class="post-meta">
             <i class="iconfont icon-tags"></i>
             
-              <a href="/tags/%E5%88%86%E5%9D%97/">#分块</a>
+              <a href="/tags/%E7%BA%BF%E6%AE%B5%E6%A0%91/">#线段树</a>
             
           </div>
         
@@ -537,15 +681,15 @@
     <article class="col-12 col-md-12 mx-auto index-info">
       <h2 class="index-header">
         
-        <a href="/2026/02/03/%E7%BD%91%E7%BB%9C%E6%B5%81-%E6%9C%80%E5%B0%8F%E5%89%B2%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/" target="_self">
-          网络流- 最小割学习笔记
+        <a href="/2026/06/07/%E9%A2%98%E8%A7%A3%EF%BC%9AAT-abc461-f-ABC461F-Total-Product-is-N/" target="_self">
+          题解：AT_abc461_f [ABC461F] Total Product is N
         </a>
       </h2>
 
       
-      <a class="index-excerpt index-excerpt__noimg" href="/2026/02/03/%E7%BD%91%E7%BB%9C%E6%B5%81-%E6%9C%80%E5%B0%8F%E5%89%B2%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/" target="_self">
+      <a class="index-excerpt index-excerpt__noimg" href="/2026/06/07/%E9%A2%98%E8%A7%A3%EF%BC%9AAT-abc461-f-ABC461F-Total-Product-is-N/" target="_self">
         <div>
-          网络流—最小割学习笔记 最大流最小割定理 一个图的最小割等于最大流。 如果一个图的的最小割小于最大流，那么图一定能找到增广路径。 我们一定能找到个方案使最小割等于最大流，具体的，最大流是由多个增广路径组成的，我们把这所有的增广路径的最小容量边给割掉，那么就是一个合法的最小割，因为不存在任何一个增广路径了。且这种方案显然是最大流等于最小割的。 最小割的大小 求最小割直接用 dinic 或 EK 算法
+          前言 洛谷题目传送门。 AtCoder 题目传送门。 前置题目传送门。 前置题目我的题解。 赛时机房无人做出。                      ▶题目                                  题目描述 You are given a positive integer  NNN . We call a non-empty sequence of positive
         </div>
       </a>
 
@@ -553,8 +697,8 @@
         
           <div class="post-meta mr-3">
             <i class="iconfont icon-date"></i>
-            <time datetime="2026-02-03 19:06" pubdate>
-              2026-02-03
+            <time datetime="2026-06-07 10:39" pubdate>
+              2026-06-07
             </time>
           </div>
         
@@ -569,7 +713,7 @@
     
       <span class="category-chain">
         
-  <a href="/categories/%E7%9C%81%E9%80%89%E7%9F%A5%E8%AF%86%E7%82%B9%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/" class="category-chain-item">省选知识点学习笔记</a>
+  <a href="/categories/%E9%A2%98%E8%A7%A3/" class="category-chain-item">题解</a>
   
   
 
@@ -584,7 +728,7 @@
           <div class="post-meta">
             <i class="iconfont icon-tags"></i>
             
-              <a href="/tags/%E7%BD%91%E7%BB%9C%E6%B5%81/">#网络流</a>
+              <a href="/tags/%E5%8A%A8%E6%80%81%E8%A7%84%E5%88%92/">#动态规划</a>
             
           </div>
         
@@ -598,15 +742,15 @@
     <article class="col-12 col-md-12 mx-auto index-info">
       <h2 class="index-header">
         
-        <a href="/2026/02/03/%E7%BD%91%E7%BB%9C%E6%B5%81-%E6%9C%80%E5%A4%A7%E6%B5%81%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/" target="_self">
-          网络流- 最大流学习笔记
+        <a href="/2026/06/07/%E9%A2%98%E8%A7%A3%EF%BC%9AP3861-%E6%8B%86%E5%88%86/" target="_self">
+          题解：P3861 拆分
         </a>
       </h2>
 
       
-      <a class="index-excerpt index-excerpt__noimg" href="/2026/02/03/%E7%BD%91%E7%BB%9C%E6%B5%81-%E6%9C%80%E5%A4%A7%E6%B5%81%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/" target="_self">
+      <a class="index-excerpt index-excerpt__noimg" href="/2026/06/07/%E9%A2%98%E8%A7%A3%EF%BC%9AP3861-%E6%8B%86%E5%88%86/" target="_self">
         <div>
-          网络流—最大流学习笔记 Edmonds-Karp 增广路算法（EK） 时间复杂度 O(nm2)O(nm^2)O(nm2)，但往往卡不满，可以接受 103∼10410^3\sim10^4103∼104 的边数。 算法的核心在于寻找一条可以流的路径，直到不能找到。 而难点在于反向边的作用。  令一条边 u→tu\to tu→t，容量为 www，在找到一条增广路后，流量为 fff，路径为 a→u→t→b
+          前言 题目传送门。                      ▶题目                                  题目描述 给定一个整数 nnn，求将 nnn 分解为互不相同的不小于 222 的整数的乘积的方案数。答案模 998244353998244353998244353。 输入格式 第一行一个整数 TTT，表示数据组数。 接下来 TTT 行，每行一个整数 nnn，意义如
         </div>
       </a>
 
@@ -614,8 +758,8 @@
         
           <div class="post-meta mr-3">
             <i class="iconfont icon-date"></i>
-            <time datetime="2026-02-03 19:04" pubdate>
-              2026-02-03
+            <time datetime="2026-06-07 10:13" pubdate>
+              2026-06-07
             </time>
           </div>
         
@@ -630,7 +774,7 @@
     
       <span class="category-chain">
         
-  <a href="/categories/%E7%9C%81%E9%80%89%E7%9F%A5%E8%AF%86%E7%82%B9%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/" class="category-chain-item">省选知识点学习笔记</a>
+  <a href="/categories/%E9%A2%98%E8%A7%A3/" class="category-chain-item">题解</a>
   
   
 
@@ -645,7 +789,7 @@
           <div class="post-meta">
             <i class="iconfont icon-tags"></i>
             
-              <a href="/tags/%E7%BD%91%E7%BB%9C%E6%B5%81/">#网络流</a>
+              <a href="/tags/%E5%8A%A8%E6%80%81%E8%A7%84%E5%88%92/">#动态规划</a>
             
           </div>
         
@@ -659,15 +803,15 @@
     <article class="col-12 col-md-12 mx-auto index-info">
       <h2 class="index-header">
         
-        <a href="/2026/02/03/%E7%BD%91%E7%BB%9C%E6%B5%81-%E4%B8%8A%E4%B8%8B%E7%95%8C%E7%BD%91%E7%BB%9C%E6%B5%81%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/" target="_self">
-          网络流- 上下界网络流学习笔记
+        <a href="/2026/06/03/%E9%A2%98%E8%A7%A3%EF%BC%9AAT-agc058-b-AGC058B-Adjacent-Chmax/" target="_self">
+          题解：AT_agc058_b [AGC058B] Adjacent Chmax
         </a>
       </h2>
 
       
-      <a class="index-excerpt index-excerpt__noimg" href="/2026/02/03/%E7%BD%91%E7%BB%9C%E6%B5%81-%E4%B8%8A%E4%B8%8B%E7%95%8C%E7%BD%91%E7%BB%9C%E6%B5%81%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/" target="_self">
+      <a class="index-excerpt index-excerpt__noimg" href="/2026/06/03/%E9%A2%98%E8%A7%A3%EF%BC%9AAT-agc058-b-AGC058B-Adjacent-Chmax/" target="_self">
         <div>
-          网络流—上下界网络流学习笔记 无汇源上下界可行流 题目描述 给定有向图 G=(E,V)G=(E,V)G=(E,V)，每条边的容量有上界 rir_iri​，和下界 lil_ili​，求出是否有一种合法的流的方式满足每条边的流量 fif_ifi​，满足 li≤fi≤ril_i\le f_i\le r_ili​≤fi​≤ri​。 解决方案 不妨令图为这样：  首先构造两个图，分别是下界（低保）网络和增量
+          前言 比较妙的一道题，这题没做出来，我是不是废了。 洛谷题目传送门。 AtCoder 题目传送门。                      ▶题目                                  AT_agc058_b [AGC058B] Adjacent Chmax 题目描述 给你一个 1∼n1 \sim n1∼n 的排列 PPP ,你可以进行若干次如下操作，也可以不进行操作
         </div>
       </a>
 
@@ -675,8 +819,8 @@
         
           <div class="post-meta mr-3">
             <i class="iconfont icon-date"></i>
-            <time datetime="2026-02-03 19:03" pubdate>
-              2026-02-03
+            <time datetime="2026-06-03 16:58" pubdate>
+              2026-06-03
             </time>
           </div>
         
@@ -691,7 +835,7 @@
     
       <span class="category-chain">
         
-  <a href="/categories/%E7%9C%81%E9%80%89%E7%9F%A5%E8%AF%86%E7%82%B9%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/" class="category-chain-item">省选知识点学习笔记</a>
+  <a href="/categories/%E9%A2%98%E8%A7%A3/" class="category-chain-item">题解</a>
   
   
 
@@ -706,7 +850,7 @@
           <div class="post-meta">
             <i class="iconfont icon-tags"></i>
             
-              <a href="/tags/%E7%BD%91%E7%BB%9C%E6%B5%81/">#网络流</a>
+              <a href="/tags/%E5%8A%A8%E6%80%81%E8%A7%84%E5%88%92/">#动态规划</a>
             
           </div>
         
@@ -720,15 +864,15 @@
     <article class="col-12 col-md-12 mx-auto index-info">
       <h2 class="index-header">
         
-        <a href="/2026/02/03/%E5%85%A8%E5%B1%80%E5%B9%B3%E8%A1%A1%E4%BA%8C%E5%8F%89%E6%A0%91%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/" target="_self">
-          全局平衡二叉树学习笔记
+        <a href="/2026/06/03/%E9%A2%98%E8%A7%A3%EF%BC%9AP8321-%E3%80%8EJROI-4%E3%80%8F%E6%B2%88%E9%98%B3%E5%A4%A7%E8%A1%97-2/" target="_self">
+          题解：P8321 『JROI-4』沈阳大街 2
         </a>
       </h2>
 
       
-      <a class="index-excerpt index-excerpt__noimg" href="/2026/02/03/%E5%85%A8%E5%B1%80%E5%B9%B3%E8%A1%A1%E4%BA%8C%E5%8F%89%E6%A0%91%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/" target="_self">
+      <a class="index-excerpt index-excerpt__noimg" href="/2026/06/03/%E9%A2%98%E8%A7%A3%EF%BC%9AP8321-%E3%80%8EJROI-4%E3%80%8F%E6%B2%88%E9%98%B3%E5%A4%A7%E8%A1%97-2/" target="_self">
         <div>
-          全局平衡二叉树学习笔记 前言 全局平衡二叉树是对于序列上的优化而言的，最常见且经典的应用是针对于 绝大部分的树链剖分。 所以下面直接按树链剖分的优化讲了。 能使树链剖分的时间复杂度降一个 log⁡n\log nlogn。 树链剖分的缺陷 在树链剖分的单点修改中，由于每次都要到线段树的子节点，单次时间复杂度是固定的 O(log⁡n)\mathcal O(\log n)O(logn)。 这是非常不公平
+          前言 比较巧妙的一道 trick 计数题。 题目传送门。                      ▶题目                                  题目描述 给定两个长度为 nnn 的序列 A,BA,BA,B，满足：   ∀1≤i&lt;n,Ai≥Ai+1\forall 1\le i&lt;n,A_i \ge A_{i+1}∀1≤i&lt;n,Ai​≥Ai+1​   An
         </div>
       </a>
 
@@ -736,8 +880,8 @@
         
           <div class="post-meta mr-3">
             <i class="iconfont icon-date"></i>
-            <time datetime="2026-02-03 19:01" pubdate>
-              2026-02-03
+            <time datetime="2026-06-03 15:16" pubdate>
+              2026-06-03
             </time>
           </div>
         
@@ -752,7 +896,7 @@
     
       <span class="category-chain">
         
-  <a href="/categories/%E7%9C%81%E9%80%89%E7%9F%A5%E8%AF%86%E7%82%B9%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/" class="category-chain-item">省选知识点学习笔记</a>
+  <a href="/categories/%E9%A2%98%E8%A7%A3/" class="category-chain-item">题解</a>
   
   
 
@@ -767,7 +911,7 @@
           <div class="post-meta">
             <i class="iconfont icon-tags"></i>
             
-              <a href="/tags/%E5%85%A8%E5%B1%80%E5%B9%B3%E8%A1%A1%E4%BA%8C%E5%8F%89%E6%A0%91/">#全局平衡二叉树</a>
+              <a href="/tags/%E5%8A%A8%E6%80%81%E8%A7%84%E5%88%92/">#动态规划</a>
             
           </div>
         
@@ -781,15 +925,15 @@
     <article class="col-12 col-md-12 mx-auto index-info">
       <h2 class="index-header">
         
-        <a href="/2026/02/03/%E5%90%89%E5%8F%B8%E6%9C%BA%E7%BA%BF%E6%AE%B5%E6%A0%91/" target="_self">
-          吉司机线段树
+        <a href="/2026/06/01/%E9%A2%98%E8%A7%A3%EF%BC%9AP14016-ICPC-2024-Nanjing-R-%E6%8B%93%E6%89%91/" target="_self">
+          题解：P14016 [ICPC 2024 Nanjing R] 拓扑]
         </a>
       </h2>
 
       
-      <a class="index-excerpt index-excerpt__noimg" href="/2026/02/03/%E5%90%89%E5%8F%B8%E6%9C%BA%E7%BA%BF%E6%AE%B5%E6%A0%91/" target="_self">
+      <a class="index-excerpt index-excerpt__noimg" href="/2026/06/01/%E9%A2%98%E8%A7%A3%EF%BC%9AP14016-ICPC-2024-Nanjing-R-%E6%8B%93%E6%89%91/" target="_self">
         <div>
-          吉司机线段树学习笔记 前言 吉司机线段树是用来维护区间取 max⁡/min⁡\max/\minmax/min，以及历史最值的问题。 应用还是应该较为少见。 【模板】线段树 3（区间最值操作、区间历史最值）。 例题 给出一个长度为 nnn 的数列 AAA，同时定义一个辅助数组 BBB，BBB 开始与 AAA 完全相同。接下来进行了 mmm 次操作，操作有五种类型，按以下格式给出：  1 l r k：
+          前言 题目传送门。 比较难且复杂的一道计数题。                      ▶题目                                  题目描述 给定一棵由 nnn 个节点组成的树，其中节点 111 是根。保证每个节点的编号都比它所有子节点小。树的拓扑序是一个满足以下限制的 nnn 的排列 p1,p2,…,pnp_1,p_2,\dots,p_np1​,p2​,…,pn​
         </div>
       </a>
 
@@ -797,8 +941,8 @@
         
           <div class="post-meta mr-3">
             <i class="iconfont icon-date"></i>
-            <time datetime="2026-02-03 18:57" pubdate>
-              2026-02-03
+            <time datetime="2026-06-01 15:40" pubdate>
+              2026-06-01
             </time>
           </div>
         
@@ -813,7 +957,7 @@
     
       <span class="category-chain">
         
-  <a href="/categories/%E7%9C%81%E9%80%89%E7%9F%A5%E8%AF%86%E7%82%B9%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/" class="category-chain-item">省选知识点学习笔记</a>
+  <a href="/categories/%E9%A2%98%E8%A7%A3/" class="category-chain-item">题解</a>
   
   
 
@@ -828,7 +972,7 @@
           <div class="post-meta">
             <i class="iconfont icon-tags"></i>
             
-              <a href="/tags/%E5%90%89%E5%8F%B8%E6%9C%BA%E7%BA%BF%E6%AE%B5%E6%A0%91/">#吉司机线段树</a>
+              <a href="/tags/%E5%8A%A8%E6%80%81%E8%A7%84%E5%88%92/">#动态规划</a>
             
           </div>
         
@@ -840,7 +984,7 @@
 
   <nav aria-label="navigation">
     <span class="pagination" id="pagination">
-      <a class="extend prev" rel="prev" href="/page/5/#board"><i class="iconfont icon-arrowleft"></i></a><a class="page-number" href="/">1</a><span class="space">&hellip;</span><a class="page-number" href="/page/4/#board">4</a><a class="page-number" href="/page/5/#board">5</a><span class="page-number current">6</span><a class="page-number" href="/page/7/#board">7</a><a class="extend next" rel="next" href="/page/7/#board"><i class="iconfont icon-arrowright"></i></a>
+      <a class="extend prev" rel="prev" href="/page/5/#board"><i class="iconfont icon-arrowleft"></i></a><a class="page-number" href="/">1</a><span class="space">&hellip;</span><a class="page-number" href="/page/4/#board">4</a><a class="page-number" href="/page/5/#board">5</a><span class="page-number current">6</span><a class="page-number" href="/page/7/#board">7</a><a class="page-number" href="/page/8/#board">8</a><span class="space">&hellip;</span><a class="page-number" href="/page/12/#board">12</a><a class="extend next" rel="next" href="/page/7/#board"><i class="iconfont icon-arrowright"></i></a>
     </span>
   </nav>
 
@@ -901,17 +1045,6 @@
 
   <!-- Scripts -->
   
-  <script  src="https://lib.baomitu.com/nprogress/0.2.0/nprogress.min.js" ></script>
-  <link  rel="stylesheet" href="https://lib.baomitu.com/nprogress/0.2.0/nprogress.min.css" />
-
-  <script>
-    NProgress.configure({"showSpinner":false,"trickleSpeed":100})
-    NProgress.start()
-    window.addEventListener('load', function() {
-      NProgress.done();
-    })
-  </script>
-
 
 <script  src="https://lib.baomitu.com/jquery/3.6.4/jquery.min.js" ></script>
 <script  src="https://lib.baomitu.com/twitter-bootstrap/4.6.1/js/bootstrap.min.js" ></script>

@@ -65,7 +65,7 @@
   <script id="fluid-configs">
     var Fluid = window.Fluid || {};
     Fluid.ctx = Object.assign({}, Fluid.ctx)
-    var CONFIG = {"hostname":"starseaeternal.dpdns.org","root":"/","version":"1.9.8","typing":{"enable":true,"typeSpeed":70,"cursorChar":"⭐","loop":false,"scope":[]},"anchorjs":{"enable":true,"element":"h1,h2,h3,h4,h5,h6","placement":"left","visible":"hover","icon":""},"progressbar":{"enable":true,"height_px":3,"color":"#29d","options":{"showSpinner":false,"trickleSpeed":100}},"code_language":{"enable":true,"default":"TEXT"},"copy_btn":true,"image_caption":{"enable":true},"image_zoom":{"enable":true,"img_url_replace":["",""]},"toc":{"enable":true,"placement":"right","headingSelector":"h1,h2,h3,h4,h5,h6","collapseDepth":0},"lazyload":{"enable":true,"loading_img":"/img/loading.gif","onlypost":false,"offset_factor":2},"web_analytics":{"enable":false,"follow_dnt":true,"baidu":null,"google":{"measurement_id":null},"tencent":{"sid":null,"cid":null},"leancloud":{"app_id":null,"app_key":null,"server_url":null,"path":"window.location.pathname","ignore_local":false},"umami":{"src":null,"website_id":null,"domains":null,"start_time":"2024-01-01T00:00:00.000Z","token":null,"api_server":null}},"search_path":"/local-search.xml","include_content_in_search":true};
+    var CONFIG = {"hostname":"starseaeternal.dpdns.org","root":"/","version":"1.9.9","typing":{"enable":true,"typeSpeed":91,"cursorChar":"⭐","loop":true,"scope":[]},"anchorjs":{"enable":true,"element":"h1,h2,h3,h4,h5,h6","placement":"left","visible":"hover","icon":""},"progressbar":{"enable":false,"height_px":3,"color":"#29d","options":{"showSpinner":false,"trickleSpeed":100}},"code_language":{"enable":true,"default":"TEXT"},"copy_btn":true,"image_caption":{"enable":true},"image_zoom":{"enable":true,"img_url_replace":["",""]},"toc":{"enable":true,"expand_all":true,"placement":"right","headingSelector":"h1,h2,h3,h4,h5,h6","collapseDepth":0},"lazyload":{"enable":true,"loading_img":"/img/loading.gif","onlypost":false,"offset_factor":2},"web_analytics":{"enable":false,"follow_dnt":true,"baidu":null,"google":{"measurement_id":null},"tencent":{"sid":null,"cid":null},"leancloud":{"app_id":null,"app_key":null,"server_url":null,"path":"window.location.pathname","ignore_local":false},"openkounter":{"server_url":"https://open-kounter.mintimate.cn","path":"window.location.pathname","ignore_local":false},"umami":{"src":null,"website_id":null,"domains":null,"start_time":"2024-01-01T00:00:00.000Z","token":null,"api_server":null}},"search_path":"/local-search.xml","include_content_in_search":true};
 
     if (CONFIG.web_analytics.follow_dnt) {
       var dntVal = navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack;
@@ -78,11 +78,10 @@
 
 
   
+
 <meta name="generator" content="Hexo 8.1.1"></head>
 
-
 <body>
-
   
 
   <header>
@@ -101,7 +100,7 @@
       <div class="animated-icon"><span></span><span></span><span></span></div>
     </button>
 
-    <!-- Collapsible content -->
+    <!-- Collapsible content (desktop) -->
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav ml-auto text-center">
         
@@ -165,6 +164,18 @@
             </li>
           
         
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/links/" target="_self">
+                <i class="iconfont icon-link-fill"></i>
+                <span>Links</span>
+              </a>
+            </li>
+          
+        
         
           <li class="nav-item" id="search-btn">
             <a class="nav-link" target="_self" href="javascript:;" data-toggle="modal" data-target="#modalSearch" aria-label="Search">
@@ -185,10 +196,127 @@
   </div>
 </nav>
 
+<!-- Mobile grid menu overlay -->
+<div id="mobile-grid-menu" class="d-lg-none">
+  <div class="mobile-grid-menu-inner">
+    <div class="container">
+      <div class="row">
+        
+          
+          
+          
+          
+            <div class="col-4 mobile-grid-cell">
+              <a href="/" target="_self">
+                <div class="mobile-grid-item">
+                  <i class="iconfont icon-home-fill"></i>
+                  <span>Home</span>
+                </div>
+              </a>
+            </div>
+          
+        
+          
+          
+          
+          
+            <div class="col-4 mobile-grid-cell">
+              <a href="/archives/" target="_self">
+                <div class="mobile-grid-item">
+                  <i class="iconfont icon-user-fill"></i>
+                  <span>Archives</span>
+                </div>
+              </a>
+            </div>
+          
+        
+          
+          
+          
+          
+            <div class="col-4 mobile-grid-cell">
+              <a href="/categories/" target="_self">
+                <div class="mobile-grid-item">
+                  <i class="iconfont icon-user-fill"></i>
+                  <span>Categories</span>
+                </div>
+              </a>
+            </div>
+          
+        
+          
+          
+          
+          
+            <div class="col-4 mobile-grid-cell">
+              <a href="/tags/" target="_self">
+                <div class="mobile-grid-item">
+                  <i class="iconfont icon-tags-fill"></i>
+                  <span>Tag</span>
+                </div>
+              </a>
+            </div>
+          
+        
+          
+          
+          
+          
+            <div class="col-4 mobile-grid-cell">
+              <a href="/about/" target="_self">
+                <div class="mobile-grid-item">
+                  <i class="iconfont icon-user-fill"></i>
+                  <span>About</span>
+                </div>
+              </a>
+            </div>
+          
+        
+          
+          
+          
+          
+            <div class="col-4 mobile-grid-cell">
+              <a href="/links/" target="_self">
+                <div class="mobile-grid-item">
+                  <i class="iconfont icon-link-fill"></i>
+                  <span>Links</span>
+                </div>
+              </a>
+            </div>
+          
+        
+        
+          <div class="col-4 mobile-grid-cell" id="mobile-search-btn">
+            <a href="javascript:;" data-toggle="modal" data-target="#modalSearch" aria-label="Search">
+              <div class="mobile-grid-item">
+                <i class="iconfont icon-search"></i>
+                <span>Search</span>
+              </div>
+            </a>
+          </div>
+        
+        
+          <div class="col-4 mobile-grid-cell" id="mobile-color-toggle-btn"
+               data-label-light="Light"
+               data-label-dark="Dark">
+            <a href="javascript:;" aria-label="Color Toggle">
+              <div class="mobile-grid-item">
+                <i class="iconfont icon-dark" id="mobile-color-toggle-icon"></i>
+                <span id="mobile-color-toggle-label">Dark</span>
+              </div>
+            </a>
+          </div>
+        
+      </div>
+    </div>
+  </div>
+</div>
+
   
 
-<div id="banner" class="banner" parallax=true
-     style="background: url('/img/bg/15.jpg') no-repeat center center; background-size: cover;">
+<div id="banner" class="banner" parallax=true data-random-banner='/img/random/10.jpg,/img/random/11.jpg,/img/random/12.jpg,/img/random/13.jpg,/img/random/14.jpg,/img/random/15.jpg,/img/random/16.jpg,/img/random/17.jpg,/img/random/18.jpg,/img/random/19.jpg,/img/random/20.jpg,/img/random/21.jpg,/img/random/22.jpg,/img/random/23.jpg,/img/random/24.jpg,/img/random/25.jpg,/img/random/26.jpg,/img/random/27.jpg,/img/random/28.jpg,/img/random/29.jpg,/img/random/3.jpg,/img/random/30.jpg,/img/random/31.jpg,/img/random/32.jpg,/img/random/33.jpg,/img/random/34.jpg,/img/random/35.jpg,/img/random/36.jpg,/img/random/37.jpg,/img/random/38.jpg,/img/random/39.jpg,/img/random/40.jpg,/img/random/41.jpg,/img/random/42.jpg,/img/random/43.jpg,/img/random/44.jpg,/img/random/45.jpg,/img/random/46.jpg,/img/random/47.jpg,/img/random/48.jpg,/img/random/49.jpg,/img/random/50.jpg,/img/random/51.jpg,/img/random/52.jpg,/img/random/53.jpg,/img/random/54.jpg,/img/random/55.jpg,/img/random/56.jpg,/img/random/57.jpg,/img/random/58.jpg,/img/random/59.jpg,/img/random/6.jpg,/img/random/60.jpg,/img/random/61.jpg,/img/random/7.jpg,/img/random/8.jpg,/img/random/9.jpg,/img/random/default.png,/img/random/t1.jpg'
+     style="background: url('/img/random/10.jpg') no-repeat center center; background-size: cover;">
   <div class="full-bg-img">
     <div class="mask flex-center" style="background-color: rgba(0, 0, 0, 0.3)">
       <div class="banner-text text-center fade-in-up">
@@ -210,6 +338,21 @@
   </div>
 </div>
 
+
+  <script>
+    (function() {
+      var banner = document.getElementById('banner');
+      if (!banner) return;
+      var list = banner.getAttribute('data-random-banner');
+      if (!list) return;
+      list = list.split(',').filter(Boolean);
+      if (list.length === 0) return;
+      var pick = list[Math.floor(Math.random() * list.length)];
+      banner.style.backgroundImage = "url('" + pick + "')";
+    })();
+  </script>
+
+
 </div>
 
   </header>
@@ -226,7 +369,7 @@
                 
 
 <div class="text-center tagcloud">
-  <a href="/tags/AC-%E8%87%AA%E5%8A%A8%E6%9C%BA/" style="font-size: 15px; color: #bbe">AC 自动机</a> <a href="/tags/bitset/" style="font-size: 15px; color: #bbe">bitset</a> <a href="/tags/hash/" style="font-size: 24px; color: #6994cd">hash</a> <a href="/tags/min-max-%E5%AE%B9%E6%96%A5/" style="font-size: 15px; color: #bbe">min-max 容斥</a> <a href="/tags/%E4%B8%BB%E5%AE%9A%E7%90%86/" style="font-size: 15px; color: #bbe">主定理</a> <a href="/tags/%E4%BA%8C%E9%A1%B9%E5%BC%8F%E5%8F%8D%E6%BC%94/" style="font-size: 18px; color: #a0aee3">二项式反演</a> <a href="/tags/%E5%80%8D%E5%A2%9E/" style="font-size: 15px; color: #bbe">倍增</a> <a href="/tags/%E5%85%A8%E5%B1%80%E5%B9%B3%E8%A1%A1%E4%BA%8C%E5%8F%89%E6%A0%91/" style="font-size: 18px; color: #a0aee3">全局平衡二叉树</a> <a href="/tags/%E5%88%86%E5%9D%97/" style="font-size: 21px; color: #85a1d8">分块</a> <a href="/tags/%E5%88%86%E6%B2%BB/" style="font-size: 18px; color: #a0aee3">分治</a> <a href="/tags/%E5%8A%A8%E6%80%81%E8%A7%84%E5%88%92/" style="font-size: 30px; color: #337ab7">动态规划</a> <a href="/tags/%E5%8C%85%E7%BD%97%E4%B8%87%E8%B1%A1/" style="font-size: 15px; color: #bbe">包罗万象</a> <a href="/tags/%E5%90%89%E5%8F%B8%E6%9C%BA%E7%BA%BF%E6%AE%B5%E6%A0%91/" style="font-size: 15px; color: #bbe">吉司机线段树</a> <a href="/tags/%E5%AD%90%E9%9B%86%E5%8F%8D%E6%BC%94/" style="font-size: 21px; color: #85a1d8">子集反演</a> <a href="/tags/%E5%AD%97%E5%85%B8%E6%A0%91/" style="font-size: 21px; color: #85a1d8">字典树</a> <a href="/tags/%E5%AE%B9%E6%96%A5%E5%8E%9F%E7%90%86/" style="font-size: 18px; color: #a0aee3">容斥原理</a> <a href="/tags/%E5%B9%B6%E6%9F%A5%E9%9B%86/" style="font-size: 15px; color: #bbe">并查集</a> <a href="/tags/%E6%89%AB%E6%8F%8F%E7%BA%BF/" style="font-size: 18px; color: #a0aee3">扫描线</a> <a href="/tags/%E6%90%9C%E7%B4%A2/" style="font-size: 15px; color: #bbe">搜索</a> <a href="/tags/%E6%9C%80%E7%9F%AD%E8%B7%AF/" style="font-size: 15px; color: #bbe">最短路</a> <a href="/tags/%E6%9E%84%E9%80%A0/" style="font-size: 21px; color: #85a1d8">构造</a> <a href="/tags/%E6%A0%87%E8%AE%B0%E6%B0%B8%E4%B9%85%E5%8C%96/" style="font-size: 15px; color: #bbe">标记永久化</a> <a href="/tags/%E6%A0%91%E4%B8%8A%E5%90%AF%E5%8F%91%E5%BC%8F%E5%90%88%E5%B9%B6/" style="font-size: 15px; color: #bbe">树上启发式合并</a> <a href="/tags/%E6%A0%91%E7%8A%B6%E6%95%B0%E7%BB%84/" style="font-size: 18px; color: #a0aee3">树状数组</a> <a href="/tags/%E6%A0%91%E9%93%BE%E5%89%96%E5%88%86/" style="font-size: 15px; color: #bbe">树链剖分</a> <a href="/tags/%E7%82%B9%E5%88%86%E6%B2%BB/" style="font-size: 18px; color: #a0aee3">点分治</a> <a href="/tags/%E7%8F%82%E6%9C%B5%E8%8E%89%E6%A0%91/" style="font-size: 21px; color: #85a1d8">珂朵莉树</a> <a href="/tags/%E7%9F%A9%E9%98%B5%E8%BF%90%E7%AE%97/" style="font-size: 21px; color: #85a1d8">矩阵运算</a> <a href="/tags/%E7%AC%9B%E5%8D%A1%E5%B0%94%E6%A0%91/" style="font-size: 15px; color: #bbe">笛卡尔树</a> <a href="/tags/%E7%BA%BF%E6%AE%B5%E6%A0%91/" style="font-size: 27px; color: #4e87c2">线段树</a> <a href="/tags/%E7%BA%BF%E6%AE%B5%E6%A0%91%E4%BA%8C%E5%88%86/" style="font-size: 15px; color: #bbe">线段树二分</a> <a href="/tags/%E7%BA%BF%E6%AE%B5%E6%A0%91%E5%88%86%E6%B2%BB/" style="font-size: 15px; color: #bbe">线段树分治</a> <a href="/tags/%E7%BB%84%E5%90%88%E6%95%B0%E5%AD%A6/" style="font-size: 15px; color: #bbe">组合数学</a> <a href="/tags/%E7%BD%91%E7%BB%9C%E6%B5%81/" style="font-size: 24px; color: #6994cd">网络流</a> <a href="/tags/%E9%AB%98%E7%BB%B4%E5%89%8D%E7%BC%80%E5%92%8C/" style="font-size: 21px; color: #85a1d8">高维前缀和</a>
+  <a href="/tags/AC-%E8%87%AA%E5%8A%A8%E6%9C%BA/" style="font-size: 15px; color: #bbe">AC 自动机</a> <a href="/tags/Slope-trick/" style="font-size: 26.25px; color: #558ac5">Slope trick</a> <a href="/tags/Z-%E5%87%BD%E6%95%B0/" style="font-size: 15px; color: #bbe">Z 函数</a> <a href="/tags/hash/" style="font-size: 16.88px; color: #aab3e7">hash</a> <a href="/tags/min-max-%E5%AE%B9%E6%96%A5/" style="font-size: 15px; color: #bbe">min-max 容斥</a> <a href="/tags/%E4%B8%BB%E5%AE%9A%E7%90%86/" style="font-size: 15px; color: #bbe">主定理</a> <a href="/tags/%E4%BA%8C%E9%A1%B9%E5%BC%8F%E5%8F%8D%E6%BC%94/" style="font-size: 16.88px; color: #aab3e7">二项式反演</a> <a href="/tags/%E5%80%8D%E5%A2%9E/" style="font-size: 15px; color: #bbe">倍增</a> <a href="/tags/%E5%87%B8%E5%8C%85/" style="font-size: 15px; color: #bbe">凸包</a> <a href="/tags/%E5%88%86%E5%9D%97/" style="font-size: 16.88px; color: #aab3e7">分块</a> <a href="/tags/%E5%88%86%E6%B2%BB/" style="font-size: 15px; color: #bbe">分治</a> <a href="/tags/%E5%8A%A8%E6%80%81%E8%A7%84%E5%88%92/" style="font-size: 30px; color: #337ab7">动态规划</a> <a href="/tags/%E5%8D%9A%E5%BC%88%E8%AE%BA/" style="font-size: 15px; color: #bbe">博弈论</a> <a href="/tags/%E5%8F%AF%E5%B9%B6%E5%A0%86/" style="font-size: 22.5px; color: #779bd3">可并堆</a> <a href="/tags/%E5%AD%90%E9%9B%86%E5%8F%8D%E6%BC%94/" style="font-size: 18.75px; color: #99abe0">子集反演</a> <a href="/tags/%E5%AD%97%E5%85%B8%E6%A0%91/" style="font-size: 16.88px; color: #aab3e7">字典树</a> <a href="/tags/%E5%AE%B9%E6%96%A5%E5%8E%9F%E7%90%86/" style="font-size: 16.88px; color: #aab3e7">容斥原理</a> <a href="/tags/%E6%89%AB%E6%8F%8F%E7%BA%BF/" style="font-size: 15px; color: #bbe">扫描线</a> <a href="/tags/%E6%90%9C%E7%B4%A2/" style="font-size: 15px; color: #bbe">搜索</a> <a href="/tags/%E6%9C%80%E7%9F%AD%E8%B7%AF/" style="font-size: 18.75px; color: #99abe0">最短路</a> <a href="/tags/%E6%9D%8E%E8%B6%85%E7%BA%BF%E6%AE%B5%E6%A0%91/" style="font-size: 20.63px; color: #88a3d9">李超线段树</a> <a href="/tags/%E6%9E%84%E9%80%A0/" style="font-size: 28.13px; color: #4482be">构造</a> <a href="/tags/%E6%A0%91%E4%B8%8A%E5%90%AF%E5%8F%91%E5%BC%8F%E5%90%88%E5%B9%B6/" style="font-size: 15px; color: #bbe">树上启发式合并</a> <a href="/tags/%E6%A0%91%E7%8A%B6%E6%95%B0%E7%BB%84/" style="font-size: 16.88px; color: #aab3e7">树状数组</a> <a href="/tags/%E6%A0%91%E9%93%BE%E5%89%96%E5%88%86/" style="font-size: 16.88px; color: #aab3e7">树链剖分</a> <a href="/tags/%E6%AC%A7%E6%8B%89%E8%BF%B9/" style="font-size: 15px; color: #bbe">欧拉迹</a> <a href="/tags/%E7%82%B9%E5%88%86%E6%B2%BB/" style="font-size: 16.88px; color: #aab3e7">点分治</a> <a href="/tags/%E7%8F%82%E6%9C%B5%E8%8E%89%E6%A0%91/" style="font-size: 16.88px; color: #aab3e7">珂朵莉树</a> <a href="/tags/%E7%9F%A9%E9%98%B5%E8%BF%90%E7%AE%97/" style="font-size: 15px; color: #bbe">矩阵运算</a> <a href="/tags/%E7%AC%9B%E5%8D%A1%E5%B0%94%E6%A0%91/" style="font-size: 15px; color: #bbe">笛卡尔树</a> <a href="/tags/%E7%BA%BF%E6%80%A7%E5%9F%BA/" style="font-size: 24.38px; color: #6692cc">线性基</a> <a href="/tags/%E7%BA%BF%E6%AE%B5%E6%A0%91/" style="font-size: 26.25px; color: #558ac5">线段树</a> <a href="/tags/%E7%BA%BF%E6%AE%B5%E6%A0%91%E4%BA%8C%E5%88%86/" style="font-size: 15px; color: #bbe">线段树二分</a> <a href="/tags/%E7%BA%BF%E6%AE%B5%E6%A0%91%E5%88%86%E6%B2%BB/" style="font-size: 15px; color: #bbe">线段树分治</a> <a href="/tags/%E9%AB%98%E6%96%AF%E6%B6%88%E5%85%83/" style="font-size: 15px; color: #bbe">高斯消元</a> <a href="/tags/%E9%AB%98%E7%BB%B4%E5%89%8D%E7%BC%80%E5%92%8C/" style="font-size: 18.75px; color: #99abe0">高维前缀和</a>
 </div>
 
               </div>
@@ -284,17 +427,6 @@
 
   <!-- Scripts -->
   
-  <script  src="https://lib.baomitu.com/nprogress/0.2.0/nprogress.min.js" ></script>
-  <link  rel="stylesheet" href="https://lib.baomitu.com/nprogress/0.2.0/nprogress.min.css" />
-
-  <script>
-    NProgress.configure({"showSpinner":false,"trickleSpeed":100})
-    NProgress.start()
-    window.addEventListener('load', function() {
-      NProgress.done();
-    })
-  </script>
-
 
 <script  src="https://lib.baomitu.com/jquery/3.6.4/jquery.min.js" ></script>
 <script  src="https://lib.baomitu.com/twitter-bootstrap/4.6.1/js/bootstrap.min.js" ></script>
